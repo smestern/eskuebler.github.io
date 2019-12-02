@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Primate Cell Type Database</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.3.1_edit.css" rel="stylesheet">
+	  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.15.5/dist/bootstrap-table.min.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Primate Cell Type Database</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Our Lab</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Data
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Electrophysiology</a>
+              <a class="dropdown-item" href="#">Morphology</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">RNAseq (coming soon)</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+    <section>
+      <div class="jumbotron text-center mt-2">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h1>Primate Cell Type Database</h1>
+              <p>Intracellular recordings of non-human primates (NHP) cells sampled from the lateral prefrontal cortex. ~370 patch clamp recordings for 2 protocols: 1 second current pulse & 3 millisecond pulse. Morphology obtained by biocytin injections and confocal imaging at 63x magnification.</p>
+              <p><a class="btn btn-primary btn-lg" href="#" role="button"}>Learn more through our Technical White Papers »</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h2>Ex vivo data - Electrophysiology&nbsp;</h2>
+   
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <table
+  data-toggle="table"
+  data-url="data/data.json"
+	data-sortable="true"
+	data-pagination="true"
+  data-search="true">
+  <thead>
+    <tr>
+      <th data-field="ID" data-sortable="true">CELL ID</th>
+		<th data-field="preview" data-formatter="imageFormatter">Preview</th>
+      <th data-field="Resistence" data-sortable="true">Resistence</th>
+      <th data-field="sag" data-sortable="true">sag</th>
+		<th data-field="link" data-formatter="linkFormatter">link</th>
+    </tr>
+  </thead>
+</table>
+<script> function imageFormatter(value, row) {
+    return '<img src="images/waveform.png" style="width:50px;height:60px;"/>';
+	}
+	function linkFormatter(value, row) {
+    return '<a href="https://www.'+value+'" target="_blank">Download</a>';
+	}
+	  
+	  </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    
+    <script src="https://unpkg.com/bootstrap-table@1.15.5/dist/bootstrap-table.min.js"></script>
+    </section>
+    <hr>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-12">
+            <h3 class="text-center">Our lab</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, ducimus, sit, quibusdam quidem recusandae veniam eos quod error nisi repellat excepturi laboriosam aspernatur suscipit possimus consectetur dolores nihil labore quas eius illo accusamus nulla sed blanditiis porro accusantium. Perspiciatis, perferendis!</p>
+          </div>
+          <div class="col-md-4 col-12">
+            <h3 class="text-center">GET IN TOUCH</h3>
+            <address class="text-center">
+              <strong>Western University - Robarts Research Institute</strong><br>
+              1151 Richmond St. N., 
+              London, Ontario, Canada<br>
+            P: (519) 931-5777 F: (519) 931-5789<br>
+            </address>
+          </div>
+          <div class="col-md-4 col-12">
+            <h3 class="text-center">NEWSLETTER</h3>
+            <form>
+              <div class="form-group col-12">
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                <button type="submit" class="btn btn-dark mt-2">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <footer class="text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p>Copyright © JMT Lab 2020. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="jquery-3.3.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="popper.min.js"></script>
+    <script src="bootstrap-4.3.1.js"></script>
+  </body>
+</html>
