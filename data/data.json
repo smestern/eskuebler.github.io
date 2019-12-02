@@ -1,6 +1,6 @@
 [
   {
-    "ID": "M01_CN_A1_C01",
+    "ID": "M01_A1_C01",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -90,7 +90,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M01_CN_A1_C02",
+    "ID": "M01_A1_C02",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -180,7 +180,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M01_CN_A1_C03",
+    "ID": "M01_A1_C03",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -270,7 +270,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M01_CN_A2_C04",
+    "ID": "M01_A2_C04",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -360,7 +360,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M01_CN_A2_C05",
+    "ID": "M01_A2_C05",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -450,7 +450,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M01_CN_A2_C06",
+    "ID": "M01_A2_C06",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -540,7 +540,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M01_CN_A3_C07",
+    "ID": "M01_A3_C07",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -630,7 +630,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M01_CN_A3_C08",
+    "ID": "M01_A3_C08",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -720,7 +720,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M01_CN_A3_C09",
+    "ID": "M01_A3_C09",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -810,7 +810,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M01_CN_A4_C10",
+    "ID": "M01_A4_C10",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -900,7 +900,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M01_CN_A4_C11",
+    "ID": "M01_A4_C11",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -990,7 +990,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M01_CN_A4_C12",
+    "ID": "M01_A4_C12",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -1080,7 +1080,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M01_CN_A5_C13",
+    "ID": "M01_A5_C13",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -1170,7 +1170,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M01_CN_A5_C14",
+    "ID": "M01_A5_C14",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -1260,7 +1260,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M01_CN_A5_C15",
+    "ID": "M01_A5_C15",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -1350,7 +1350,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M01_JS_A1_C02",
+    "ID": "M01_A1_C02",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -1440,7 +1440,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M01_JS_A2_C03",
+    "ID": "M01_A2_C03",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -1530,7 +1530,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M01_JS_A2_C05",
+    "ID": "M01_A2_C05",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -1620,7 +1620,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M01_JS_A3_C06",
+    "ID": "M01_A3_C06",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -1710,7 +1710,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M01_JS_A3_C07",
+    "ID": "M01_A3_C07",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -1800,7 +1800,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M01_JS_A3_C08",
+    "ID": "M01_A3_C08",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -1890,7 +1890,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M01_JS_A4_C09",
+    "ID": "M01_A4_C09",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -1980,7 +1980,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M01_JS_A4_C11",
+    "ID": "M01_A4_C11",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -2070,7 +2070,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M01_JS_A5_C12",
+    "ID": "M01_A5_C12",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -2160,7 +2160,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M01_JS_A6_C13",
+    "ID": "M01_A6_C13",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -2250,7 +2250,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M01_JS_B1_C14",
+    "ID": "M01_B1_C14",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -2340,7 +2340,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M01_JS_B1_C15",
+    "ID": "M01_B1_C15",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -2430,7 +2430,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M01_JS_B2_C17",
+    "ID": "M01_B2_C17",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -2520,7 +2520,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M01_JS_B2_C18",
+    "ID": "M01_B2_C18",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -2610,7 +2610,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M01_JS_B2_C19",
+    "ID": "M01_B2_C19",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -2700,7 +2700,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M01_JS_B3_C20",
+    "ID": "M01_B3_C20",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -2790,7 +2790,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M01_JS_B3_C21",
+    "ID": "M01_B3_C21",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -2880,7 +2880,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M01_MW_D1_C01",
+    "ID": "M01_D1_C01",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -2970,7 +2970,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M01_MW_D1_C02",
+    "ID": "M01_D1_C02",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -3060,7 +3060,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M01_MW_D2_C03",
+    "ID": "M01_D2_C03",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -3150,7 +3150,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M01_MW_D2_C04",
+    "ID": "M01_D2_C04",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -3240,7 +3240,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M01_MW_D2_C05",
+    "ID": "M01_D2_C05",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -3330,7 +3330,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M01_MW_D3_C06",
+    "ID": "M01_D3_C06",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -3420,7 +3420,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M01_MW_D3_C07",
+    "ID": "M01_D3_C07",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -3510,7 +3510,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M01_MW_D3_C08",
+    "ID": "M01_D3_C08",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -3600,7 +3600,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M01_MW_D4_C09",
+    "ID": "M01_D4_C09",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -3690,7 +3690,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M01_MW_D4_C10",
+    "ID": "M01_D4_C10",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -3780,7 +3780,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M01_MW_D4_C11",
+    "ID": "M01_D4_C11",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -3870,7 +3870,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M01_MW_D5_C12",
+    "ID": "M01_D5_C12",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -3960,7 +3960,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M01_MW_D5_C13",
+    "ID": "M01_D5_C13",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -4050,7 +4050,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M01_MW_D5_C14",
+    "ID": "M01_D5_C14",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -4140,7 +4140,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M01_MW_D6_C15",
+    "ID": "M01_D6_C15",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -4230,7 +4230,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M01_SM_A1_C01",
+    "ID": "M01_A1_C01",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -4320,7 +4320,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M01_SM_A1_C02",
+    "ID": "M01_A1_C02",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -4410,7 +4410,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M01_SM_A1_C03",
+    "ID": "M01_A1_C03",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -4500,7 +4500,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M01_SM_A2_C04",
+    "ID": "M01_A2_C04",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -4590,7 +4590,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M01_SM_A2_C05",
+    "ID": "M01_A2_C05",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -4680,7 +4680,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M01_SM_A2_C06",
+    "ID": "M01_A2_C06",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -4770,7 +4770,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M01_SM_A3_C07",
+    "ID": "M01_A3_C07",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -4860,7 +4860,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M01_SM_A3_C08",
+    "ID": "M01_A3_C08",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -4950,7 +4950,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M01_SM_A3_C09",
+    "ID": "M01_A3_C09",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -5040,7 +5040,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M01_SM_A4_C10",
+    "ID": "M01_A4_C10",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -5130,7 +5130,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M01_SM_A4_C11",
+    "ID": "M01_A4_C11",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -5220,7 +5220,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M01_SM_A5_C12",
+    "ID": "M01_A5_C12",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -5310,7 +5310,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M01_SM_A5_C13",
+    "ID": "M01_A5_C13",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -5400,7 +5400,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M01_SM_A6_C14",
+    "ID": "M01_A6_C14",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -5490,7 +5490,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M01_SM_A6_C15",
+    "ID": "M01_A6_C15",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -5580,7 +5580,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M01_SM_A6_C16",
+    "ID": "M01_A6_C16",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -5670,7 +5670,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M01_SM_A7_C17",
+    "ID": "M01_A7_C17",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -5760,7 +5760,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M01_SM_A7_C18",
+    "ID": "M01_A7_C18",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -5850,7 +5850,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M01_SM_A7_C19",
+    "ID": "M01_A7_C19",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -5940,7 +5940,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M02_JS_D1_C12",
+    "ID": "M02_D1_C12",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -6030,7 +6030,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M02_JS_D2_C09",
+    "ID": "M02_D2_C09",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -6120,7 +6120,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M02_JS_D2_C10",
+    "ID": "M02_D2_C10",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -6210,7 +6210,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M02_JS_D3_C07",
+    "ID": "M02_D3_C07",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -6300,7 +6300,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M02_JS_D3_C08",
+    "ID": "M02_D3_C08",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -6390,7 +6390,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M02_JS_D4_C05",
+    "ID": "M02_D4_C05",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -6480,7 +6480,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M02_JS_D4_C06",
+    "ID": "M02_D4_C06",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -6570,7 +6570,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M02_JS_D5_C03",
+    "ID": "M02_D5_C03",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -6660,7 +6660,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M02_JS_D6_C02",
+    "ID": "M02_D6_C02",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -6750,7 +6750,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M02_MW_D1_C01",
+    "ID": "M02_D1_C01",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -6840,7 +6840,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M02_MW_D2_C03",
+    "ID": "M02_D2_C03",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -6930,7 +6930,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M02_MW_D2_C04",
+    "ID": "M02_D2_C04",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -7020,7 +7020,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M02_MW_D3_C06",
+    "ID": "M02_D3_C06",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -7110,7 +7110,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M02_MW_D3_C07",
+    "ID": "M02_D3_C07",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -7200,7 +7200,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M02_MW_D4_C08",
+    "ID": "M02_D4_C08",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -7290,7 +7290,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M02_MW_D4_C09",
+    "ID": "M02_D4_C09",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -7380,7 +7380,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M02_MW_D5_C10",
+    "ID": "M02_D5_C10",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -7470,7 +7470,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M02_MW_D5_C11",
+    "ID": "M02_D5_C11",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -7560,7 +7560,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M02_MW_D6_C12",
+    "ID": "M02_D6_C12",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -7650,7 +7650,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M02_MW_D6_C13",
+    "ID": "M02_D6_C13",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -7740,7 +7740,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M02_SM_A1_C03",
+    "ID": "M02_A1_C03",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -7830,7 +7830,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M02_SM_A2_C04",
+    "ID": "M02_A2_C04",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -7920,7 +7920,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M02_SM_A3_C05",
+    "ID": "M02_A3_C05",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -8010,7 +8010,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M02_SM_A4_C07",
+    "ID": "M02_A4_C07",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -8100,7 +8100,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M02_SM_A4_C08",
+    "ID": "M02_A4_C08",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -8190,7 +8190,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M02_SM_A5_C10",
+    "ID": "M02_A5_C10",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -8280,7 +8280,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M02_SM_A5_C12",
+    "ID": "M02_A5_C12",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -8370,7 +8370,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M02_SM_A6_C14",
+    "ID": "M02_A6_C14",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -8460,7 +8460,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M02_SM_A6_C15",
+    "ID": "M02_A6_C15",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -8550,7 +8550,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M02_SM_A6_C16",
+    "ID": "M02_A6_C16",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -8640,7 +8640,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M02_SM_A6_C17",
+    "ID": "M02_A6_C17",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -8730,7 +8730,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M02_SM_B1_C18",
+    "ID": "M02_B1_C18",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -8820,7 +8820,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M03_JS_A1_C01",
+    "ID": "M03_A1_C01",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -8910,7 +8910,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M03_JS_A1_C02",
+    "ID": "M03_A1_C02",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -9000,7 +9000,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M03_JS_A1_C03",
+    "ID": "M03_A1_C03",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -9090,7 +9090,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M03_JS_A1_C04",
+    "ID": "M03_A1_C04",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -9180,7 +9180,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M03_JS_A1_C05",
+    "ID": "M03_A1_C05",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -9270,7 +9270,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M03_JS_A1_C06",
+    "ID": "M03_A1_C06",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -9360,7 +9360,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M03_JS_A1_C07",
+    "ID": "M03_A1_C07",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -9450,7 +9450,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M03_JS_A1_C08",
+    "ID": "M03_A1_C08",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -9540,7 +9540,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M03_JS_A1_C09",
+    "ID": "M03_A1_C09",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -9630,7 +9630,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M03_JS_A1_C11",
+    "ID": "M03_A1_C11",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -9720,7 +9720,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M03_JS_A1_C13",
+    "ID": "M03_A1_C13",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -9810,7 +9810,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M03_JS_A1_C14",
+    "ID": "M03_A1_C14",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -9900,7 +9900,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M03_JS_A1_C15",
+    "ID": "M03_A1_C15",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -9990,7 +9990,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M03_JS_A1_C16",
+    "ID": "M03_A1_C16",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -10080,7 +10080,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M03_JS_A1_C17",
+    "ID": "M03_A1_C17",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -10170,7 +10170,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M03_JS_A1_C18",
+    "ID": "M03_A1_C18",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -10260,7 +10260,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M03_JS_A1_C19",
+    "ID": "M03_A1_C19",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -10350,7 +10350,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M03_JS_A1_C20",
+    "ID": "M03_A1_C20",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -10440,7 +10440,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M03_MW_A1_C01",
+    "ID": "M03_A1_C01",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -10530,7 +10530,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M03_MW_A1_C02",
+    "ID": "M03_A1_C02",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -10620,7 +10620,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M03_MW_A1_C03",
+    "ID": "M03_A1_C03",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -10710,7 +10710,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M03_MW_A1_C04",
+    "ID": "M03_A1_C04",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -10800,7 +10800,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M03_MW_A1_C05",
+    "ID": "M03_A1_C05",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -10890,7 +10890,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M03_MW_A1_C06",
+    "ID": "M03_A1_C06",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -10980,7 +10980,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M03_MW_A1_C07",
+    "ID": "M03_A1_C07",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -11070,7 +11070,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M03_MW_A1_C08",
+    "ID": "M03_A1_C08",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -11160,7 +11160,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M03_MW_A1_C09",
+    "ID": "M03_A1_C09",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -11250,7 +11250,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M03_MW_A1_C10",
+    "ID": "M03_A1_C10",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -11340,7 +11340,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M03_MW_A1_C11",
+    "ID": "M03_A1_C11",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -11430,7 +11430,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M03_MW_A1_C12",
+    "ID": "M03_A1_C12",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -11520,7 +11520,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M03_MW_A1_C13",
+    "ID": "M03_A1_C13",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -11610,7 +11610,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M03_MW_A1_C15",
+    "ID": "M03_A1_C15",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -11700,7 +11700,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M03_MW_A1_C16",
+    "ID": "M03_A1_C16",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -11790,7 +11790,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M03_SM_A1_C01",
+    "ID": "M03_A1_C01",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -11880,7 +11880,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M03_SM_A1_C02",
+    "ID": "M03_A1_C02",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -11970,7 +11970,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M03_SM_A1_C03",
+    "ID": "M03_A1_C03",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -12060,7 +12060,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M03_SM_A1_C04",
+    "ID": "M03_A1_C04",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -12150,7 +12150,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M03_SM_A1_C05",
+    "ID": "M03_A1_C05",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -12240,7 +12240,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M03_SM_A1_C06",
+    "ID": "M03_A1_C06",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -12330,7 +12330,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M03_SM_A1_C07",
+    "ID": "M03_A1_C07",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -12420,7 +12420,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M03_SM_A1_C08",
+    "ID": "M03_A1_C08",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -12510,7 +12510,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M03_SM_A1_C09",
+    "ID": "M03_A1_C09",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -12600,7 +12600,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M03_SM_A1_C10",
+    "ID": "M03_A1_C10",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -12690,7 +12690,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M03_SM_A1_C11",
+    "ID": "M03_A1_C11",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -12780,7 +12780,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M03_SM_A1_C12",
+    "ID": "M03_A1_C12",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -12870,7 +12870,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M03_SM_A1_C13",
+    "ID": "M03_A1_C13",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -12960,7 +12960,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M03_SM_A1_C14",
+    "ID": "M03_A1_C14",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -13050,7 +13050,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M03_SM_A1_C15",
+    "ID": "M03_A1_C15",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -13140,7 +13140,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M03_SM_A1_C16",
+    "ID": "M03_A1_C16",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -13230,7 +13230,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M03_SM_A1_C18",
+    "ID": "M03_A1_C18",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -13320,7 +13320,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M04_JS_A1_C01",
+    "ID": "M04_A1_C01",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -13410,7 +13410,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M04_JS_A1_C02",
+    "ID": "M04_A1_C02",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -13500,7 +13500,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M04_JS_A1_C03",
+    "ID": "M04_A1_C03",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -13590,7 +13590,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M04_JS_A1_C04",
+    "ID": "M04_A1_C04",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -13680,7 +13680,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M04_JS_A1_C05",
+    "ID": "M04_A1_C05",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -13770,7 +13770,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M04_JS_A1_C06",
+    "ID": "M04_A1_C06",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -13860,7 +13860,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M04_JS_A1_C07",
+    "ID": "M04_A1_C07",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -13950,7 +13950,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M04_JS_A1_C08",
+    "ID": "M04_A1_C08",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -14040,7 +14040,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M04_JS_A1_C09",
+    "ID": "M04_A1_C09",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -14130,7 +14130,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M04_JS_A1_C10",
+    "ID": "M04_A1_C10",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -14220,7 +14220,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M04_JS_A1_C11",
+    "ID": "M04_A1_C11",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -14310,7 +14310,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M04_JS_A1_C12",
+    "ID": "M04_A1_C12",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -14400,7 +14400,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M04_JS_A1_C13",
+    "ID": "M04_A1_C13",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -14490,7 +14490,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M04_JS_A1_C14",
+    "ID": "M04_A1_C14",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -14580,7 +14580,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M04_JS_A1_C15",
+    "ID": "M04_A1_C15",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -14670,7 +14670,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M04_JS_A1_C16",
+    "ID": "M04_A1_C16",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -14760,7 +14760,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M04_JS_A1_C17",
+    "ID": "M04_A1_C17",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -14850,7 +14850,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M04_MJ_A1_C01",
+    "ID": "M04_A1_C01",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -14940,7 +14940,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M04_MW_A1_C01",
+    "ID": "M04_A1_C01",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -15030,7 +15030,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M04_MW_A1_C02",
+    "ID": "M04_A1_C02",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -15120,7 +15120,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M04_MW_A1_C03",
+    "ID": "M04_A1_C03",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -15210,7 +15210,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M04_MW_A1_C04",
+    "ID": "M04_A1_C04",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -15300,7 +15300,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M04_MW_A1_C05",
+    "ID": "M04_A1_C05",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -15390,7 +15390,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M04_MW_A1_C06",
+    "ID": "M04_A1_C06",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -15480,7 +15480,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M04_MW_A1_C07",
+    "ID": "M04_A1_C07",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -15570,7 +15570,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M04_MW_A1_C08",
+    "ID": "M04_A1_C08",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -15660,7 +15660,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M04_MW_A1_C09",
+    "ID": "M04_A1_C09",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -15750,7 +15750,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M04_MW_A1_C10",
+    "ID": "M04_A1_C10",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -15840,7 +15840,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M04_SM_A1_C01",
+    "ID": "M04_A1_C01",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -15930,7 +15930,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M04_SM_A1_C02",
+    "ID": "M04_A1_C02",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -16020,7 +16020,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M04_SM_A1_C03",
+    "ID": "M04_A1_C03",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -16110,7 +16110,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M04_SM_A1_C04",
+    "ID": "M04_A1_C04",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -16200,7 +16200,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M04_SM_A1_C05",
+    "ID": "M04_A1_C05",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -16290,7 +16290,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M04_SM_A1_C06",
+    "ID": "M04_A1_C06",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -16380,7 +16380,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M04_SM_A1_C07",
+    "ID": "M04_A1_C07",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -16470,7 +16470,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M04_SM_A1_C08",
+    "ID": "M04_A1_C08",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -16560,7 +16560,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M04_SM_A1_C09",
+    "ID": "M04_A1_C09",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -16650,7 +16650,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M04_SM_A1_C10",
+    "ID": "M04_A1_C10",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -16740,7 +16740,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M04_SM_A1_C11",
+    "ID": "M04_A1_C11",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -16830,7 +16830,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M04_SM_A1_C12",
+    "ID": "M04_A1_C12",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -16920,7 +16920,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M04_SM_A1_C13",
+    "ID": "M04_A1_C13",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -17010,7 +17010,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M05_JS_A1_C01",
+    "ID": "M05_A1_C01",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -17100,7 +17100,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M05_JS_A1_C02",
+    "ID": "M05_A1_C02",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -17190,7 +17190,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M05_JS_A1_C03",
+    "ID": "M05_A1_C03",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -17280,7 +17280,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M05_JS_A1_C04",
+    "ID": "M05_A1_C04",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -17370,7 +17370,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M05_JS_A1_C05",
+    "ID": "M05_A1_C05",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -17460,7 +17460,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M05_JS_A1_C06",
+    "ID": "M05_A1_C06",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -17550,7 +17550,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M05_JS_A1_C07",
+    "ID": "M05_A1_C07",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -17640,7 +17640,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M05_JS_A1_C08",
+    "ID": "M05_A1_C08",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -17730,7 +17730,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M05_JS_A1_C09",
+    "ID": "M05_A1_C09",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -17820,7 +17820,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M05_JS_A1_C10",
+    "ID": "M05_A1_C10",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -17910,7 +17910,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M05_JS_A1_C11",
+    "ID": "M05_A1_C11",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -18000,7 +18000,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M05_JS_A1_C12",
+    "ID": "M05_A1_C12",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -18090,7 +18090,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M05_JS_A1_C13",
+    "ID": "M05_A1_C13",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -18180,7 +18180,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M05_MJ_A1_C01",
+    "ID": "M05_A1_C01",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -18270,7 +18270,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M05_MJ_A1_C02",
+    "ID": "M05_A1_C02",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -18360,7 +18360,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M05_MJ_A1_C03",
+    "ID": "M05_A1_C03",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -18450,7 +18450,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M05_MJ_A1_C04",
+    "ID": "M05_A1_C04",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -18540,7 +18540,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M05_MJ_A1_C05",
+    "ID": "M05_A1_C05",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -18630,7 +18630,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M05_MW_A1_C01",
+    "ID": "M05_A1_C01",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -18720,7 +18720,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M05_MW_A1_C02",
+    "ID": "M05_A1_C02",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -18810,7 +18810,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M05_MW_A1_C03",
+    "ID": "M05_A1_C03",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -18900,7 +18900,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M05_MW_A1_C04",
+    "ID": "M05_A1_C04",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -18990,7 +18990,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M05_MW_A1_C05",
+    "ID": "M05_A1_C05",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -19080,7 +19080,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M05_SM_A1_C01",
+    "ID": "M05_A1_C01",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -19170,7 +19170,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M05_SM_A1_C02",
+    "ID": "M05_A1_C02",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -19260,7 +19260,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M05_SM_A1_C04",
+    "ID": "M05_A1_C04",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -19350,7 +19350,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M05_SM_A1_C05",
+    "ID": "M05_A1_C05",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -19440,7 +19440,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M05_SM_A1_C06",
+    "ID": "M05_A1_C06",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -19530,7 +19530,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M05_SM_A1_C07",
+    "ID": "M05_A1_C07",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -19620,7 +19620,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M05_SM_A1_C08",
+    "ID": "M05_A1_C08",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -19710,7 +19710,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M05_SM_A1_C09",
+    "ID": "M05_A1_C09",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -19800,7 +19800,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M05_SM_A1_C10",
+    "ID": "M05_A1_C10",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -19890,7 +19890,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M05_SM_A1_C11",
+    "ID": "M05_A1_C11",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -19980,7 +19980,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M05_SM_A1_C12",
+    "ID": "M05_A1_C12",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -20070,7 +20070,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M05_SM_A1_C13",
+    "ID": "M05_A1_C13",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -20160,7 +20160,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M05_SM_A1_C14",
+    "ID": "M05_A1_C14",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -20250,7 +20250,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M05_SM_A1_C15",
+    "ID": "M05_A1_C15",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -20340,7 +20340,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M06_MJ_A1_C03",
+    "ID": "M06_A1_C03",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -20430,7 +20430,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M06_MJ_A1_C06",
+    "ID": "M06_A1_C06",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -20520,7 +20520,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M06_MJ_A1_C07",
+    "ID": "M06_A1_C07",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -20610,7 +20610,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M06_MW_A1_C01",
+    "ID": "M06_A1_C01",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -20700,7 +20700,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M06_MW_A1_C02",
+    "ID": "M06_A1_C02",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -20790,7 +20790,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M06_MW_A1_C03",
+    "ID": "M06_A1_C03",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -20880,7 +20880,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M06_MW_A1_C04",
+    "ID": "M06_A1_C04",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -20970,7 +20970,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M06_MW_A1_C05",
+    "ID": "M06_A1_C05",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -21060,7 +21060,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M06_MW_A1_C06",
+    "ID": "M06_A1_C06",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -21150,7 +21150,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M06_SM_A1_C01",
+    "ID": "M06_A1_C01",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -21240,7 +21240,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M06_SM_A1_C02",
+    "ID": "M06_A1_C02",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -21330,7 +21330,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M06_SM_A1_C03",
+    "ID": "M06_A1_C03",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -21420,7 +21420,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M06_SM_A1_C04",
+    "ID": "M06_A1_C04",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -21510,7 +21510,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M06_SM_A1_C05",
+    "ID": "M06_A1_C05",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -21600,7 +21600,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M06_SM_A1_C06",
+    "ID": "M06_A1_C06",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -21690,7 +21690,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M06_SM_A1_C07",
+    "ID": "M06_A1_C07",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -21780,7 +21780,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M06_SM_A1_C08",
+    "ID": "M06_A1_C08",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -21870,7 +21870,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M06_SM_A1_C09",
+    "ID": "M06_A1_C09",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -21960,7 +21960,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M06_SM_A1_C10",
+    "ID": "M06_A1_C10",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -22050,7 +22050,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M06_SM_A1_C11",
+    "ID": "M06_A1_C11",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -22140,7 +22140,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M06_SM_A1_C12",
+    "ID": "M06_A1_C12",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -22230,7 +22230,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M06_SM_A1_C13",
+    "ID": "M06_A1_C13",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -22320,7 +22320,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M06_SM_A1_C14",
+    "ID": "M06_A1_C14",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -22410,7 +22410,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M07_MJ_A1_C01",
+    "ID": "M07_A1_C01",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -22500,7 +22500,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M07_MW_A1_C02",
+    "ID": "M07_A1_C02",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -22590,7 +22590,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M07_MW_A1_C03",
+    "ID": "M07_A1_C03",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -22680,7 +22680,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M07_MW_A1_C04",
+    "ID": "M07_A1_C04",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -22770,7 +22770,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M07_MW_A1_C05",
+    "ID": "M07_A1_C05",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -22860,7 +22860,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M08_JS_A1_C01",
+    "ID": "M08_A1_C01",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -22950,7 +22950,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M08_JS_A1_C02",
+    "ID": "M08_A1_C02",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -23040,7 +23040,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M08_JS_A1_C03",
+    "ID": "M08_A1_C03",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -23130,7 +23130,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M08_JS_A1_C04",
+    "ID": "M08_A1_C04",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -23220,7 +23220,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M08_JS_A1_C05",
+    "ID": "M08_A1_C05",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -23310,7 +23310,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M08_JS_A1_C06",
+    "ID": "M08_A1_C06",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -23400,7 +23400,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M08_JS_A1_C07",
+    "ID": "M08_A1_C07",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -23490,7 +23490,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M08_JS_A1_C08",
+    "ID": "M08_A1_C08",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -23580,7 +23580,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M08_JS_A1_C09",
+    "ID": "M08_A1_C09",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -23670,7 +23670,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M08_JS_A1_C10",
+    "ID": "M08_A1_C10",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -23760,7 +23760,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M08_JS_A1_C11",
+    "ID": "M08_A1_C11",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -23850,7 +23850,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M08_JS_A1_C12",
+    "ID": "M08_A1_C12",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -23940,7 +23940,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M08_JS_A1_C13",
+    "ID": "M08_A1_C13",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -24030,7 +24030,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M08_JS_A1_C14",
+    "ID": "M08_A1_C14",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -24120,7 +24120,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M08_JS_A1_C15",
+    "ID": "M08_A1_C15",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -24210,7 +24210,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M08_JS_A1_C16",
+    "ID": "M08_A1_C16",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -24300,7 +24300,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M08_MJ_A1_C01",
+    "ID": "M08_A1_C01",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -24390,7 +24390,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M08_MJ_A1_C02",
+    "ID": "M08_A1_C02",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -24480,7 +24480,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M08_MJ_A1_C03",
+    "ID": "M08_A1_C03",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -24570,7 +24570,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M08_MW_A1_C01",
+    "ID": "M08_A1_C01",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -24660,7 +24660,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M08_MW_A1_C02",
+    "ID": "M08_A1_C02",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -24750,7 +24750,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M08_MW_A1_C03",
+    "ID": "M08_A1_C03",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -24840,7 +24840,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M08_MW_A1_C04",
+    "ID": "M08_A1_C04",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -24930,7 +24930,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M08_MW_A1_C05",
+    "ID": "M08_A1_C05",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -25020,7 +25020,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M08_MW_A1_C06",
+    "ID": "M08_A1_C06",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -25110,7 +25110,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M08_MW_A1_C07",
+    "ID": "M08_A1_C07",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -25200,7 +25200,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M08_MW_A1_C08",
+    "ID": "M08_A1_C08",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -25290,7 +25290,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M08_MW_A1_C09",
+    "ID": "M08_A1_C09",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -25380,7 +25380,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M08_MW_A1_C10",
+    "ID": "M08_A1_C10",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -25470,7 +25470,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M08_MW_A1_C11",
+    "ID": "M08_A1_C11",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -25560,7 +25560,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M08_SM_A1_C01",
+    "ID": "M08_A1_C01",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -25650,7 +25650,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M08_SM_A1_C02",
+    "ID": "M08_A1_C02",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -25740,7 +25740,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M08_SM_A1_C03",
+    "ID": "M08_A1_C03",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -25830,7 +25830,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M08_SM_A1_C04",
+    "ID": "M08_A1_C04",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -25920,7 +25920,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M08_SM_A1_C05",
+    "ID": "M08_A1_C05",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -26010,7 +26010,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M08_SM_A1_C06",
+    "ID": "M08_A1_C06",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -26100,7 +26100,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M08_SM_A1_C07",
+    "ID": "M08_A1_C07",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -26190,7 +26190,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M08_SM_A1_C08",
+    "ID": "M08_A1_C08",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -26280,7 +26280,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M08_SM_A1_C09",
+    "ID": "M08_A1_C09",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -26370,7 +26370,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M10_JS_A1_C01",
+    "ID": "M10_A1_C01",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -26460,7 +26460,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M10_JS_A1_C02",
+    "ID": "M10_A1_C02",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -26550,7 +26550,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M10_JS_A1_C03",
+    "ID": "M10_A1_C03",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -26640,7 +26640,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M10_JS_A1_C04",
+    "ID": "M10_A1_C04",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -26730,7 +26730,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M10_JS_A1_C05",
+    "ID": "M10_A1_C05",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -26820,7 +26820,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M10_JS_A1_C06",
+    "ID": "M10_A1_C06",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -26910,7 +26910,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M10_JS_A1_C07",
+    "ID": "M10_A1_C07",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -27000,7 +27000,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M10_JS_A1_C08",
+    "ID": "M10_A1_C08",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -27090,7 +27090,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M10_JS_A1_C09",
+    "ID": "M10_A1_C09",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -27180,7 +27180,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M10_JS_A1_C10",
+    "ID": "M10_A1_C10",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -27270,7 +27270,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M10_JS_A1_C11",
+    "ID": "M10_A1_C11",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -27360,7 +27360,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M10_JS_A1_C12",
+    "ID": "M10_A1_C12",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -27450,7 +27450,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M10_JS_A1_C13",
+    "ID": "M10_A1_C13",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -27540,7 +27540,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M10_JS_A1_C14",
+    "ID": "M10_A1_C14",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -27630,7 +27630,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M10_JS_A1_C15",
+    "ID": "M10_A1_C15",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -27720,7 +27720,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M10_JS_A1_C16",
+    "ID": "M10_A1_C16",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -27810,7 +27810,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M10_JS_A1_C17",
+    "ID": "M10_A1_C17",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -27900,7 +27900,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M10_JS_A1_C18",
+    "ID": "M10_A1_C18",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -27990,7 +27990,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M10_JS_A1_C19",
+    "ID": "M10_A1_C19",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -28080,7 +28080,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M10_JS_A1_C20",
+    "ID": "M10_A1_C20",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -28170,7 +28170,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M10_JS_A1_C21",
+    "ID": "M10_A1_C21",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -28260,7 +28260,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M10_JS_A1_C22",
+    "ID": "M10_A1_C22",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -28350,7 +28350,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M10_JS_A1_C23",
+    "ID": "M10_A1_C23",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -28440,7 +28440,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M10_JS_A1_C24",
+    "ID": "M10_A1_C24",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -28530,7 +28530,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M10_JS_A1_C25",
+    "ID": "M10_A1_C25",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -28620,7 +28620,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M10_JS_A1_C26",
+    "ID": "M10_A1_C26",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -28710,7 +28710,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M10_JS_A1_C27",
+    "ID": "M10_A1_C27",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -28800,7 +28800,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M10_JS_A1_C28",
+    "ID": "M10_A1_C28",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -28890,7 +28890,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M10_JS_A1_C29",
+    "ID": "M10_A1_C29",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -28980,7 +28980,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M10_JS_A1_C30",
+    "ID": "M10_A1_C30",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -29070,7 +29070,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M10_JS_A1_C32",
+    "ID": "M10_A1_C32",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -29160,7 +29160,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M10_MJ_A1_C01",
+    "ID": "M10_A1_C01",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -29250,7 +29250,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M10_MJ_A1_C02",
+    "ID": "M10_A1_C02",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -29340,7 +29340,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M10_MJ_A1_C03",
+    "ID": "M10_A1_C03",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -29430,7 +29430,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M10_MJ_A1_C04",
+    "ID": "M10_A1_C04",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -29520,7 +29520,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M10_MJ_A1_C05",
+    "ID": "M10_A1_C05",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -29610,7 +29610,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M10_MJ_A1_C06",
+    "ID": "M10_A1_C06",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -29700,7 +29700,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M10_MJ_A1_C07",
+    "ID": "M10_A1_C07",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -29790,7 +29790,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M10_MJ_A1_C08",
+    "ID": "M10_A1_C08",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -29880,7 +29880,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M10_MJ_A1_C09",
+    "ID": "M10_A1_C09",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -29970,7 +29970,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M10_MJ_A1_C10",
+    "ID": "M10_A1_C10",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -30060,7 +30060,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M10_MJ_A1_C11",
+    "ID": "M10_A1_C11",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -30150,7 +30150,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M10_MJ_A1_C12",
+    "ID": "M10_A1_C12",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -30240,7 +30240,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M10_MJ_A1_C13",
+    "ID": "M10_A1_C13",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -30330,7 +30330,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M10_MJ_A1_C15",
+    "ID": "M10_A1_C15",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -30420,7 +30420,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M10_MJ_A1_C16",
+    "ID": "M10_A1_C16",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -30510,7 +30510,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M10_SA_A1_C01",
+    "ID": "M10_A1_C01",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -30600,7 +30600,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M10_SA_A1_C02",
+    "ID": "M10_A1_C02",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -30690,7 +30690,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M10_SA_A1_C03",
+    "ID": "M10_A1_C03",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -30780,7 +30780,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M10_SA_A1_C04",
+    "ID": "M10_A1_C04",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -30870,7 +30870,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M10_SA_A1_C05",
+    "ID": "M10_A1_C05",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -30960,7 +30960,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M10_SA_A1_C06",
+    "ID": "M10_A1_C06",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -31050,7 +31050,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M10_SA_A1_C07",
+    "ID": "M10_A1_C07",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -31140,7 +31140,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M10_SA_A1_C08",
+    "ID": "M10_A1_C08",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -31230,7 +31230,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M10_SA_A1_C09",
+    "ID": "M10_A1_C09",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -31320,7 +31320,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M10_SA_A1_C10",
+    "ID": "M10_A1_C10",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -31410,7 +31410,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M10_SA_A1_C11",
+    "ID": "M10_A1_C11",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -31500,7 +31500,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M10_SA_A1_C12",
+    "ID": "M10_A1_C12",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -31590,7 +31590,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M10_SA_A1_C13",
+    "ID": "M10_A1_C13",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -31680,7 +31680,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M10_SA_A1_C14",
+    "ID": "M10_A1_C14",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -31770,7 +31770,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M10_SA_A1_C15",
+    "ID": "M10_A1_C15",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
@@ -31860,7 +31860,7 @@
     "link": "google.com"
   },
   {
-    "ID": "M10_SA_A1_C16",
+    "ID": "M10_A1_C16",
     "preview": "preview.jpg",
     "Spec_no": 3,
     "line": "",
