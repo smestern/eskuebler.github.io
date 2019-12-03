@@ -109,15 +109,15 @@ data-page-list="[10, 25, 50, 100, all]"
     return '<img src="images/waveform.png" style="width:50px;height:60px;"/>';
 	}
 	function linkFormatter(value, row) {
-    return '<button class="btn btn-primary btn-lg" a href="https://www.'+ row.ID +'" target="_blank">Download (ZIP)</button></a> <a href="https://ptcd.s3.us-east-2.amazonaws.com/'+ row.ID +'.nwb" target="_blank" class="btn btn-lg">Download (NWB)</a>';
+    return '<a href="https://www.'+ row.ID +'" target="_blank" class="btn btn-primary btn-lg">Download (ZIP)</button></a> <a href="https://ptcd.s3.us-east-2.amazonaws.com/'+ row.ID +'.nwb" target="_blank" class="btn btn-lg">Download (NWB)</a>';
 	}
 	function detailFormatter(index, row) {
     var html = []
-	html.push()
+	html.push('<div class="grid-container">')
     	$.each(row, function (key, value) {
-      		html.push('<p><b>' + key + ':</b>' + value + '</p>')
+      		html.push('<div class="grid-item">' + key + ' ' + value + '</div>')
     	})
-	
+	html.push('</div>')
     return html.join('')
   }
 	
