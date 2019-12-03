@@ -9,7 +9,7 @@
     <link href="css/bootstrap-4.3.1_edit.css" rel="stylesheet">
 	  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.15.5/dist/bootstrap-table.min.css">
+    <link rel="stylesheet" href="css/bootstrap-table.css">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -59,7 +59,7 @@
         </div>
       </div>
     </section>
-    <section>
+  <section>
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
@@ -80,13 +80,16 @@ data-detail-view="true"
 data-click-to-select="true"
 data-detail-formatter="detailFormatter"
 data-show-export="true"
-data-click-to-select="true"
+data-classes="table table-hover table-borderless table-striped"
+data-sort-name="rheobaseLP"
+data-sort-order="desc"
 			 >
   <thead>
 	<tr>
-	<th data-field="ID" data-sortable="true" rowspan="2" data-valign="middle">CELL ID</th>
-	<th data-field="preview" data-formatter="imageFormatter" rowspan="2" data-valign="middle">Preview</th>
-	<th colspan="2">Item Detail</th>
+	<th data-field="state" data-checkbox="true" rowspan="2" data-valign="middle"></th>
+	<th data-field="ID" data-sortable="true" rowspan="2" data-valign="middle">Cell</th>
+	<th data-field="preview" data-formatter="imageFormatter" rowspan="2" data-valign="middle"></th>
+	<th colspan="4">Ephys Details</th>
 	<th data-field="link" data-formatter="linkFormatter" rowspan="2" data-valign="middle">Link</th>
 	  
 	  </tr>
@@ -95,15 +98,17 @@ data-click-to-select="true"
       
       <th data-field="Resistence" data-sortable="true">Resistence</th>
       <th data-field="sag" data-sortable="true">Sag</th>
+		<th data-field="rheobaseLP" data-sortable="true">Rheobase</th>
+		<th data-field="peakLP" data-sortable="true">Peak</th>
 		
     </tr>
   </thead>
 </table>
-<script> function imageFormatter(value, row) {
+		<script> function imageFormatter(value, row) {
     return '<img src="images/waveform.png" style="width:50px;height:60px;"/>';
 	}
 	function linkFormatter(value, row) {
-    return '<a href="https://www.'+value+'" target="_blank">Download</a>';
+    return '<button class="btn btn-primary btn-lg" a href="https://www.'+value+'" target="_blank">Download</button>';
 	}
 	function detailFormatter(index, row) {
     var html = []
