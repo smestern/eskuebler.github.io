@@ -266,6 +266,21 @@
   overflow-y: scroll;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #E9ECEF;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: #E9ECEF;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 0px;
+  font-size: 20px;
+  text-align: left;
+}
+
 /* calculate scrollbar width */
 div.fixed-table-scroll-inner {
   width: 100%;

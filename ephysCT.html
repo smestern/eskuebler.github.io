@@ -115,7 +115,7 @@ data-page-list="[10, 25, 50, 100, all]"
     var html = []
 	html.push('<div class="grid-container">')
     	$.each(row, function (key, value) {
-      		html.push('<div class="grid-item">' + key + ' ' + value + '</div>')
+      		html.push('<div class="grid-item">' + key + ': ' + value + '</div>')
     	})
 	html.push('</div>')
     return html.join('')
