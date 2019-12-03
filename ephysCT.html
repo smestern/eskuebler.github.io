@@ -70,19 +70,32 @@
       </div>
     </section>
     <section>
-      <table
-  data-toggle="table"
-  data-url="data/data.json"
-	data-sortable="true"
-	data-pagination="true"
-  data-search="true">
+      <table id="ctable"
+data-toggle="table"
+data-url="data/data.json"
+data-sortable="true"
+data-pagination="true"
+data-search="true"
+data-detail-view="true"
+data-click-to-select="true"
+data-detail-formatter="detailFormatter"
+data-show-export="true"
+data-click-to-select="true"
+			 >
   <thead>
+	<tr>
+	<th data-field="ID" data-sortable="true" rowspan="2" data-valign="middle">CELL ID</th>
+	<th data-field="preview" data-formatter="imageFormatter" rowspan="2" data-valign="middle">Preview</th>
+	<th colspan="2">Item Detail</th>
+	<th data-field="link" data-formatter="linkFormatter" rowspan="2" data-valign="middle">Link</th>
+	  
+	  </tr>
+	  
     <tr>
-      <th data-field="ID" data-sortable="true">CELL ID</th>
-		<th data-field="preview" data-formatter="imageFormatter">Preview</th>
+      
       <th data-field="Resistence" data-sortable="true">Resistence</th>
-      <th data-field="sag" data-sortable="true">sag</th>
-		<th data-field="link" data-formatter="linkFormatter">link</th>
+      <th data-field="sag" data-sortable="true">Sag</th>
+		
     </tr>
   </thead>
 </table>
@@ -92,12 +105,22 @@
 	function linkFormatter(value, row) {
     return '<a href="https://www.'+value+'" target="_blank">Download</a>';
 	}
+	function detailFormatter(index, row) {
+    var html = []
+    $.each(row, function (key, value) {
+      html.push('<p><b>' + key + ':</b> ' + value + '</p>')
+    })
+    return html.join('')
+  }
+	
 	  
 	  </script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    
+	<script src="https://unpkg.com/tableexport.jquery.plugin/tableExport.min.js"></script>
+
     <script src="https://unpkg.com/bootstrap-table@1.15.5/dist/bootstrap-table.min.js"></script>
+	<script src="https://unpkg.com/bootstrap-table@1.15.5/dist/extensions/export/bootstrap-table-export.min.js"></script>
     </section>
     <hr>
     <div class="section">
