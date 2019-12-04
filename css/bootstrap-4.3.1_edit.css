@@ -722,7 +722,9 @@ pre code {
 #subscribe_btn{
 	margin-bottom: 1rem;
 }
-
+#team_recr{
+	margin-top: 1.5rem
+}
 .order-first {
   -ms-flex-order: -1;
   order: -1;
