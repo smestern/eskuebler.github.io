@@ -65,6 +65,8 @@
       </div>
     </section>
     <section>
+	<div class="text-right">
+	<a href="https://ptcd.s3.us-east-2.amazonaws.com/'+ row.ID +'.zip" target="_blank" class="btn btn-primary btn-lg">Download Full dataset (NWB + abf)</a></div>
       <table id="ctable"
 data-toggle="table"
 data-url="data/data.json"
@@ -78,7 +80,7 @@ data-click-to-select="true"
 data-detail-formatter="detailFormatter"
 data-show-export="true"
 data-classes="table table-hover table-borderless table-striped"
-data-sort-name="rheobaseLP"
+data-sort-name="peakLP"
 data-sort-order="desc"
 data-page-list="[10, 25, 50, 100, all]"
 			 >
@@ -88,7 +90,7 @@ data-page-list="[10, 25, 50, 100, all]"
 	<th data-field="ID" data-sortable="true" rowspan="2" data-valign="middle">Cell</th>
 	<th data-field="preview" data-formatter="imageFormatter" rowspan="2" data-valign="middle"></th>
 	<th colspan="7">Ephys Details</th>
-	<th data-field="link" data-formatter="linkFormatter" rowspan="2" data-valign="middle">Link</th>
+	<th data-field="link" data-formatter="linkFormatter" rowspan="2" data-valign="right">Link</th>
 	  
 	  </tr>
 	  
@@ -109,14 +111,24 @@ data-page-list="[10, 25, 50, 100, all]"
     return '<img src="images/waveform.png" style="width:50px;height:60px;"/>';
 	}
 	function linkFormatter(value, row) {
-    return '<a href="https://www.'+ row.ID +'" target="_blank" class="btn btn-primary btn-lg">Download (ZIP)</button></a> <a href="https://ptcd.s3.us-east-2.amazonaws.com/'+ row.ID +'.nwb" target="_blank" class="btn btn-lg">Download (NWB)</a>';
+    return '<a href="https://ptcd.s3.us-east-2.amazonaws.com/'+ row.ID +'.zip" target="_blank" class="btn btn-primary btn-lg">Download (zip/abf)</a> <a href="https://ptcd.s3.us-east-2.amazonaws.com/'+ row.ID +'.nwb" target="_blank" class="btn btn-lg">Download (NWB)</a>';
 	}
 	function detailFormatter(index, row) {
     var html = []
 	html.push('<div class="grid-container">')
+	html.push('<div class="row">')
+	html.push('<div class="col">')
+	html.push('<img src="https://ptcd.s3.us-east-2.amazonaws.com/'+ row.ID +'.png" style="width:500px;height:240px;"/>')
+	html.push('</div>')
+	html.push('<div class="col">')
+	html.push('<div class="grid-container">')
+	
     	$.each(row, function (key, value) {
       		html.push('<div class="grid-item"><b>' + key + '</b>: ' + value + '</div>')
     	})
+	html.push('</div>')
+	html.push('</div>')
+	html.push('</div>')
 	html.push('</div>')
     return html.join('')
   }
