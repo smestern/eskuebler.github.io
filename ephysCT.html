@@ -75,9 +75,9 @@
     </section>
     <section>
 	<div class="text-right">
-	<button id="dlsel" class="btn btn-primary btn-lg">Download Selected (zip)</button>
+	<button id="dlsel" class="btn btn-secondary">Download Selected (zip)</button>
 	
-	<a href="https://ptcd.s3.us-east-2.amazonaws.com/NHP.zip" target="_blank" class="btn btn-primary btn-lg">Download Full dataset (NWB + abf)</a></div>
+	<a href="https://ptcd.s3.us-east-2.amazonaws.com/NHP.zip" target="_blank" class="btn btn-primary">Download Full dataset (NWB + abf)</a></div>
       <table id="table"
 data-toggle="table"
 data-url="data/data.json"
@@ -177,7 +177,7 @@ function saveZip(ids){
 $("#dlsel").on("click", function () {
 	
 	var ids
-	
+	$("#dlsel").html('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Generating Zip...')
 	
 	
 	ids = getIdSelections();
@@ -191,8 +191,10 @@ $("#dlsel").on("click", function () {
 	});
 	//wait for files to dl
     zip.generateAsync({type:"blob"}).then(function (blob) { 
-        	saveAs(blob, "datasel.zip");                          
+        	saveAs(blob, "datasel.zip");
+			$("#dlsel").html('Download Selected (zip)');
     });
+	
 }) })
 	  
 	  </script>
@@ -203,11 +205,8 @@ $("#dlsel").on("click", function () {
     <div class="section">
       <div class="container">
         <div class="row">
-          <div class="col-md-4 col-12">
-            <h3 class="text-center">Our lab</h3>
-            
-          </div>
-          <div class="col-md-4 col-12">
+          
+          <div class="col-md-4 col-12 col-lg-7">
             <h3 class="text-center">GET IN TOUCH</h3>
             <address class="text-center">
               <strong>Western University - Robarts Research Institute</strong><br>
