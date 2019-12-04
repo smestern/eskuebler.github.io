@@ -703,6 +703,13 @@ pre code {
   flex: 0 0 100%;
   max-width: 100%;
 }
+#PIs{
+	padding-bottom: 1.25rem
+}
+/*subscribe button*/
+#subscribe_btn{
+	margin-bottom: 1rem;
+}
 
 .order-first {
   -ms-flex-order: -1;

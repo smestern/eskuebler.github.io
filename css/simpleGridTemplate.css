@@ -171,8 +171,9 @@ footer {
 	background-color: #e9ecef;
 	background-image:url('../brainberg.png"brainberg.png')
 }
+/* Julio Picture */
 .profile {
-	width: 50%;
+	width: 80%;
 }
 .gallery .thumbnail .tag {
 	color: #5D5E5D;
@@ -255,9 +256,7 @@ footer {
 	margin-left: 0px;
 	margin-right: 0px;
 }
-.profile {
-	width: 100%;
-}
+
 .intro .column p {
 	width: 90%;
 	text-align: center;
