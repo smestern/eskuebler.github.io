@@ -14,8 +14,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://unpkg.com/tableexport.jquery.plugin/tableExport.min.js"></script>
 	<script src="js/jszip.min.js"></script>
+	<script src="js/jszip-utils.min.js"></script>
+	<script src="js/Filesaver.min.js"></script>
     <script src="https://unpkg.com/bootstrap-table@1.15.5/dist/bootstrap-table.min.js"></script>
-  <script src="https://unpkg.com/bootstrap-table@1.15.5/dist/extensions/export/bootstrap-table-export.min.js"></script>
+  	<script src="https://unpkg.com/bootstrap-table@1.15.5/dist/extensions/export/bootstrap-table-export.min.js"></script>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -75,14 +77,14 @@
 	<button id="dlsel" class="btn btn-primary btn-lg">Download Selected (zip)</button>
 	
 	<a href="https://ptcd.s3.us-east-2.amazonaws.com/NHP.zip" target="_blank" class="btn btn-primary btn-lg">Download Full dataset (NWB + abf)</a></div>
-      <table id="ctable"
+      <table id="table"
 data-toggle="table"
 data-url="data/data.json"
 data-sortable="true"
 data-pagination="true"
 data-search="true"
 data-detail-view="true"
-data-force-export "true"
+data-force-export="true"
 data-show-columns="true"
 data-click-to-select="true"
 data-detail-formatter="detailFormatter"
@@ -117,6 +119,7 @@ data-page-list="[10, 25, 50, 100, all]"
 </table>
 		<script> 
 		var zip = new JSZip();
+		var $table = $('#table');
 	
 		function imageFormatter(value, row) {
     		return '<img src="images/waveform.png" style="width:50px;height:60px;"/>';
@@ -145,23 +148,41 @@ data-page-list="[10, 25, 50, 100, all]"
   }
 	
 function getIdSelections() {
-    return $.map($ctable.bootstrapTable('getSelections'), function (row) {
-      return row.ID
+	
+    return $.map($table.bootstrapTable('getSelections'), function (row) {
+		
+      return row.ID 
     })
   }
-$("#dlsel").on("click", function () {
-	alert('button')
+			
+  $(function() {
+	  $("#dlsel").on("click", function () {
+	
 	var ids = []
 	
-	ids = getIdSelections()
+	
+	ids = getIdSelections();
+	
 	zip.file("dl.txt", ids);
+	$.each(ids, function (idu, a) {
+      		var dlurl = "https://ptcd.s3.us-east-2.amazonaws.com/"+ a +".zip"
+			JSZipUtils.getBinaryContent(dlurl, function (err, data) {
+   			if(err) {
+      			throw err; // or handle the error
+   			}
+   	
+   				zip.file(a + ".zip", data, {binary:true});
+			})
+	});
+
+		  
     zip.generateAsync({type:"blob"}).then(function (blob) { 
 		
-        saveAs(blob, "hello.zip");                          // 2) trigger the download
+        saveAs(blob, "data-sel.zip");                          /
     }, function (err) {
         jQuery("#blob").text(err);
     });
-});
+}) });
 	  
 	  </script>
 	
