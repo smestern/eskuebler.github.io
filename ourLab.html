@@ -4,10 +4,40 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Light Theme</title>
+<title>Our Lab</title>
 <link href="css/simpleGridTemplate.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap-4.3.1_edit.css" rel="stylesheet">
 </head>
 <body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Primate Cell Type Database</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <li class="nav-item">
+            <a class="nav-link" href="ourLab.html">Our Lab</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Data
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="ephysCT.html">Electrophysiology</a>
+              <a class="dropdown-item" href="#">Morphology</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">RNAseq (coming soon)</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
 <!-- Main Container -->
 <div class="container"> 
   <!-- Header -->
@@ -17,11 +47,14 @@
   <!-- Hero Section -->
   <section class="intro">
     <div class="column">
-      <h3>Julio C. Martinez-Trujillo</h3>
+      <h2 class="text-capitalize text-center">Julio C. Martinez-Trujillo</h3>
       <img src="images/profile.png" alt="" class="profile"> </div>
     <div class="column">
-      <h2>Understanding the neurophysiological basis of cognition is one of the greatest challenges faced by neuroscientists. In the last decades we have made considerable progress searching for neural correlates of cognitive functions in the primate brain, however what we currently know is just the tip of the iceberg. </h2>
-      <h2>The laboratory uses a combination of techniques such as behavioral measurements, extra-cellular single cell recordings and brain mapping in order to explore the physiology of cognition, more specifically, the physiology of attention, visuomotor transformations and motion perception. Ultimately, the results of our research will be applied to the study of diseases that affect human health.</h2>
+      <b>Understanding the neurophysiological basis of cognition is one of the greatest challenges faced by neuroscientists. In the last decades we have made considerable progress searching for neural correlates of cognitive functions in the primate brain, however what we currently know is just the tip of the iceberg. </b>
+		<div>
+		
+		</div>
+      <b>The laboratory uses a combination of techniques such as behavioral measurements, extra-cellular single cell recordings and brain mapping in order to explore the physiology of cognition, more specifically, the physiology of attention, visuomotor transformations and motion perception. Ultimately, the results of our research will be applied to the study of diseases that affect human health.</b>
     </div>
   </section>
   <!-- Stats Gallery Section -->

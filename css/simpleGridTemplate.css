@@ -16,7 +16,7 @@ body {
 header {
 	width: 100%;
 	height: 8%;
-	background-color: #5D5E5D;
+	background-color: #495057;
 	border-bottom: 1px solid #353635;
 }
 .logo {
@@ -168,7 +168,8 @@ footer {
 }
 .intro {
 	display: inline-block;
-	background-color: #6DC7D0;
+	background-color: #e9ecef;
+	background-image:url('../brainberg.png"brainberg.png')
 }
 .profile {
 	width: 50%;
