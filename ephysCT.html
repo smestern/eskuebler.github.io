@@ -15,7 +15,7 @@
 	<script src="https://unpkg.com/tableexport.jquery.plugin/tableExport.min.js"></script>
 	<script src="js/jszip.min.js"></script>
 	<script src="js/jszip-utils.min.js"></script>
-	<script src="https://ptcd.s3.us-east-2.amazonaws.com/FileSaver.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.min.js"></script>
     <script src="https://unpkg.com/bootstrap-table@1.15.5/dist/bootstrap-table.min.js"></script>
   	<script src="https://unpkg.com/bootstrap-table@1.15.5/dist/extensions/export/bootstrap-table-export.min.js"></script>
   </head>
@@ -120,6 +120,7 @@ data-page-list="[10, 25, 50, 100, all]"
 		<script> 
 		var zip = new JSZip();
 		var $table = $('#table');
+		var selections = []
 	
 		function imageFormatter(value, row) {
     		return '<img src="images/waveform.png" style="width:50px;height:60px;"/>';
@@ -154,23 +155,31 @@ function getIdSelections() {
       return row.ID 
     })
   }
-			
+function saveZip(ids){
+	
+}			
  $(function() {
-	  $("#dlsel").on("click", function () {
+	 $table.on('check.bs.table uncheck.bs.table ' +
+      'check-all.bs.table uncheck-all.bs.table',
+    		function () {
+		 		alert('check')
+      			// save your data, here just save the current page
+      			selections = getIdSelections()
+      			
+    })
+$("#dlsel").on("click", function () {
 	
-	var ids = []
+	var ids
 	
-	
+	while(ids === undefined){
+	alert(ids)
 	ids = getIdSelections();
-	
+	}
 	zip.file("dl.txt", ids);
 	$.each(ids, function (idu, a) {
       		var dlurl = "https://ptcd.s3.us-east-2.amazonaws.com/"+ a +".zip"
 			JSZipUtils.getBinaryContent(dlurl, function (err, data) {
-   			if(err) {
-      			throw err; // or handle the error
-   			}
-   	
+				
    				zip.file(a + ".zip", data, {binary:true});
 			})
 	});
@@ -178,9 +187,7 @@ function getIdSelections() {
 		  
     zip.generateAsync({type:"blob"}).then(function (blob) { 
 		
-        saveAs(blob, "datasel.zip");                          
-    }, function (err) {
-        jQuery("#blob").text(err);
+        	saveAs(blob, "datasel.zip");                          
     });
 }) })
 	  
@@ -194,7 +201,7 @@ function getIdSelections() {
         <div class="row">
           <div class="col-md-4 col-12">
             <h3 class="text-center">Our lab</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, ducimus, sit, quibusdam quidem recusandae veniam eos quod error nisi repellat excepturi laboriosam aspernatur suscipit possimus consectetur dolores nihil labore quas eius illo accusamus nulla sed blanditiis porro accusantium. Perspiciatis, perferendis!</p>
+            
           </div>
           <div class="col-md-4 col-12">
             <h3 class="text-center">GET IN TOUCH</h3>
