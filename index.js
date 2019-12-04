@@ -21,7 +21,9 @@ function readSwcFile(e) {
   }
 }
 function switchSwcFile(e) {
- const f = e.target.files[0];
+ const f = e.options[e.selectedIndex].value;
+console.log(f)
+console.log(e.options)
   if (f) {
     const r = new FileReader();
     r.onload = (e2) => {
