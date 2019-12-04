@@ -21,9 +21,9 @@ function readSwcFile(e) {
   }
 }
 function switchSwcFile(e) {
+var e = document
+    .getElementById("loadCell");
  const f = e.options[e.selectedIndex].value;
-console.log(f)
-console.log(e.options)
   if (f) {
     const r = new FileReader();
     r.onload = (e2) => {
