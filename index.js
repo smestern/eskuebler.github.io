@@ -61,7 +61,7 @@ window.onload = () => {
     .getElementById("obj_input")
     .addEventListener("change", readObjFile, false);
 document
-    .getElementById("obj_input")
+    .getElementById("loadCell")
     .addEventListener("change", switchSwcFile, false);
   const swc = sharkViewer.swcParser(document.getElementById("swc").text);
   mdata = JSON.parse(document.getElementById("metadata_swc").text);
