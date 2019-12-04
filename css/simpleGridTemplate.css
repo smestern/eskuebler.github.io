@@ -88,10 +88,10 @@ header {
 }
 /* More info */
 .intro {
+    background-image: url("../brainberg.png"):
 	background-color: #FFFFFF;
 	padding-bottom: 35px;
 	padding-right: 60px;
-	background-image: url("../brainberg.png"):
 	
 }
 .column {
