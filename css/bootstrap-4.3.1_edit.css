@@ -704,11 +704,26 @@ pre code {
   max-width: 100%;
 }
 #PIs{
-	padding-bottom: 1.25rem
+	padding-bottom: 2.5rem
+}
+#julio_bio{
+	margin-bottom: 2rem
+}
+#julio_pic{
+	padding-left: 3rem
+}
+#wataru_bio{
+	margin-bottom: 2rem
+}
+#wataru_pic{
+	padding-left: 3rem
 }
 /*subscribe button*/
 #subscribe_btn{
 	margin-bottom: 1rem;
+}
+#team_recr{
+	margin-top: 1.5rem
 }
 
 .order-first {

@@ -271,14 +271,14 @@
   grid-template-columns: auto auto auto;
   background-color: #FFFFFF;
   padding: 10px;
-  grid-template-columns: 250px 250px 250px 250px
+  grid-template-columns: 220px 220px 220px 220px
 }
 
 .grid-item {
   background-color: #FFF;
-  border: 1px solid rgba(0, 0, 0, 0.8);
+  border: 0px solid rgba(0, 0, 0, 0.8);
   padding: 0px;
-  font-size: 15px;
+  font-size: 13px;
   text-align: left;
 }
 

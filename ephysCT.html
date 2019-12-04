@@ -30,7 +30,7 @@
         <ul class="navbar-nav mr-auto">
             <a class="nav-link" href="index.html">Home </a>
           <li class="nav-item">
-            <a class="nav-link" href="ourLab.html">Our Lab</a>
+            <a class="nav-link" href="lab_new.html">Our Team</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -40,7 +40,7 @@
               <a class="dropdown-item" href="#">Electrophysiology</a>
               <a class="dropdown-item" href="#">Morphology</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">RNAseq (coming soon)</a>
+              <a class="dropdown-item" href="transcriptome.html">RNAseq (coming soon)</a>
             </div>
           </li>
         </ul>
@@ -90,7 +90,7 @@ data-show-columns="true"
 data-click-to-select="true"
 data-detail-formatter="detailFormatter"
 data-show-export="true"
-data-classes="table table-hover table-borderless table-striped"
+data-classes="table table-borderless table-striped"
 data-sort-name="peakLP"
 data-sort-order="desc"
 data-page-list="[10, 25, 50, 100, all]"
@@ -133,9 +133,7 @@ data-page-list="[10, 25, 50, 100, all]"
     var html = []
 	html.push('<div class="container">');
 	html.push('<div class="row justify-content-between">');
-	html.push('<div class="col-md-auto">');
-	html.push('<img src="https://ptcd.s3.us-east-2.amazonaws.com/'+ row.ID +'.png" class="img-fluid"/>');
-	html.push('</div>');
+	html.push('<img src="https://ptcd.s3.us-east-2.amazonaws.com/'+ row.ID +'.jpg" width= "30%" height= "30% class="img-fluid"/>');
 	html.push('<div class="col col-8">');
 	html.push('<div class="grid-container">');
 	
