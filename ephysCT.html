@@ -155,7 +155,7 @@ function getIdSelections() {
     })
   }
 			
-  $(function() {
+ $(function() {
 	  $("#dlsel").on("click", function () {
 	
 	var ids = []
@@ -178,11 +178,11 @@ function getIdSelections() {
 		  
     zip.generateAsync({type:"blob"}).then(function (blob) { 
 		
-        saveAs(blob, "data-sel.zip");                          /
+        saveAs(blob, "datasel.zip");                          
     }, function (err) {
         jQuery("#blob").text(err);
     });
-}) });
+}) })
 	  
 	  </script>
 	
