@@ -5084,8 +5084,9 @@ a.badge-dark:focus, a.badge-dark.focus {
 }
 
 .jumbotron {
-  padding: 2rem 1rem;
+  padding-bottom: 2rem 1rem;
   margin-bottom: 2rem;
+  margin-top: 0;
   background-color: #e9ecef;
 	  bckground-color: #fdf;
  /*background: url("../images/index_banner.png") no-repeat center center fixed;*/
@@ -7970,10 +7971,11 @@ button.bg-dark:focus {
   margin: 0.5rem !important;
 }
 
+/*
 .mt-2,
 .my-2 {
   margin-top: 0.5rem !important;
-}
+}*/
 
 .mr-2,
 .mx-2 {
