@@ -10,6 +10,12 @@
 	
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap-table.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/tableexport.jquery.plugin/tableExport.min.js"></script>
+	<script src="js/jszip.min.js"></script>
+    <script src="https://unpkg.com/bootstrap-table@1.15.5/dist/bootstrap-table.min.js"></script>
+  <script src="https://unpkg.com/bootstrap-table@1.15.5/dist/extensions/export/bootstrap-table-export.min.js"></script>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -66,6 +72,8 @@
     </section>
     <section>
 	<div class="text-right">
+	<button id="dlsel" class="btn btn-primary btn-lg">Download Selected (zip)</button>
+	
 	<a href="https://ptcd.s3.us-east-2.amazonaws.com/NHP.zip" target="_blank" class="btn btn-primary btn-lg">Download Full dataset (NWB + abf)</a></div>
       <table id="ctable"
 data-toggle="table"
@@ -107,40 +115,57 @@ data-page-list="[10, 25, 50, 100, all]"
     </tr>
   </thead>
 </table>
-		<script> function imageFormatter(value, row) {
-    return '<img src="images/waveform.png" style="width:50px;height:60px;"/>';
-	}
+		<script> 
+		var zip = new JSZip();
+	
+		function imageFormatter(value, row) {
+    		return '<img src="images/waveform.png" style="width:50px;height:60px;"/>';
+		}
 	function linkFormatter(value, row) {
     return '<a href="https://ptcd.s3.us-east-2.amazonaws.com/'+ row.ID +'.zip" target="_blank" class="btn btn-primary btn-lg">Download (zip/abf)</a> <a href="https://ptcd.s3.us-east-2.amazonaws.com/'+ row.ID +'.nwb" target="_blank" class="btn btn-lg">Download (NWB)</a>';
 	}
 	function detailFormatter(index, row) {
     var html = []
-	html.push('<div class="container">')
-	html.push('<div class="row justify-content-between">')
-	html.push('<div class="col-md-auto">')
-	html.push('<img src="https://ptcd.s3.us-east-2.amazonaws.com/'+ row.ID +'.png" class="img-fluid"/>')
-	html.push('</div>')
-	html.push('<div class="col col-8">')
-	html.push('<div class="grid-container">')
+	html.push('<div class="container">');
+	html.push('<div class="row justify-content-between">');
+	html.push('<div class="col-md-auto">');
+	html.push('<img src="https://ptcd.s3.us-east-2.amazonaws.com/'+ row.ID +'.png" class="img-fluid"/>');
+	html.push('</div>');
+	html.push('<div class="col col-8">');
+	html.push('<div class="grid-container">');
 	
     	$.each(row, function (key, value) {
-      		html.push('<div class="grid-item"><b>' + key + '</b>: ' + value + '</div>')
+      		html.push('<div class="grid-item"><b>' + key + '</b>: ' + value + '</div>');
     	})
-	html.push('</div>')
-	html.push('</div>')
-	html.push('</div>')
-	html.push('</div>')
-    return html.join('')
+	html.push('</div>');
+	html.push('</div>');
+	html.push('</div>');
+	html.push('</div>');
+    return html.join('');
   }
 	
+function getIdSelections() {
+    return $.map($ctable.bootstrapTable('getSelections'), function (row) {
+      return row.ID
+    })
+  }
+$("#dlsel").on("click", function () {
+	alert('button')
+	var ids = []
+	
+	ids = getIdSelections()
+	zip.file("dl.txt", ids);
+    zip.generateAsync({type:"blob"}).then(function (blob) { 
+		
+        saveAs(blob, "hello.zip");                          // 2) trigger the download
+    }, function (err) {
+        jQuery("#blob").text(err);
+    });
+});
 	  
 	  </script>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	<script src="https://unpkg.com/tableexport.jquery.plugin/tableExport.min.js"></script>
-
-    <script src="https://unpkg.com/bootstrap-table@1.15.5/dist/bootstrap-table.min.js"></script>
-	<script src="https://unpkg.com/bootstrap-table@1.15.5/dist/extensions/export/bootstrap-table-export.min.js"></script>
+	
+    
     </section>
     <hr>
     <div class="section">
