@@ -20,7 +20,25 @@ function readSwcFile(e) {
     alert("Failed to load file");
   }
 }
-
+function switchSwcFile(e) {
+ const f = e.target.files[0];
+  if (f) {
+    const r = new FileReader();
+    r.onload = (e2) => {
+      const swcTxt = e2.target.result;
+      const  swc = sharkViewer.swcParser(swcTxt);
+      if (Object.keys(swc).length > 0) {
+        s.loadNeuron('foo', '#ff0000', swc);
+        s.render();
+      } else {
+        alert("Please upload a valid swc file.");
+      }
+    };
+    r.readAsText(f);
+  } else {
+    alert("Failed to load file");
+  }
+}
 function readObjFile(e) {
   const file = e.target.files[0];
   if (file) {
@@ -42,6 +60,9 @@ window.onload = () => {
   document
     .getElementById("obj_input")
     .addEventListener("change", readObjFile, false);
+document
+    .getElementById("obj_input")
+    .addEventListener("change", switchSwcFile, false);
   const swc = sharkViewer.swcParser(document.getElementById("swc").text);
   mdata = JSON.parse(document.getElementById("metadata_swc").text);
   s = new sharkViewer.default({

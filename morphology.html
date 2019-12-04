@@ -3,7 +3,10 @@
 	<head>
 		<title>Morphology</title>
 		<link href="css/bootstrap-4.3.1.css" rel="stylesheet">
-    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+		<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+		<link href="jQueryAssets/jquery.ui.accordion.min.css" rel="stylesheet" type="text/css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
     <script id="swc" type='text/plain'>
@@ -13532,6 +13535,8 @@
         {"label":"custom","type":7}
       ]
     </script>
+    <script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+    <script src="jQueryAssets/jquery.ui-1.10.4.accordion.min.js"></script>
   </head>
   <body>
 	 <!--Nav Bar-->
@@ -13566,15 +13571,18 @@
     </nav>
 	              <h1 class="text-center">Morphology Reconstruction Viewer.</h1>
 
-	  
-    <form  hidden>
+	 
+  <form  hidden>
       <label for='swc_input'>Upload a swc file to view it in the SharkViewer:</label>
       <input type='file' name='swc_input' id='swc_input' />  
 		      <label for='swc_input'>Upload a obj file to view it in the SharkViewer:</label>
       <input type='file' name='obj_input' id='obj_input' />
     </form>
-	  
-	  <hr>
+	  <select id='loadCell'><option value="swc/M3.JS.B5.C11 Rrconstruction 2016-06-06 .swc">M3.JS.B5.C11</option>
+  <option value="swc/M3.JS.B5.C11 Reconstruction .swc">M3.JS.B5.C11</option>
+  <option value="swc/M3.MW.B2.C8 RECONSTRUCTION  .swc">M3.MW.B2.C8</option>
+  <option value="swc/M3.JS.A1.C1 RECONSTRUCTION.swc">M3.JS.A1.C1</option></select>
+<hr>
     <!-- three.js container -->
     <div id="container" style='position:relative;width:100%;height:700px'></div>
 	  
@@ -13612,6 +13620,11 @@
     <script type="text/javascript" src="three.min.js"></script>
     <script type="text/javascript" src="./shark_viewer.js"></script>
     <script type="text/javascript" src="./index.js"></script>
+  <script type="text/javascript">
+$(function() {
+	$( "#Accordion1" ).accordion(); 
+});
+    </script>
   </body>
 </html>
 
