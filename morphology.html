@@ -7,7 +7,7 @@
     <title>Morphology Viewer</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap-4.3.1.css" rel="stylesheet">
-	  	<script src="js/three.min.js"></script>
+	 <script src="js/three.min.js"></script>
 	<script src="js/shark_viewer.js"></script>
 	<script src="js/index.js"></script>
   </head>
@@ -53,15 +53,21 @@
       <input type='file' name='swc_input' id='swc_input' />
     </form>
     <!-- three.js container -->
-    <div id="container" style='position:relative;width:100%;height:700px'></div>
+    <div id="ctcontainer" style='position:relative;width:100%;height:700px'></div>
     <!-- info on screen display -->
 			  
-            <script>
-				var s = new sharkViewer.default({ swc: swc, dom_element: 'container' });
-				s.init();
-				s.animate();
-			  	var swcJSON = sharkViewer.swcParser(swc_input); ;
-				s.loadNeuron('neuron_name', '#ff0000', swcJSON);
+		<script>
+			
+				var swc1 = new sharkViewer.default({ animated: false,
+    						dom_element: document.getElementById('ctcontainer'),
+    						
+     					});
+				
+				swc1.init();
+				swc1.animate();
+			  	var swcJSON = sharkViewer.swcParser('swc/M3.JS.B5.C11 Rrconstruction 2016-06-06.swc');
+				swc1.loadNeuron('neuron_name', null, swcJSON);
+				swc1.render();
 			  </script>
 			  
 		  	<div class="row justify-content-center">
