@@ -75,9 +75,9 @@
     </section>
     <section>
 	<div class="text-right">
-	<button id="dlsel" class="btn btn-secondary">Download Selected (zip)</button>
+	<button disabled id="dlsel" class="btn btn-secondary">Download Selected (zip)</button>
 	
-	<a href="https://ptcd.s3.us-east-2.amazonaws.com/NHP.zip" target="_blank" class="btn btn-primary">Download Full dataset (NWB + abf)</a></div>
+	<a href="https://ptcd.s3.us-east-2.amazonaws.com/NHP.zip" target="_blank" class="disabled btn btn-primary">Download Full dataset (NWB + abf)</a></div>
       <table id="table"
 data-toggle="table"
 data-url="data/data.json"
@@ -87,9 +87,9 @@ data-search="true"
 data-detail-view="true"
 data-force-export="true"
 data-show-columns="true"
-data-click-to-select="true"
+data-click-to-select="false"
 data-detail-formatter="detailFormatter"
-data-show-export="true"
+data-show-export="false"
 data-classes="table table-borderless table-striped"
 data-sort-name="peakLP"
 data-sort-order="desc"
@@ -97,11 +97,11 @@ data-page-list="[10, 25, 50, 100, all]"
 			 >
   <thead>
 	<tr>
-	<th data-field="state" data-checkbox="true" rowspan="2" data-valign="middle"></th>
+	<th data-field="state" data-checkbox="false" rowspan="2" data-valign="middle"></th>
 	<th data-field="ID" data-sortable="true" rowspan="2" data-valign="middle">Cell</th>
 	<th data-field="preview" data-formatter="imageFormatter" rowspan="2" data-valign="middle"></th>
 	<th colspan="7">Ephys Details</th>
-	<th data-field="link" data-formatter="linkFormatter" rowspan="2" data-valign="right">Link</th>
+	<th data-field="link" data-formatter="Disabled - linkFormatter" rowspan="2" data-valign="right">Link</th>
 	  
 	  </tr>
 	  
