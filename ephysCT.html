@@ -75,7 +75,7 @@
     </section>
     <section>
 	<div class="text-right">
-	<button disabled id="dlsel" class="btn btn-secondary">Download Selected (zip)</button>
+	<button disabled hidden id="dlsel" class="btn btn-secondary">Download Selected (zip)</button>
 	
 	<a href="https://ptcd.s3.us-east-2.amazonaws.com/NHP.zip" target="_blank" class="disabled btn btn-primary">Download Full dataset (NWB + abf)</a></div>
       <table id="table"
@@ -153,18 +153,16 @@ function getIdSelections() {
 		
       return row.ID 
     })
-	$.each(ids, function (idu, a) {
+	/*$.each(ids, function (idu, a) {
       		var dlurl = "https://ptcd.s3.us-east-2.amazonaws.com/"+ a +".zip"
 			JSZipUtils.getBinaryContent(dlurl, function (err, data) {
 				
    				zip.file(a + ".zip", data, {binary:true});
 			})
-	});
+	});*/
 	return ids;
   }
-function saveZip(ids){
-	
-}			
+
  $(function() {
 	 $table.on('check.bs.table uncheck.bs.table ' +
       'check-all.bs.table uncheck-all.bs.table',
@@ -182,7 +180,7 @@ $("#dlsel").on("click", function () {
 	
 	ids = getIdSelections();
 	
-	$.each(ids, function (idu, a) {
+	/*$.each(ids, function (idu, a) {
       		var dlurl = "https://ptcd.s3.us-east-2.amazonaws.com/"+ a +".zip"
 			JSZipUtils.getBinaryContent(dlurl, function (err, data) {
 				
@@ -192,7 +190,7 @@ $("#dlsel").on("click", function () {
 	//wait for files to dl
     zip.generateAsync({type:"blob"}).then(function (blob) { 
         	saveAs(blob, "datasel.zip");
-			$("#dlsel").html('Download Selected (zip)');
+			$("#dlsel").html('Download Selected (zip)');*/
     });
 	
 }) })
