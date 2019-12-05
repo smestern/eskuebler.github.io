@@ -101,7 +101,7 @@ data-page-list="[10, 25, 50, 100, all]"
 	<th data-field="ID" data-sortable="true" rowspan="2" data-valign="middle">Cell</th>
 	<th data-field="preview" data-formatter="imageFormatter" rowspan="2" data-valign="middle"></th>
 	<th colspan="7">Ephys Details</th>
-	<th data-field="link" data-formatter="Disabled - linkFormatter" rowspan="2" data-valign="right">Link</th>
+	<th data-field="link" data-formatter="linkFormatter" rowspan="2" data-valign="right">Link</th>
 	  
 	  </tr>
 	  
@@ -180,18 +180,18 @@ $("#dlsel").on("click", function () {
 	
 	ids = getIdSelections();
 	
-	/*$.each(ids, function (idu, a) {
+	$.each(ids, function (idu, a) {
       		var dlurl = "https://ptcd.s3.us-east-2.amazonaws.com/"+ a +".zip"
-			JSZipUtils.getBinaryContent(dlurl, function (err, data) {
-				
-   				zip.file(a + ".zip", data, {binary:true});
-			})
+			//JSZipUtils.getBinaryContent(dlurl, function (err, data) {
+			//	
+   			//	zip.file(a + ".zip", data, {binary:true});
+			//})
 	});
 	//wait for files to dl
-    zip.generateAsync({type:"blob"}).then(function (blob) { 
-        	saveAs(blob, "datasel.zip");
-			$("#dlsel").html('Download Selected (zip)');*/
-    });
+    //zip.generateAsync({type:"blob"}).then(function (blob) { 
+    //    	saveAs(blob, "datasel.zip");
+	//		$("#dlsel").html('Download Selected (zip)');
+    //});
 	
 }) })
 	  
