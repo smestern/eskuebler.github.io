@@ -101,7 +101,8 @@ data-page-list="[10, 25, 50, 100, all]"
 	<th data-field="ID" data-sortable="true" rowspan="2" data-valign="middle">Cell</th>
 	<th data-field="preview" data-formatter="imageFormatter" rowspan="2" data-valign="middle"></th>
 	<th colspan="7">Ephys Details</th>
-	<th data-field="link" data-formatter="linkFormatter" rowspan="2" data-valign="right">Link</th>
+	<th data-field="link" data-formatter="linkFormatter" rowspan="2" data-halign="right">Link</th>
+	<th data-field="Morphology" data-formatter="morphFormatter" rowspan="2" data-valign="right">Morphology?</th>
 	  
 	  </tr>
 	  
@@ -127,7 +128,12 @@ data-page-list="[10, 25, 50, 100, all]"
     		return '<img src="images/waveform.png" style="width:50px;height:60px;"/>';
 		}
 	function linkFormatter(value, row) {
-    return '<a href="https://ptcd.s3.us-east-2.amazonaws.com/'+ row.ID +'.zip" target="_blank" class="btn btn-primary btn-lg">Download (zip/abf)</a> <a href="https://ptcd.s3.us-east-2.amazonaws.com/'+ row.ID +'.nwb" target="_blank" class="btn btn-lg">Download (NWB)</a>';
+    return '<a href="https://ptcd.s3.us-east-2.amazonaws.com/'+ row.ID +'.zip" target="_blank" class="btn btn-primary">Download (zip/abf)</a> <a href="https://ptcd.s3.us-east-2.amazonaws.com/'+ row.ID +'.nwb" target="_blank" class="btn">Download (NWB)</a>';
+	}
+	function morphFormatter(value, row) {
+		if(value){
+    return '<a href="http://primatedatabase.com'+ value +'" class="btn btn-primary">View Morphology</a> ';}
+		else{ return;}
 	}
 	function detailFormatter(index, row) {
     var html = []

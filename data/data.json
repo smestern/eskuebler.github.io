@@ -4650,7 +4650,7 @@
     "trough": -65.31372216,
     "preview": "",
     "link": "",
-    "Morphology": "/morphology.html"
+    "Morphology": "/morphology.html?cell=M3.JS.A1.C1.swc"
   },
   {
     "ID": "M03_JS_A1_C02",
@@ -5073,7 +5073,7 @@
     "trough": -58.89282358,
     "preview": "",
     "link": "",
-    "Morphology": "/morphology.html"
+    "Morphology": "/morphology.html?cell=M3.JS.B5.C11.swc"
   },
   {
     "ID": "M03_JS_A1_C13",
@@ -5402,7 +5402,7 @@
     "trough": -71.39892738,
     "preview": "",
     "link": "",
-    "Morphology": "/morphology.html"
+    "Morphology": "/morphology.html?cell=M3.JS.D1.C19.swc"
   },
   {
     "ID": "M03_JS_A1_C20",
@@ -5543,7 +5543,7 @@
     "trough": -60.85205214,
     "preview": "",
     "link": "",
-    "Morphology": "/morphology.html"
+    "Morphology": "/morphology.html?cell=M3.MW.A2.C2.swc"
   },
   {
     "ID": "M03_MW_A1_C03",
@@ -5637,7 +5637,7 @@
     "trough": -64.33105613,
     "preview": "",
     "link": "",
-    "Morphology": "/morphology.html"
+    "Morphology": "/morphology.html?cell=M3.MW.A4.C4.swc"
   },
   {
     "ID": "M03_MW_A1_C05",
@@ -5778,7 +5778,7 @@
     "trough": -71.27685706,
     "preview": "",
     "link": "",
-    "Morphology": "/morphology.html"
+    "Morphology": "/morphology.html?cell=M3.MW.B1.C7.swc"
   },
   {
     "ID": "M03_MW_A1_C08",
@@ -5825,7 +5825,7 @@
     "trough": -61.41357559,
     "preview": "",
     "link": "",
-    "Morphology": "/morphology.html"
+    "Morphology": "/morphology.html?cell=M3.MW.B2.C8.swc"
   },
   {
     "ID": "M03_MW_A1_C09",
