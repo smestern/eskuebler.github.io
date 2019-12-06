@@ -31,7 +31,7 @@ function switchSwcFile(e) {
 		alert( "Data Loaded: " + data );
 		const  swc = sharkViewer.swcParser(data);
 		if (Object.keys(swc).length > 0) {
-        s.loadNeuron('foo', '#ff0000', swc);
+        s.loadNeuron('foo',null, swc);
         s.render();
       } else {
         alert("Please upload a valid swc file.");}
