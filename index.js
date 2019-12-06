@@ -10,7 +10,13 @@ function getUrlVars() {
     return vars;
 }
 
-
+function getUrlParam(parameter, defaultvalue){
+    var urlparameter = defaultvalue;
+    if(window.location.href.indexOf(parameter) > -1){
+        urlparameter = getUrlVars()[parameter];
+        }
+    return urlparameter;
+}
 
 function switchSwcFile(e) {
 	s.unloadNeuron('foo', null, swc);	
@@ -53,7 +59,11 @@ window.onload = () => {
 document
     .getElementById("loadCell")
     .addEventListener("change", switchSwcFile, false);	
-  const swc = sharkViewer.swcParser(document.getElementById("swc").text);
+  var swc = sharkViewer.swcParser(document.getElementById("swc").text);
+	
+  var cellvars = getUrlParam('cell', 'M3.JS.B5.C11.2.swc')
+  cellvars = 'swc/' + cellvars
+  
   mdata = JSON.parse(document.getElementById("metadata_swc").text);
   s = new sharkViewer.default({
     animated: false,
@@ -64,6 +74,17 @@ document
     cameraChangeCallback: (data) => { console.log(data) }
   });
   window.s = s;
+  const r = jQuery.get(cellvars).done(function(data) {
+		/*alert( "Data Loaded: " + data );*/
+	    swc = sharkViewer.swcParser(data);
+		if (Object.keys(swc).length > 0) {
+        s.loadNeuron('foo',null, swc);
+        s.render();
+      } else {
+        alert("Please upload a valid swc file.");}
+	
+	
+  });
   s.init();
   s.animate();
   const swc2 = sharkViewer.swcParser(document.getElementById("swc2").text);
