@@ -28,7 +28,7 @@ function switchSwcFile(e) {
  const f = e.options[e.selectedIndex].value;
   if (f) {
 	const r = jQuery.get(f).done(function(data) {
-		alert( "Data Loaded: " + data );
+		/*alert( "Data Loaded: " + data );*/
 		const  swc = sharkViewer.swcParser(data);
 		if (Object.keys(swc).length > 0) {
         s.loadNeuron('foo',null, swc);
@@ -73,8 +73,7 @@ function readObjFile(e) {
 window.onload = () => {
 document
     .getElementById("loadCell")
-    .addEventListener("change", switchSwcFile, false);
-	
+    .addEventListener("change", switchSwcFile, false);	
   document
     .getElementById("swc_input")
     .addEventListener("change", readSwcFile, false);
