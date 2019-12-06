@@ -25,7 +25,8 @@ var e = document
     .getElementById("loadCell");
  const f = e.options[e.selectedIndex].value;
   if (f) {
-    const r = new FileReader();
+	const r = jQuery.get(f, function(data) {alert( "Data Loaded: " + data );});
+	/*const r = new FileReader();*/
     r.onload = (e2) => {
       const swcTxt = e2.target.result;
       const  swc = sharkViewer.swcParser(swcTxt);
