@@ -22,7 +22,7 @@ function readSwcFile(e) {
 }
 
 function switchSwcFile(e) {
-	s.unload();
+	s.unloadNeuron();
 	var e = document
     .getElementById("loadCell");
  const f = e.options[e.selectedIndex].value;
