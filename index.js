@@ -20,16 +20,18 @@ function readSwcFile(e) {
     alert("Failed to load file");
   }
 }
+
 function switchSwcFile(e) {
-var e = document
+	s.unloadNeuron('foo', null, swc);	
+	var e = document
     .getElementById("loadCell");
  const f = e.options[e.selectedIndex].value;
   if (f) {
 	const r = jQuery.get(f).done(function(data) {
-		alert( "Data Loaded: " + data );
+		/*alert( "Data Loaded: " + data );*/
 		const  swc = sharkViewer.swcParser(data);
 		if (Object.keys(swc).length > 0) {
-        s.loadNeuron('foo', '#ff0000', swc);
+        s.loadNeuron('foo',null, swc);
         s.render();
       } else {
         alert("Please upload a valid swc file.");}
@@ -48,7 +50,7 @@ var e = document
       }
     };
     r.readAsText(f);*/
-	const  swc = sharkViewer.swcParser(swcTxt);
+	/*const  swc = sharkViewer.swcParser(swcTxt);*/
 
   } else {
     alert("Failed to load file");
@@ -69,15 +71,15 @@ function readObjFile(e) {
 
 
 window.onload = () => {
+document
+    .getElementById("loadCell")
+    .addEventListener("change", switchSwcFile, false);	
   document
     .getElementById("swc_input")
     .addEventListener("change", readSwcFile, false);
   document
     .getElementById("obj_input")
     .addEventListener("change", readObjFile, false);
-document
-    .getElementById("loadCell")
-    .addEventListener("change", switchSwcFile, false);
   const swc = sharkViewer.swcParser(document.getElementById("swc").text);
   mdata = JSON.parse(document.getElementById("metadata_swc").text);
   s = new sharkViewer.default({
