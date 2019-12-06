@@ -63,7 +63,7 @@ document
 	
   var cellvars = getUrlParam('cell', 'M3.JS.B5.C11.2.swc')
   cellvars = 'swc/' + cellvars
-  
+  document.getElementById("loadCell").value = cellvars;
   mdata = JSON.parse(document.getElementById("metadata_swc").text);
   s = new sharkViewer.default({
     animated: false,
