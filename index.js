@@ -71,12 +71,6 @@ function readObjFile(e) {
 
 
 window.onload = () => {
-  document
-    .getElementById("swc_input")
-    .addEventListener("change", readSwcFile, false);
-  document
-    .getElementById("obj_input")
-    .addEventListener("change", readObjFile, false);
 document
     .getElementById("loadCell")
     .addEventListener("change", switchSwcFile, false);
