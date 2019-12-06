@@ -20,8 +20,10 @@ function readSwcFile(e) {
     alert("Failed to load file");
   }
 }
+
 function switchSwcFile(e) {
-var e = document
+	s.unload();
+	var e = document
     .getElementById("loadCell");
  const f = e.options[e.selectedIndex].value;
   if (f) {
