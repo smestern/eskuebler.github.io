@@ -37,7 +37,7 @@ var e = document
         alert("Please upload a valid swc file.");
       }
     };
-    r.readAsText(f);
+    /*r.readAsText(f);*/
   } else {
     alert("Failed to load file");
   }
