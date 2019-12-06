@@ -80,7 +80,15 @@ window.onload = () => {
 document
     .getElementById("loadCell")
     .addEventListener("change", switchSwcFile, false);
-  const swc = sharkViewer.swcParser(document.getElementById("swc").text);
+  /*const swc = sharkViewer.swcParser(document.getElementById("swc").text);*/
+	const r = jQuery.get("swc/M3.JS.A1.C1 RECONSTRUCTION.swc").done(function(data) {
+		alert( "Data Loaded: " + data );
+		const  swc = sharkViewer.swcParser(data);
+		if (Object.keys(swc).length > 0) {
+        s.loadNeuron('foo',null, swc);
+        s.render();
+      } else {
+        alert("Please upload a valid swc file.");}
   mdata = JSON.parse(document.getElementById("metadata_swc").text);
   s = new sharkViewer.default({
     animated: false,
