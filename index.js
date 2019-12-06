@@ -25,9 +25,19 @@ var e = document
     .getElementById("loadCell");
  const f = e.options[e.selectedIndex].value;
   if (f) {
-	const r = jQuery.get(f, function(data) {alert( "Data Loaded: " + data );});
+	const r = jQuery.get(f).done(function(data) {
+		alert( "Data Loaded: " + data );
+		const  swc = sharkViewer.swcParser(data);
+		if (Object.keys(swc).length > 0) {
+        s.loadNeuron('foo', '#ff0000', swc);
+        s.render();
+      } else {
+        alert("Please upload a valid swc file.");}
+	
+	
+	});
 	/*const r = new FileReader();*/
-    r.onload = (e2) => {
+    /*r.onload = (e2) => {
       const swcTxt = e2.target.result;
       const  swc = sharkViewer.swcParser(swcTxt);
       if (Object.keys(swc).length > 0) {
@@ -37,7 +47,9 @@ var e = document
         alert("Please upload a valid swc file.");
       }
     };
-    /*r.readAsText(f);*/
+    r.readAsText(f);*/
+	const  swc = sharkViewer.swcParser(swcTxt);
+
   } else {
     alert("Failed to load file");
   }
