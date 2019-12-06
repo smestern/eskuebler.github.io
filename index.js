@@ -22,7 +22,7 @@ function readSwcFile(e) {
 }
 
 function switchSwcFile(e) {
-	s.unloadNeuron();
+	s.init();
 	var e = document
     .getElementById("loadCell");
  const f = e.options[e.selectedIndex].value;
@@ -50,7 +50,7 @@ function switchSwcFile(e) {
       }
     };
     r.readAsText(f);*/
-	const  swc = sharkViewer.swcParser(swcTxt);
+	/*const  swc = sharkViewer.swcParser(swcTxt);*/
 
   } else {
     alert("Failed to load file");
