@@ -209,7 +209,7 @@ table {
   border-collapse: collapse;
 }
 #loadCell{
-	margin-left: 1rem;
+	margin-left: 2rem;
 }
 caption {
   padding-top: 0.75rem;
@@ -2786,14 +2786,14 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-success {
-  color: #28a745;
-  border-color: #28a745;
+  color: #fff;
+  border-color: #fff;
 }
 
 .btn-outline-success:hover {
   color: #fff;
-  background-color: #28a745;
-  border-color: #28a745;
+  background-color: #495057;
+  border-color: #fff;
 }
 
 .btn-outline-success:focus, .btn-outline-success.focus {
@@ -2801,15 +2801,15 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-success.disabled, .btn-outline-success:disabled {
-  color: #28a745;
+  color: #fff;
   background-color: transparent;
 }
 
 .btn-outline-success:not(:disabled):not(.disabled):active, .btn-outline-success:not(:disabled):not(.disabled).active,
 .show > .btn-outline-success.dropdown-toggle {
   color: #fff;
-  background-color: #28a745;
-  border-color: #28a745;
+  background-color: #495057;
+  border-color: #495057;
 }
 
 .btn-outline-success:not(:disabled):not(.disabled):active:focus, .btn-outline-success:not(:disabled):not(.disabled).active:focus,
