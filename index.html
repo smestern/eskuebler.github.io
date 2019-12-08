@@ -48,7 +48,7 @@
         <div class="col-12">
               <h1>Primate Cell Type Database</h1>
               <p>Intracellular recordings of non-human primates (NHP) cells sampled from the lateral prefrontal cortex.
-			<p id="length" style="display:inline"></p> patch clamp recordings for 2 protocols: 1 second current pulse &amp; 3 millisecond pulse. Morphology obtained by biocytin injections and confocal imaging at 63x magnification.</p>
+			<b id="length" style="display:inline"></b> patch clamp recordings for 2 protocols: 1 second current pulse &amp; 3 millisecond pulse. Morphology obtained by biocytin injections and confocal imaging at 63x magnification.</p>
 	<script>			
 	jQuery.get("../data/data.json").done(function(data){
 	document.getElementById("length").innerHTML=Object.keys(data).length;
