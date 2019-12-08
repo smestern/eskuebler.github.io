@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	    <script src="jquery-3.3.1.min.js"></script>
+	    <script src="js/jquery-3.3.1.min.js"></script>
 
     <title>Primate Cell Type Database</title>
     <!-- Bootstrap -->
@@ -50,10 +50,12 @@
               <p>Intracellular recordings of non-human primates (NHP) cells sampled from the lateral prefrontal cortex.
 			<p id="length" style="display:inline"></p> patch clamp recordings for 2 protocols: 1 second current pulse &amp; 3 millisecond pulse. Morphology obtained by biocytin injections and confocal imaging at 63x magnification.</p>
 			<script>
-			/*$.getJSON("/data/data.JSON").done(function(data){*/
-			document.getElementById("length").innerHTML = 350;
-				/*Object.keys(data).length;
-			})*/
+			$.getJSON("/data/data.JSON").done(function(data){
+			data = JSON.parse(data); // add this line
+
+			document.getElementById("length").innerHTML = Object.keys(data).length;
+			alert(Object.keys(data).length)
+			})
 			</script>
               <p><a class="btn btn-primary btn-lg" href="#" role="button"}>Learn more through our Technical White Papers »</a></p>
             </div>
