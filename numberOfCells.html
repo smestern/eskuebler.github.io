@@ -6,12 +6,13 @@
 </head>
 
 <body>
-	<p id="length" style="display:inline"></p>
+	<b><p id="length" style="display:inline"></p></b>
 	
-	<script>			
-	jQuery.get("../data/data.json").done(function(data){
+	<script>	
+		document.getElementById("length").innerHTML=350
+	/*jQuery.get("../data/data.json").done(function(data){
 	document.getElementById("length").innerHTML=Object.keys(data).length;
-	});
+	});*/
 	</script>
 	
 </body>
