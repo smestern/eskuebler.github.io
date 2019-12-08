@@ -9,7 +9,7 @@
 	<p id="length" style="display:inline"></p>
 	
 	<script>			
-	jQuery.get("/data/data.JSON").done(function(data){
+	jQuery.get("../data/data.JSON").done(function(data){
 	document.getElementById("length").innerHTML=Object.keys(data).length;
 	});
 	</script>
