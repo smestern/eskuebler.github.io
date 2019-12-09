@@ -5657,6 +5657,11 @@ button.close {
   appearance: none;
 }
 
+#dwnld_btn {
+	float: right;
+	padding-right: 1rem;
+}
+
 a.close.disabled {
   pointer-events: none;
 }
