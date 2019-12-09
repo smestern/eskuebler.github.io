@@ -81,8 +81,13 @@
     <section>
 	<div class="text-right">
 	<button disabled hidden id="dlsel" class="btn btn-secondary">Download Selected (zip)</button>
-	
-	<a href="https://ptcd.s3.us-east-2.amazonaws.com/NHP.zip" target="_blank" class="btn btn-primary">Download Full dataset (NWB + abf)</a></div>
+
+		
+	<a href="https://ptcd.s3.us-east-2.amazonaws.com/NHP.zip" target="_blank" class="btn btn-primary">Download Full dataset (NWB + abf)</a>
+		
+		</div>
+		
+
       <table id="table"
 data-toggle="table"
 data-url="data/data.json"
@@ -100,7 +105,7 @@ data-sort-name="peakLP"
 data-sort-order="desc"
 data-page-list="[10, 25, 50, 100, all]"
 			 >
-  <thead>
+	  <thead>
 	<tr>
 	<th data-field="state" data-checkbox="false" rowspan="2" data-valign="middle"></th>
 	<th data-field="ID" data-sortable="true" rowspan="2" data-valign="middle">Cell</th>
@@ -108,11 +113,8 @@ data-page-list="[10, 25, 50, 100, all]"
 	<th colspan="7">Ephys Details</th>
 	<th data-field="link" data-formatter="linkFormatter" rowspan="2" data-halign="right">Link</th>
 	<th data-field="Morphology" data-sortable="true" data-formatter="morphFormatter" rowspan="2" data-valign="right">Morphology</th>
-	  
-	  </tr>
-	  
+	</tr>
     <tr>
-      
       <th data-field="Resistence" data-sortable="true">Resistence</th>
       <th data-field="sag" data-sortable="true">Sag</th>
 	  <th data-field="rheobaseLP" data-sortable="true">Rheobase</th>
@@ -120,9 +122,8 @@ data-page-list="[10, 25, 50, 100, all]"
 	  <th data-field="time_constant" data-sortable="true">Time Constant</th>
       <th data-field="delay" data-sortable="true">Delay</th>
 	  <th data-field="halfWidthTP" data-sortable="true">AP Width</th>
-		
     </tr>
-  </thead>
+	  </thead>
 </table>
 		<script> 
 		var zip = new JSZip();
