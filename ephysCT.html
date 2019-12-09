@@ -83,8 +83,17 @@
 <p>
 	  <a class="btn btn-primary" data-toggle="collapse" href="#ScatterFilter" role="button" aria-expanded="false" aria-controls="ScatterFilter">Scatter</a>
   <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#tableData" aria-expanded="true" aria-controls="tableData">Table</button>
-  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="ScatterFilter tableData">Scatter + Table</button>
-	  </p>	  
+  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="ScatterFilter tableData">Scatter + Table</button>  
+	  
+	  	<span class="text-right" style="display: inline">
+	<button disabled hidden id="dlsel" class="btn btn-secondary">Download Selected (zip)</button>
+
+		
+	<a href="https://ptcd.s3.us-east-2.amazonaws.com/NHP.zip" target="_blank" class="btn btn-primary" alight="right">Download Full dataset (NWB + abf)</a>
+	</span>
+	  </p>
+	
+	
 		  <div class="collapse multi-collapse" id="ScatterFilter">
 		  <div class="card card-body">
 			  <center>
@@ -134,16 +143,10 @@ Plotly.plot('scatter', data, layout, {displaylogo: false});
 			  </div>
 		  </div>
     <section>
-	<div class="collapse multi-collapse show" id="tableData">
+	
+	
+		<div class="collapse multi-collapse show" id="tableData">
 		 <div class="card card-body">
-	<div class="text-right">
-	<button disabled hidden id="dlsel" class="btn btn-secondary">Download Selected (zip)</button>
-
-		
-	<a href="https://ptcd.s3.us-east-2.amazonaws.com/NHP.zip" target="_blank" class="btn btn-primary">Download Full dataset (NWB + abf)</a>
-		
-		</div>
-		
 
       <table id="table"
 data-toggle="table"
