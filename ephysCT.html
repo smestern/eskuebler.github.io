@@ -97,7 +97,7 @@
 		  <div class="collapse multi-collapse" id="ScatterFilter">
 		  <div class="card card-body">
 			  <center>
-				  <div id="graphDiv"></div>
+				  <div id="graphDiv"></div> <div id="traceDiv"></div>
 	
 	
 	<script> 
@@ -228,9 +228,11 @@ data-page-list="[10, 25, 50, 100, all]"
 	}
     function detailFormatter(index, row) {
     var html = []
+	
 	html.push('<div class="container">');
 	html.push('<div class="row justify-content-between">');
 	html.push('<img src="https://ptcd.s3.us-east-2.amazonaws.com/'+ row.ID +'.jpg" width= "30%" height= "30%" class="img-fluid"/>');
+	html.push('<div id="rendergrid"></div>');
 	html.push('<div class="col col-8">');
 	html.push('<div class="grid-container">');
 	
@@ -241,6 +243,7 @@ data-page-list="[10, 25, 50, 100, all]"
 	html.push('</div>');
 	html.push('</div>');
 	html.push('</div>');
+	maketrace(row);
     return html.join('');
   }
 	function filterByPlot(keys, ranges){
@@ -279,7 +282,41 @@ data-page-list="[10, 25, 50, 100, all]"
 	});*/
 	return ids;
   }
-			
+	function maketrace(row){
+		var url = "https://raw.githubusercontent.com/smestern/LPtraces/master/" + row.ID + ".csv"
+		Plotly.d3.csv(url, function(rows){
+					data = []
+					rows.forEach(row => {
+						var rowdata = Object.values(row)
+						var trace = {
+                      			type: 'scatter',                    // set the chart type
+								mode: 'lines',                      // connect points with lines
+                      
+                      			y: rowdata,
+                      line: {                             // set the width of the line.
+                        width: 1
+                      }
+						
+                    };
+						data.push(trace);
+                    
+					});
+					
+                   
+
+                    var layout = {
+                      yaxis: {title: "mV"},       // set the y axis title
+                      xaxis: {
+                        showgrid: false,                  // remove the x-axis grid lines
+                           
+                      },
+                      margin: {                           // update the left, bottom, right, top margin
+                        l: 40, b: 15, r: 10, t: 20
+                      }
+                    };
+
+                    Plotly.newPlot(document.getElementById('rendergrid'), data, layout, {displaylogo: false});
+                });}
  $(function() {
 	 $table.on('check.bs.table uncheck.bs.table ' +
       'check-all.bs.table uncheck-all.bs.table',
