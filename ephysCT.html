@@ -242,7 +242,7 @@ data-page-list="[10, 25, 50, 100, all]"
 	html.push('<div class="container">');
 	html.push('<div class="row justify-content-between">');
 	html.push('<img src="https://ptcd.s3.us-east-2.amazonaws.com/'+ row.ID +'.jpg" width= "30%" height= "30%" class="img-fluid"/>');
-	html.push('<div id="rendergrid"></div>');
+	html.push('<div id="' + row.ID + '"></div>');
 	html.push('<div class="col col-8">');
 	html.push('<div class="grid-container">');
 	
@@ -325,7 +325,7 @@ data-page-list="[10, 25, 50, 100, all]"
                       }
                     };
 
-                    Plotly.newPlot(document.getElementById('rendergrid'), data, layout, {displaylogo: false});
+                    Plotly.newPlot(document.getElementById(row.ID), data, layout, {displaylogo: false});
                 });}
  $(function() {
 	 $table.on('check.bs.table uncheck.bs.table ' +
