@@ -2400,6 +2400,16 @@ textarea.form-control {
   opacity: 0.65;
 }
 
+#PlotTable_btn {
+	float: left;
+	padding: 0.5rem;
+}
+
+#dwnld_btn {
+	float:right;
+	padding:0.5rem;
+}
+
 a.btn.disabled,
 fieldset:disabled a.btn {
   pointer-events: none;
