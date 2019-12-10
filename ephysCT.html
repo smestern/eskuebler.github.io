@@ -10,7 +10,7 @@
 	
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap-table.css">
-	<script src="js/plotly-latest.min.js"></script>
+	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://unpkg.com/tableexport.jquery.plugin/tableExport.min.js"></script>
@@ -114,7 +114,8 @@ var data = [{
   type: 'parcoords',
   pad: [80,80,80,80],
   line: {
-	color: '#1f77b4'
+	colorscale: 'Bluered',
+	color: unpack(rows, 'peakLP')
   },
 
   dimensions: [{
@@ -153,7 +154,15 @@ graphDiv.on('plotly_restyle', function(data){
 				}
 				else{
 					keys.push(d.label);
-					ranges.push(d.constraintrange);
+					var allLengths = d.constraintrange.flat();
+					if (allLengths.length > 2){
+						ranges.push([d.constraintrange[0][0],d.constraintrange[0][1]]); //return only the first filter applied per feature
+	
+					}else{
+						ranges.push(d.constraintrange);
+					}
+					
+					
 				} // => use this to find values are selected
   		})
 		
