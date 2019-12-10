@@ -682,6 +682,7 @@ pre code {
 	padding-left: 3rem
 }
 
+
 /* SUBSCRIBE BUTTON */
 #subscribe_btn{
 	margin-top: 0.5rem;
@@ -2399,17 +2400,13 @@ textarea.form-control {
 .btn.disabled, .btn:disabled {
   opacity: 0.65;
 }
-
-#PlotTable_btn {
-	float: left;
-	padding: 0.5rem;
-}
-
 #dwnld_btn {
 	float:right;
 	padding:0.5rem;
 }
-
+#filter_btn {
+	margin-left: 0.5rem;
+}
 a.btn.disabled,
 fieldset:disabled a.btn {
   pointer-events: none;
