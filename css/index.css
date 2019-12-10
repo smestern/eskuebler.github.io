@@ -2387,8 +2387,13 @@ textarea.form-control {
 #dwnld_btn {
 	float: right;
 	padding-right: 1rem;
-	
 }
+
+#dwnld_btn {
+	float: right;
+	padding-right: 1rem;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .btn {
     transition: none;
@@ -5668,8 +5673,14 @@ button.close {
 
 #dwnld_btn {
 	float: right;
-	padding-right: 1rem;
+	padding-right: 0.5rem;
 }
+
+#PlotTable_btn {
+	float: left;
+	padding-left: 0.5rem;
+}
+
 
 a.close.disabled {
   pointer-events: none;
