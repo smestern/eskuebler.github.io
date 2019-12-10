@@ -682,13 +682,9 @@ pre code {
 	padding-left: 3rem
 }
 
-#shreejoy_pic{
-	padding-left: 3rem
-}
-
 /* SUBSCRIBE BUTTON */
 #subscribe_btn{
-	margin-bottom: 1rem;
+	margin-top: 0.5rem;
 }
 #team_recr{
 	margin-top: 1.5rem
@@ -2382,16 +2378,6 @@ textarea.form-control {
   line-height: 1.5;
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
-
-#dwnld_btn {
-	float: right;
-	padding-right: 1rem;
-}
-
-#dwnld_btn {
-	float: right;
-	padding-right: 1rem;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -5670,17 +5656,6 @@ button.close {
   -moz-appearance: none;
   appearance: none;
 }
-
-#dwnld_btn {
-	float: right;
-	padding-right: 0.5rem;
-}
-
-#PlotTable_btn {
-	float: left;
-	padding-left: 0.5rem;
-}
-
 
 a.close.disabled {
   pointer-events: none;
