@@ -142,7 +142,7 @@ var layout = {
   width: 800
 };
 
-Plotly.newPlot('graphDiv', data, layout, {displaylogo: false});
+Plotly.newPlot('graphDiv', data, layout, {displaylogo: false}, {responsive: true});
 var graphDiv = document.getElementById("graphDiv")
 graphDiv.on('plotly_restyle', function(data){
 		var keys = []
