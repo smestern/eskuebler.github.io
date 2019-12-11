@@ -239,18 +239,17 @@ data-page-list="[10, 25, 50, 100, all]"
     function detailFormatter(index, row) {
     var html = []
 	html.push('<div class="card-columns">')
-		
+
 	html.push('<div class="card p-3">')
-	html.push('<img src="https://ptcd.s3.us-east-2.amazonaws.com/'+ row.ID +'.jpg" width= "75%" height= "75%" class="img-fluid"/>');
+	html.push('<img src="https://ptcd.s3.us-east-2.amazonaws.com/'+ row.ID +'.jpg" width= "75%" height= "75%">');
 	html.push('</div>')
 				
-	html.push('<div class="card">')
+	html.push('<div class="card p-3">')
 	html.push('<div class="card-body">')
 	html.push('<div id="' + row.ID + '"></div>');
 	maketrace(row);
 	html.push('</div>');
 	html.push('</div>');
-
 	html.push('<div class="card">')
 	html.push('<div id="' + row.ID + '"></div>');
 	html.push('<div class="grid-container">');
