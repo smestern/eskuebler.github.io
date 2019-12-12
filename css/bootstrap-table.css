@@ -286,6 +286,11 @@
 	background-color: #C7C7C7;
 }
 
+div.containerPulseTrace {
+	
+	max-height: 100px
+}
+
 /* calculate scrollbar width */
 div.fixed-table-scroll-inner {
   width: 100%;

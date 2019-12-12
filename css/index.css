@@ -564,6 +564,15 @@ pre code {
   margin-left: -15px;
 }
 
+.row.display-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.row.display-flex > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+
 .no-gutters {
   margin-right: 0;
   margin-left: 0;
@@ -585,6 +594,15 @@ pre code {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
+}
+
+.col-container {
+    display: table; /* Make the container element behave like a table */
+    width: 100%; /* Set full-width to expand the whole page */
+}
+
+.col-cell {
+    display: table-cell; /* Make elements inside the container behave like table cells */
 }
 
 .col {

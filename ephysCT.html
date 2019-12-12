@@ -229,7 +229,7 @@ data-page-list="[10, 25, 50, 100, all]"
     		return '<img src="images/previews/' + row.ID +'.png" style="width:50px;height:50px;" onerror=this.src="images/backup.png" />';
 		}
 	function linkFormatter(value, row) {
-    return '<a href="https://ptcd.s3.us-east-2.amazonaws.com/'+ row.ID +'.zip" target="_blank" class="btn btn-primary">Download (zip/abf)</a> <a href="https://ptcd.s3.us-east-2.amazonaws.com/'+ row.ID +'.nwb" target="_blank" class="btn">Download (NWB)</a>';
+    return '<div class="dropdown"><button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Download</button><div class="dropdown-menu"> <a class="dropdown-item" href="https://ptcd.s3.us-east-2.amazonaws.com/'+ row.ID +'.zip" target="_blank" class="btn btn-primary">Download (zip/abf)</a> <a class= "dropdown-item" href="https://ptcd.s3.us-east-2.amazonaws.com/'+ row.ID +'.nwb" target="_blank">Download (NWB)</a></div></div>';
 	}
 	function morphFormatter(value, row) {
 		if(value){
@@ -238,7 +238,7 @@ data-page-list="[10, 25, 50, 100, all]"
 	}
     function detailFormatter(index, row) {
     var html = []
-	html.push('<div class="card-columns">')
+	/*html.push('<div class="card-columns">')
 		
 	html.push('<div class="card p-3">')
 	html.push('<img src="https://ptcd.s3.us-east-2.amazonaws.com/'+ row.ID +'0001.png" width= "75%" height= "75%">');
@@ -251,6 +251,26 @@ data-page-list="[10, 25, 50, 100, all]"
 	html.push('</div>');
 	html.push('</div>');
 	html.push('<div class="card">')
+	html.push('<div id="' + row.ID + '"></div>');
+	html.push('<div class="grid-container">');
+    	$.each(row, function (key, value) {
+      		html.push('<div class="grid-item"><b>' + key + '</b>: ' + value + '</div>');
+    	})
+	html.push('</div>');
+	html.push('</div>');
+	html.push('</div>');
+    return html.join('');
+	html.push('</div>');*/
+	html.push('<div class="row">')
+
+	html.push('<div class="col">')
+	html.push('<img class="img-fluid" src="https://ptcd.s3.us-east-2.amazonaws.com/'+ row.ID +'0001.png" height=75% width=75%>');
+	html.push('</div>')
+	html.push('<div class="col">')
+	html.push('<div id="' + row.ID + '"></div>');
+	maketrace(row);
+	html.push('</div>');
+	html.push('<div class="col">')
 	html.push('<div id="' + row.ID + '"></div>');
 	html.push('<div class="grid-container">');
     	$.each(row, function (key, value) {
@@ -324,6 +344,7 @@ data-page-list="[10, 25, 50, 100, all]"
 
                     var layout = {
 					  height: 300,
+					  width: 650,
                       yaxis: {title: "mV"},       // set the y axis title
                       xaxis: {
                         showgrid: false,                  // remove the x-axis grid lines
