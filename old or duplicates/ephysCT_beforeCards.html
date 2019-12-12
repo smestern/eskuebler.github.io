@@ -142,7 +142,7 @@ var layout = {
   width: 800
 };
 
-Plotly.newPlot('graphDiv', data, layout, {displaylogo: false}, {responsive: true});
+Plotly.newPlot('graphDiv', data, layout, {displaylogo: false});
 var graphDiv = document.getElementById("graphDiv")
 graphDiv.on('plotly_restyle', function(data){
 		var keys = []
@@ -238,31 +238,23 @@ data-page-list="[10, 25, 50, 100, all]"
 	}
     function detailFormatter(index, row) {
     var html = []
-	html.push('<div class="card-columns">')
-		
-	html.push('<div class="card p-3">')
-	html.push('<img src="https://ptcd.s3.us-east-2.amazonaws.com/'+ row.ID +'.jpg" width= "75%" height= "75%">');
-	html.push('</div>')
-				
-	html.push('<div class="card p-3">')
-	html.push('<div class="card-body">')
+	
+	html.push('<div class="container">');
+	html.push('<div class="row justify-content-between">');
+	html.push('<img src="https://ptcd.s3.us-east-2.amazonaws.com/'+ row.ID +'.jpg" width= "30%" height= "30%" class="img-fluid"/>');
 	html.push('<div id="' + row.ID + '"></div>');
-	maketrace(row);
-	html.push('</div>');
-	html.push('</div>');
-	html.push('<div class="card">')
-	html.push('<div id="' + row.ID + '"></div>');
+	html.push('<div class="col col-8">');
 	html.push('<div class="grid-container">');
+	
     	$.each(row, function (key, value) {
       		html.push('<div class="grid-item"><b>' + key + '</b>: ' + value + '</div>');
     	})
 	html.push('</div>');
 	html.push('</div>');
 	html.push('</div>');
-    return html.join('');
 	html.push('</div>');
-
-
+	maketrace(row);
+    return html.join('');
   }
 	function filterByPlot(keys, ranges){
 		
@@ -323,7 +315,6 @@ data-page-list="[10, 25, 50, 100, all]"
                    
 
                     var layout = {
-					  height: 300,
                       yaxis: {title: "mV"},       // set the y axis title
                       xaxis: {
                         showgrid: false,                  // remove the x-axis grid lines
@@ -332,7 +323,6 @@ data-page-list="[10, 25, 50, 100, all]"
                       margin: {                           // update the left, bottom, right, top margin
                         l: 40, b: 15, r: 10, t: 20
                       }
-				
                     };
 
                     Plotly.newPlot(document.getElementById(row.ID), data, layout, {displaylogo: false});
@@ -348,7 +338,7 @@ data-page-list="[10, 25, 50, 100, all]"
     $("#dlsel").on("click", function () {
 	
 	var ids
-	$("#dlsel").html('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Generating ZIP...')
+	$("#dlsel").html('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Generating Zip...')
 	
 	
 	ids = getIdSelections();
