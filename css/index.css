@@ -453,9 +453,9 @@ mark,
   height: auto;
 }
 
-.img-wrap {
+.col-container {
   width: 250px;
-  height: 350px;
+  height: 400px;
   position: relative;
   display: inline-block;
   overflow: hidden;
@@ -608,15 +608,6 @@ pre code {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
-}
-
-.col-container {
-    display: table; /* Make the container element behave like a table */
-    width: 100%; /* Set full-width to expand the whole page */
-}
-
-.col-cell {
-    display: table-cell; /* Make elements inside the container behave like table cells */
 }
 
 .col {
