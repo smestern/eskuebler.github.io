@@ -3048,9 +3048,13 @@ input[type="button"].btn-block {
     transition: none;
   }
 }
+.dropright {
+	margin-left: 2rem;
+	margin-top: 2rem;
+	align-content: left;
+}
 
 .dropup,
-.dropright,
 .dropdown,
 .dropleft {
   position: relative;
