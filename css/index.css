@@ -210,8 +210,13 @@ table {
 }
 #loadCell{
 	margin-left: 2rem;
+	margin-bottom: -2rem;
 	margin-top: 2rem;
 	align-content: left;
+}
+
+.controls {
+	margin-top: -4.5rem;
 }
 caption {
   padding-top: 0.75rem;
