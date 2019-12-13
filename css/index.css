@@ -461,7 +461,6 @@ mark,
 .col-container {
   width: 275px;
   height: 400px;
-  position: relative;
   display: inline-block;
   overflow: hidden;
   margin: 0;
