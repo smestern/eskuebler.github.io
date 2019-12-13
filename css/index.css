@@ -465,6 +465,7 @@ mark,
   overflow: hidden;
   margin: 0;
   margin-left: 14rem;
+  flex: 1;
   
   background-color: gray;
 }
