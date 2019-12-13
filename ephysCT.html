@@ -90,7 +90,7 @@
 	<button id="dlsel" class="btn btn-secondary">Download Selected (zip)</button>
 
 		
-	<a href="https://ptcd.s3.us-east-2.amazonaws.com/NHP.zip" target="_blank" class="btn btn-primary" alight="right">Download Full dataset (NWB + abf)</a>
+	<a href="https://ptcd.s3.us-east-2.amazonaws.com/NHP.zip" target="_blank" class="btn btn-secondary" alight="right">Download Full dataset (NWB + abf)</a>
 	</span>
 	  </p>
 	<br>
@@ -135,6 +135,10 @@ var data = [{
     label: 'Peak',
     range: [-10, 70],
     values: unpack(rows, 'peakLP')
+  }, {
+    label: 'Time Constant',
+    range: [0, 50],
+    values: unpack(rows, 'time_constant')
   }]
 }];
 
@@ -301,12 +305,14 @@ data-page-list="[10, 25, 50, 100, all]"
 		var newArray = data.filter(function (el) {
   			return el.Resistence <= ranges[0][1] &&
 			el.Resistence >= ranges[0][0] &&
-				el.sag <= ranges[1][1] &&
+			el.sag <= ranges[1][1] &&
 			el.sag >= ranges[1][0] &&
-				el.rheobaseLP <= ranges[2][1] &&
+			el.rheobaseLP <= ranges[2][1] &&
 			el.rheobaseLP >= ranges[2][0] && 
-				el.peakLP <= ranges[3][1] &&
-				el.peakLP >= ranges[3][0];
+			el.peakLP <= ranges[3][1] &&
+			el.peakLP >= ranges[3][0] &&
+			el.time_constant <= ranges[4][1] &&
+			el.time_constant >= ranges[4][0];
 				
     
 			});
