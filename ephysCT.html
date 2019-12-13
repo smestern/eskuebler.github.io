@@ -328,20 +328,24 @@ data-page-list="[10, 25, 50, 100, all]"
 		var url = "https://raw.githubusercontent.com/smestern/LPtraces/master/" + row.ID + ".csv"
 		Plotly.d3.csv(url, function(rows){
 					data = []
+					var i = 1
 					rows.forEach(row => {
 						var rowdata = Object.values(row)
+						var sweepname = 'Sweep ' + i
+						console.log(sweepname)
 						var trace = {
                       			type: 'scatter',                    // set the chart type
 								mode: 'lines',                      // connect points with lines
-                      
+                      			name: sweepname,
                       			y: rowdata,
                       line: {                             // set the width of the line.
-                        width: 1
+                        width: 1,
+						shape: 'spline'
                       }
 						
                     };
 						data.push(trace);
-                    
+                        i += 1;
 					});
 					
                    
@@ -356,7 +360,8 @@ data-page-list="[10, 25, 50, 100, all]"
                       },
                       margin: {                           // update the left, bottom, right, top margin
                         l: 40, b: 15, r: 10, t: 20
-                      }
+                      },
+					  hovermode: "closest"
 				
                     };
 
