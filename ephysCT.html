@@ -86,7 +86,8 @@
   <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#tableData" aria-expanded="true" aria-controls="tableData">Table</button>
 	  
 	  	<span id = "dwnld_btn" class="text-right" style="display: inline">
-	<button disabled hidden id="dlsel" class="btn btn-secondary">Download Selected (zip)</button>
+			
+	<button id="dlsel" class="btn btn-secondary">Download Selected (zip)</button>
 
 		
 	<a href="https://ptcd.s3.us-east-2.amazonaws.com/NHP.zip" target="_blank" class="btn btn-primary" alight="right">Download Full dataset (NWB + abf)</a>
@@ -190,7 +191,7 @@ data-search="true"
 data-detail-view="true"
 data-force-export="true"
 data-show-columns="true"
-data-click-to-select="false"
+data-click-to-select="true"
 data-detail-formatter="detailFormatter"
 data-show-export="false"
 data-classes="table table-borderless table-striped"
@@ -200,7 +201,7 @@ data-page-list="[10, 25, 50, 100, all]"
 			 >
 	  <thead>
 	<tr>
-	<th data-field="state" data-checkbox="false" rowspan="2" data-valign="middle"></th>
+	<th data-field="state" data-checkbox="true" rowspan="2" data-valign="middle"></th>
 	<th data-field="ID" data-sortable="true" rowspan="2" data-valign="middle">Cell</th>
 	<th data-field="preview" data-formatter="imageFormatter" rowspan="2" data-valign="middle"></th>
 	<th colspan="7">Electrophysiology</th>
@@ -223,6 +224,10 @@ data-page-list="[10, 25, 50, 100, all]"
 		var $table = $('#table');
 		var $graphDiv = $('#graphDiv')
 		var selections = []
+		var Promise = window.Promise;
+		if (!Promise) {
+    			Promise = JSZip.external.Promise;
+			}
 		
 	function imageFormatter(value, row) {
     		return '<img src="images/previews/' + row.ID +'.png" style="width:50px;height:50px;" onerror=this.src="images/backup.png" />';
@@ -315,13 +320,7 @@ data-page-list="[10, 25, 50, 100, all]"
 		
       return row.ID 
     })
-	/*$.each(ids, function (idu, a) {
-      		var dlurl = "https://ptcd.s3.us-east-2.amazonaws.com/"+ a +".zip"
-			JSZipUtils.getBinaryContent(dlurl, function (err, data) {
-				
-   				zip.file(a + ".zip", data, {binary:true});
-			})
-	});*/
+	
 	return ids;
   }
 	function maketrace(row){
@@ -367,6 +366,26 @@ data-page-list="[10, 25, 50, 100, all]"
 
                     Plotly.newPlot(document.getElementById(row.ID), data, layout, {displaylogo: false});
                 });}
+	function urlToPromise(url) {
+    return new Promise(function(resolve, reject) {
+        JSZipUtils.getBinaryContent(url, function (err, data) {
+            if(err) {
+                reject(err);
+            } else {
+                resolve(data);
+            }
+        });
+    });
+		}
+	function resetMessage () {
+    $("#dlsel")
+    .text("");
+}
+	function showMessage(text) {
+    resetMessage();
+    $("#dlsel")
+    .html(text);
+}
  $(function() {
 	 $table.on('check.bs.table uncheck.bs.table ' +
       'check-all.bs.table uncheck-all.bs.table',
@@ -385,21 +404,32 @@ data-page-list="[10, 25, 50, 100, all]"
 	
 	$.each(ids, function (idu, a) {
       		var dlurl = "https://ptcd.s3.us-east-2.amazonaws.com/"+ a +".zip"
-			//JSZipUtils.getBinaryContent(dlurl, function (err, data) {
-			//	
-   			//	zip.file(a + ".zip", data, {binary:true});
-			//})
+			var filename = a + "zip";
+			zip.file(filename, urlToPromise(dlurl), {binary:true});
+    
 	});
-	//wait for files to dl
-    //zip.generateAsync({type:"blob"}).then(function (blob) { 
-    //    	saveAs(blob, "datasel.zip");
-	//		$("#dlsel").html('Download Selected (zip)');
-    //});
+	zip.generateAsync({type:"blob"}, function updateCallback(metadata) {
+        var msg = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Generating ZIP... Progression : ' + metadata.percent.toFixed(2) + " %";
+        if(metadata.currentFile) {
+            msg += ", current file = " + metadata.currentFile;
+        }
+        showMessage(msg);
+        
+    })
+    .then(function callback(blob) {
+
+        // see FileSaver.js
+        saveAs(blob, "dataset.zip");
+
+        showMessage("Download Selected (Zip)");
+    }, function (e) {
+        
+    });
+
+    return false;
 	
 }) 
-	$graphDiv.on('plotly_restyle', function(data){
-		alert('d.constraintrange');
-        });	 
+		 
 	
 	
 	
