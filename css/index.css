@@ -453,6 +453,17 @@ mark,
   height: auto;
 }
 
+.col-container {
+  width: 275px;
+  height: 400px;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin: 0;
+  background-color: gray;
+}
+
+
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
@@ -525,13 +536,6 @@ pre code {
   margin-left: auto;
 }
 
-.center {
-	display:block;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: -4rem;
-	display: table;
-}
 
 @media (min-width: 576px) {
   .container {
@@ -606,20 +610,14 @@ pre code {
   padding-left: 15px;
 }
 
-.col-container {
-    display: table; /* Make the container element behave like a table */
-    width: 100%; /* Set full-width to expand the whole page */
-}
-
-.col-cell {
-    display: table-cell; /* Make elements inside the container behave like table cells */
-}
-
 .col {
   -ms-flex-preferred-size: 0;
   flex-basis: 0;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  position: relative;
+  display: inline-block;
+  margin: 0;
   max-width: 100%;
 }
 
