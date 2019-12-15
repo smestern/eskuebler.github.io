@@ -150,8 +150,8 @@
   overflow: hidden;
 }
 .bootstrap-table .fixed-table-container .fixed-table-body {
-  overflow-x: auto;
-  overflow-y: auto;
+  overflow-x: 90%;
+  overflow-y: 90%;
   height: 100%;
 }
 .bootstrap-table .fixed-table-container .fixed-table-body .fixed-table-loading {
