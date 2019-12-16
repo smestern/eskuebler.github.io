@@ -21,7 +21,8 @@ function getUrlParam(parameter, defaultvalue){
 function switchSwcFile(e) {
 	s.unloadNeuron('foo', null, swc);	
 	var e = document
-    .getElementById("loadCell");
+    /*.getElementById("loadCell");*/
+	.getElementByClassName("dropdown-menu");
  const f = e.options[e.selectedIndex].value;
   if (f) {
 	const r = jQuery.get(f).done(function(data) {
@@ -57,13 +58,15 @@ function switchSwcFile(e) {
 
 window.onload = () => {
 document
-    .getElementById("loadCell")
+    /*.getElementById("loadCell")*/
+	.getElementByClassName("dropdown-menu")
     .addEventListener("change", switchSwcFile, false);	
   var swc = sharkViewer.swcParser(document.getElementById("swc").text);
 	
   var cellvars = getUrlParam('cell', 'M3.JS.B5.C11.2.swc')
   cellvars = 'swc/' + cellvars
-  document.getElementById("loadCell").value = cellvars;
+  /*document.getElementById("loadCell").value = cellvars;*/
+  document.getElementByClassName("dropdown-menu").value = cellvars;
   mdata = JSON.parse(document.getElementById("metadata_swc").text);
   s = new sharkViewer.default({
     animated: false,
