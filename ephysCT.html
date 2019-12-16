@@ -286,7 +286,7 @@ data-page-list="[10, 25, 50, 100, all]"
 	html.push('<div id="' + row.ID + '"></div>');
 	html.push('<div class="grid-container">');
     	$.each(row, function (key, value) {
-      		html.push('<div class="grid-item"><b>' + key + '</b>: ' + value + '</div>');
+      		html.push('<div class="grid-item" data-toggle="tooltip" data-placement="top" title="' + key + '""><b>' + key + '</b>: ' + value + '</div>');
     	})
 	html.push('</div>');
 	html.push('</div>');
