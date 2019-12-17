@@ -345,7 +345,8 @@ data-page-list="[10, 25, 50, 100, all]"
                       			y: rowdata,
                       line: {                             // set the width of the line.
                         width: 1,
-						shape: 'spline'
+						shape: 'spline',
+						smoothing: 0.5
                       }
 						
                     };
@@ -356,15 +357,16 @@ data-page-list="[10, 25, 50, 100, all]"
                    
 
                     var layout = {
-					  height: 340,
-					  width: 600,
-                      yaxis: {title: "mV"},       // set the y axis title
+			
+                      yaxis: {title: "mV",
+							 },       // set the y axis title
                       xaxis: {
-                        showgrid: false,                  // remove the x-axis grid lines
+          
+						zeroline: false  // remove the x-axis grid lines
                            
                       },
                       margin: {                           // update the left, bottom, right, top margin
-                        l: 40, b: 15, r: 10, t: 20
+                        l: 10, b: 20, r: 10, t: 20
                       },
 					  hovermode: "closest"
 				
