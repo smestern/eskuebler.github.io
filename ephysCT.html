@@ -286,7 +286,8 @@ data-page-list="[10, 25, 50, 100, all]"
 	html.push('<div id="' + row.ID + '"></div>');
 	html.push('<div class="grid-container">');
     	$.each(row, function (key, value) {
-      		html.push('<div class="grid-item"><b>' + key + '</b>: ' + value + '</div>');
+			if (typeof value == "number") {
+      		html.push('<div class="grid-item" data-toggle="tooltip" data-placement="top" title="' + key + '""><b>' + key + '</b>: ' + value + '</div>');}
     	})
 	html.push('</div>');
 	html.push('</div>');
@@ -312,8 +313,7 @@ data-page-list="[10, 25, 50, 100, all]"
 			el.peakLP <= ranges[3][1] &&
 			el.peakLP >= ranges[3][0] &&
 			el.time_constant <= ranges[4][1] &&
-			el.time_constant >= ranges[4][0];
-				
+			el.time_constant >= ranges[4][0];	
     
 			});
 		let result = newArray.map(a => a.ID);
