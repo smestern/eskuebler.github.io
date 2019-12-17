@@ -132,6 +132,10 @@ var data = [{
     range: [0, 500],
     values: unpack(rows, 'rheobaseLP')
   }, {
+    label: 'Time Constant',
+    range: [0, 50],
+    values: unpack(rows, 'time_constant')
+  }, {
     label: 'Peak',
     range: [-10, 70],
     values: unpack(rows, 'peakLP')
@@ -143,7 +147,7 @@ var data = [{
 }];
 
 var layout = {
-	width: 1500
+	width: 1300
 };
 
 Plotly.newPlot('graphDiv', data, layout, {displaylogo: false}, {responsive: true});
@@ -241,7 +245,7 @@ data-page-list="[10, 25, 50, 100, all]"
 	}
 	function morphFormatter(value, row) {
 		if(value){
-    return '<a href="http://primatedatabase.com'+ value +'" class="btn btn-primary">View Morphology</a> ';}
+    return '<a href="http://primatedatabase.com'+ value +'" class="btn btn-primary">View </a> ';}
 		else{ return;}
 	}
     function detailFormatter(index, row) {
@@ -356,7 +360,7 @@ data-page-list="[10, 25, 50, 100, all]"
                    
 
                     var layout = {
-			
+					  
                       yaxis: {title: "mV",
 							 },       // set the y axis title
                       xaxis: {
