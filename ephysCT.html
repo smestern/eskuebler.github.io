@@ -213,7 +213,7 @@ data-page-list="[10, 25, 50, 100, all]"
 	<th data-field="ID" data-sortable="true" rowspan="2" data-valign="middle">Cell ID</th>
 	<th data-field="preview" data-formatter="imageFormatter" rowspan="2" data-valign="middle"></th>
 	<th colspan="7">Electrophysiology</th>
-	<th data-field="link" data-formatter="linkFormatter" rowspan="2" data-halign="right">Link</th>
+	<th data-field="link" data-formatter="linkFormatter" rowspan="2" data-halign="center">Link</th>
 	<th data-field="Morphology" data-sortable="true" data-formatter="morphFormatter" rowspan="2" data-valign="right">Morphology</th>
 	</tr>
     <tr>
@@ -245,7 +245,7 @@ data-page-list="[10, 25, 50, 100, all]"
 	}
 	function morphFormatter(value, row) {
 		if(value){
-    return '<a href="http://primatedatabase.com'+ value +'" class="btn btn-primary">View </a> ';}
+    return '<a href="http://primatedatabase.com'+ value +'" class="btn btn-primary">View Cell </a>';}
 		else{ return;}
 	}
     function detailFormatter(index, row) {
