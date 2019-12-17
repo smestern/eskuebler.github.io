@@ -206,7 +206,7 @@ data-page-list="[10, 25, 50, 100, all]"
 	  <thead>
 	<tr>
 	<th data-field="state" data-checkbox="true" rowspan="2" data-valign="middle"></th>
-	<th data-field="ID" data-sortable="true" rowspan="2" data-valign="middle">Cell</th>
+	<th data-field="ID" data-sortable="true" rowspan="2" data-valign="middle">Cell ID</th>
 	<th data-field="preview" data-formatter="imageFormatter" rowspan="2" data-valign="middle"></th>
 	<th colspan="7">Electrophysiology</th>
 	<th data-field="link" data-formatter="linkFormatter" rowspan="2" data-halign="right">Link</th>
@@ -298,8 +298,7 @@ data-page-list="[10, 25, 50, 100, all]"
 
 
   }
-	function filterByPlot(keys, ranges){
-		
+	function filterByPlot(keys, ranges){		
 		jQuery.get("data/data.json").done(function(data){
 		var ids = []
 		var fildata = data
