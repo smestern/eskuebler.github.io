@@ -12,10 +12,10 @@
     <link rel="stylesheet" href="css/bootstrap-table.css">
 	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://unpkg.com/tableexport.jquery.plugin/tableExport.min.js"></script>
 	<script src="js/jszip.min.js"></script>
 	<script src="js/jszip-utils.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.min.js"></script>
     <script src="https://unpkg.com/bootstrap-table@1.15.5/dist/bootstrap-table.min.js"></script>
   	<script src="https://unpkg.com/bootstrap-table@1.15.5/dist/extensions/export/bootstrap-table-export.min.js"></script>
@@ -156,7 +156,7 @@ graphDiv.on('plotly_restyle', function(data){
 		var keys = []
 		var ranges = []
 		
-		graphDiv.data[0].dimensions.forEach(d => {
+		graphDiv.data[0].dimensions.forEach(function(d) {
      			if (d.constraintrange === undefined){
 					keys.push(d.label);
 					ranges.push([-9999,9999]);
@@ -227,7 +227,7 @@ data-page-list="[10, 25, 50, 100, all]"
     </tr>
 	  </thead>
 </table>
-		<script> 
+		<script type="text/javascript"> 
 		var zip = new JSZip();
 		var $table = $('#table');
 		var $graphDiv = $('#graphDiv')
@@ -297,7 +297,7 @@ data-page-list="[10, 25, 50, 100, all]"
 			el.time_constant >= ranges[4][0];	
     
 			});
-		let result = newArray.map(a => a.ID);
+		let result = newArray.map(function(a) { return a.ID; });
 		
 		$table.bootstrapTable('filterBy',{'ID': result})})
 	}
@@ -315,10 +315,11 @@ data-page-list="[10, 25, 50, 100, all]"
 		Plotly.d3.csv(url, function(rows){
 					data = []
 					var i = 1
-					rows.forEach(row => {
-						var rowdata = Object.values(row)
+					rows.forEach(function(row) {
+						var rowdata =  Object.keys(row).map(function(e) {
+  																return row[e]
+															})
 						var sweepname = 'Sweep ' + i
-						console.log(sweepname)
 						var trace = {
                       			type: 'scatter',                    // set the chart type
 								mode: 'lines',                      // connect points with lines
