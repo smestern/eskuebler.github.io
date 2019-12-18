@@ -103,8 +103,8 @@
 	
 	<script> 
 		
-		Plotly.d3.csv('data/WEB_DATA.csv', function(err, rows){
-      
+Plotly.d3.csv('data/WEB_DATA.csv', function(err, rows){
+ 			
 function unpack(rows, key) {
   return rows.map(function(row) { 
     return row[key]; 
@@ -248,6 +248,7 @@ data-page-list="[10, 25, 50, 100, all]"
     return '<a href="http://primatedatabase.com'+ value +'" class="btn btn-primary">View </a> ';}
 		else{ return;}
 	}
+
     function detailFormatter(index, row) {
     var html = []
 	/*html.push('<div class="card-columns">')
@@ -299,9 +300,8 @@ data-page-list="[10, 25, 50, 100, all]"
     return html.join('');
 	html.push('</div>');
 	html.push('</center>')
-
-
   }
+			
 	function filterByPlot(keys, ranges){		
 		jQuery.get("data/data.json").done(function(data){
 		var ids = []
