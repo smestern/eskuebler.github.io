@@ -83,6 +83,11 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.5rem;
 }
 
+#whiteh1Title {
+	color:white;
+	opacity: 75%
+}
+
 p {
   margin-top: 0;
   margin-bottom: 1rem;
@@ -6292,6 +6297,10 @@ a.close.disabled {
   color: #212529;
 }
 
+ #home {
+    height: 50vh;
+}
+
 .carousel {
   position: relative;
 }
@@ -6324,6 +6333,101 @@ a.close.disabled {
   transition: -webkit-transform 0.6s ease-in-out;
   transition: transform 0.6s ease-in-out;
   transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
+}
+
+/* hardware accelatator class */	
+	.trans3d
+	{
+		-webkit-transform-style: preserve-3d;
+		-webkit-transform: translate3d(0, 0, 0);
+		-moz-transform-style: preserve-3d;
+		-moz-transform: translate3d(0, 0, 0);
+		-ms-transform-style:preserve-3d;
+		-ms-transform: translate3d(0, 0, 0);
+		transform-style:preserve-3d;
+		transform: translate3d(0, 0, 0);
+
+		/*-webkit-backface-visibility: hidden;
+		-moz-backface-visibility: hidden;
+		-ms-backface-visibility:hidden;
+		backface-visibility:hidden;*/
+	}
+	
+	#contentContainer
+	{
+		position:absolute;
+		margin-left:-500px;
+		margin-top:-500px;
+		left:50%;
+		top:50%;
+		width:1000px;
+		height:1000px;
+	}
+	
+	#carouselContainer
+	{
+		position:absolute;
+		margin-left:-500px;
+		margin-top:-500px;
+		left:50%;
+		top:50%;
+		width:1000px;
+		height:1000px;
+	}
+	
+	.carouselItem
+	{
+		width:500px;
+		height:200px;
+		position:absolute;
+		left:50%;
+		top:50%;
+		margin-left:-160px;
+		margin-top: -150px;
+		visibility:hidden;
+	}
+	
+	.carouselItemInner
+	{
+		width:320px;
+		height:130px;
+		position:absolute;
+		/*background-color:rgba(255, 255, 255, .75);
+		border:10px solid rgba(255, 255, 255, .5);
+		color:aqua;*/
+		font-size:72px;
+		left:50%;
+		top:50%;
+		margin-left:-160px;
+		margin-top:-90px;
+		text-align:center;
+		padding-top:50px;
+		
+	}
+
+ /* --  background image section  -- */
+ .bg-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+	margin-bottom: 45vh;
+	 margin-top: 0vh;
+    z-index: -1;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+	background-color: black;
+}
+ .bg-img .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .8;
+    background: #000000;
 }
 
 @media (prefers-reduced-motion: reduce) {
