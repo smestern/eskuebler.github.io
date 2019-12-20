@@ -69,7 +69,7 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#tableData" aria-expanded="true" aria-controls="tableData">Table</button>
 		<span id = "dwnld_btn" class="text-right" style="display: inline">
 			<button id="dlsel" class="btn btn-primary">Download Selected (zip)</button>
-			<a href="https://ptcd.s3.us-east-2.amazonaws.com/NHP.zip" target="_blank" class="btn btn-primary" alight="right">Download Full dataset (NWB + abf)</a>
+			<a href="https://primatedatabase.com/download?cell=all" target="_blank" class="btn btn-primary" alight="right">Download Full dataset (NWB + abf)</a>
 		</span>
 	</p>
 	  
@@ -370,8 +370,8 @@ data-page-list="[10, 25, 50, 100, all]"
 	
 	var ids
 	$("#dlsel").html('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Generating ZIP...')
-	
-	
+	myWindow = window.open("http://primatedatabase.com/download", "download", "width=200, height=100");
+	myWindow.close(); 
 	ids = getIdSelections();
 	
 	$.each(ids, function (idu, a) {

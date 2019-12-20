@@ -23,7 +23,7 @@
         vars[key] = value;
     });
     return vars;
-}
+};
 
 	function getUrlParam(parameter, defaultvalue){
     var urlparameter = defaultvalue;
@@ -31,12 +31,25 @@
         urlparameter = getUrlVars()[parameter];
         }
     return urlparameter;
-}
-window.onload = () => {
+};
+	window.onload = () => {
 	
-  var cellvars = getUrlParam('cell', 'M10_SA_A1_C16.zip')
-  dlurl = 'https://ptcd.s3.us-east-2.amazonaws.com/' + cellvars
-  window.location.href = dlurl;
+  var cellvars = getUrlParam('cell', '');
+  
+  if (cellvars == 'all'){
+	  dlurl = 'https://ptcd.s3.us-east-2.amazonaws.com/NHP.zip';
+  	window.location.href = dlurl;
+  }
+ else if (cellvars == ''){
+		
+	} else{
+		
+		dlurl = 'https://ptcd.s3.us-east-2.amazonaws.com/' + cellvars;
+  		window.location.href = dlurl;
+		
+	}
+  
+  
   
 	
 };	
