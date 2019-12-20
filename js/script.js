@@ -1,9 +1,9 @@
 // set and cache variables
 		var w, container, carousel, item, radius, itemLength, rY, ticker, fps; 
-		var mouseX = 0;
-		var mouseY = 0;
+		var mouseX = -0.2;
+		var mouseY = 2;
 		var mouseZ = 0;
-		var addX = 0;
+		var addX = 0.00;
 		
 		
 		// fps counter created by: https://gist.github.com/sharkbrainguy/1156092,
