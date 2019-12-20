@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>download</title>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154856577-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-154856577-1');
+</script>
+
+</head>
+
+<body>
+<script>
+	function getUrlVars() {
+    var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+        vars[key] = value;
+    });
+    return vars;
+};
+
+	function getUrlParam(parameter, defaultvalue){
+    var urlparameter = defaultvalue;
+    if(window.location.href.indexOf(parameter) > -1){
+        urlparameter = getUrlVars()[parameter];
+        }
+    return urlparameter;
+};
+	window.onload = () => {
+	
+  var cellvars = getUrlParam('cell', '');
+  
+  if (cellvars == 'all'){
+	  dlurl = 'https://ptcd.s3.us-east-2.amazonaws.com/NHP.zip';
+  	window.location.href = dlurl;
+  }
+ else if (cellvars == ''){
+		
+	} else{
+		
+		dlurl = 'https://ptcd.s3.us-east-2.amazonaws.com/' + cellvars;
+  		window.location.href = dlurl;
+		
+	}
+  
+  
+  
+	
+};	
+	
+	
+	
+	
+	
+	
+	</script>
+</body>
+</html>
