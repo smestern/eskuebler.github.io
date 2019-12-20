@@ -223,7 +223,7 @@ data-page-list="[10, 25, 50, 100, all]"
     		return '<img src="images/previews/' + row.ID +'.png" style="width:50px;height:50px;" onerror=this.src="images/backup.png" />';
 		}
 	function linkFormatter(value, row) {
-    return '<div class="dropdown"><button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Download</button><div class="dropdown-menu"> <a class="dropdown-item" href="https://ptcd.s3.us-east-2.amazonaws.com/'+ row.ID +'.zip" target="_blank" class="btn btn-primary">Download (zip/abf)</a> <a class= "dropdown-item" href="https://ptcd.s3.us-east-2.amazonaws.com/'+ row.ID +'.nwb" target="_blank">Download (NWB)</a></div></div>';
+    return '<div class="dropdown"><button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Download</button><div class="dropdown-menu"> <a class="dropdown-item" href="http://primatedatabase.com/download?cell='+ row.ID +'.zip" target="_blank" class="btn btn-primary">Download (zip/abf)</a> <a class= "dropdown-item" href="http://primatedatabase.com/download?cell='+ row.ID +'.nwb" target="_blank">Download (NWB)</a></div></div>';
 	}
 	function morphFormatter(value, row) {
 		if(value){
