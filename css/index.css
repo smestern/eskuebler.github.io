@@ -6389,8 +6389,8 @@ a.close.disabled {
 	
 	.carouselItemInner
 	{
-		width:320px;
-		height:130px;
+		width:50px;
+		height:50px;
 		position:absolute;
 		/*background-color:rgba(255, 255, 255, .75);
 		border:10px solid rgba(255, 255, 255, .5);

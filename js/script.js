@@ -88,15 +88,15 @@
 		
 		function onMouseMove(event)
 		{
-			mouseX = -(-(window.innerWidth * .5) + event.pageX) * .0025;
-			mouseY = -(-(window.innerHeight * .5) + event.pageY ) * .01;
-			mouseZ = -(radius) - (Math.abs(-(window.innerHeight * .5) + event.pageY ) - 200);
+			mouseX = -(-(window.innerWidth * .5) + event.pageX) * .001;
+			/*(mouseY = -(-(window.innerHeight * .5) + event.pageY ) * .01;*/
+			mouseZ = -(radius) - (Math.abs(-(window.innerHeight * .5) + event.pageY ) - 100);
 		}
 		
 		// loops and sets the carousel 3d properties
 		function looper()
 		{
-			addX += mouseX
+			addX += (mouseX*0.5)
 			TweenMax.to( carousel, 1, { rotationY:addX, rotationX:mouseY, ease:Quint.easeOut } )
 			TweenMax.set( carousel, {z:mouseZ } )
 			fps.text( 'Framerate: ' + counter.tick() + '/60 FPS' )	
