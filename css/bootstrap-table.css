@@ -14,7 +14,7 @@
 .bootstrap-table .fixed-table-toolbar .columns {
   position: relative;
   margin-top: 0px;
-  margin-bottom: -35px;
+  margin-bottom: -20px;
 }
 .bootstrap-table .fixed-table-toolbar .columns .btn-group > .btn-group {
   display: inline-block;
