@@ -44,7 +44,7 @@
 			itemLength = $( '.carouselItem' ).length;
 			fps = $('#fps');
 			rY = 360 / itemLength;
-			radius = Math.round( (250) / Math.tan( Math.PI / itemLength ) );
+			radius = (Math.round( (250) / Math.tan( Math.PI / itemLength ) ))*0.4;
 			
 			// set container 3d props
 			TweenMax.set(container, {perspective:600})
@@ -67,6 +67,8 @@
 			window.addEventListener( "mousemove", onMouseMove, false );
 			ticker = setInterval( looper, 1000/60 );			
 		}
+
+		/*window.addEventListener("click", onclick,true);*/
 		
 		function animateIn( $item, $block )
 		{
@@ -90,7 +92,7 @@
 		{
 			mouseX = -(-(window.innerWidth * .5) + event.pageX) * .001;
 			/*(mouseY = -(-(window.innerHeight * .5) + event.pageY ) * .01;*/
-			mouseZ = -(radius) - (Math.abs(-(window.innerHeight * .5) + event.pageY ) - 100);
+			mouseZ = (-(radius) - (Math.abs(-(window.innerHeight * .5) + event.pageY) - 50))*1.1;
 		}
 		
 		// loops and sets the carousel 3d properties
@@ -98,7 +100,7 @@
 		{
 			addX += (mouseX*0.5)
 			TweenMax.to( carousel, 1, { rotationY:addX, rotationX:mouseY, ease:Quint.easeOut } )
-			TweenMax.set( carousel, {z:mouseZ } )
+			TweenMax.set( carousel, {z:0.5 } )
 			fps.text( 'Framerate: ' + counter.tick() + '/60 FPS' )	
 		}
 		
