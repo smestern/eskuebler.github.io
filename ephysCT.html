@@ -64,12 +64,23 @@
 	  
 	  
 <!-- AXN BUTTONS -->  
+	  <div class="toast" data-autohide="false" style="position: absolute; top: 20%; right: 0;">
+ 				 <div class="toast-header bg-danger">
+    <strong class="mr-auto text-white">Access Restricted</strong>
+    <small class="text-muted"></small>
+    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
+  </div>
+  				<div class="toast-body bg-light">
+    Download is currently restricted. To download the dataset please contact us.
+  </div>
+		</div> 
 	<p>
+		
 			<button id = "filter_btn" class="btn btn-primary" data-toggle="collapse" href="#ScatterFilter" role="button" aria-expanded="false" aria-controls="ScatterFilter" >Filter</button>
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#tableData" aria-expanded="true" aria-controls="tableData">Table</button>
 		<span id = "dwnld_btn" class="text-right" style="display: inline">
 			<button id="dlsel" class="btn btn-primary">Download Selected (zip)</button>
-			<a href="https://primatedatabase.com/download?cell=all" target="_blank" class="btn btn-primary" alight="right">Download Full dataset (NWB + abf)</a>
+			<a id="dlall" href="#" class="btn btn-primary" alight="right">Download Full dataset (NWB + abf)</a>
 		</span>
 	</p>
 	  
@@ -223,7 +234,8 @@ data-page-list="[10, 25, 50, 100, all]"
     		return '<img src="images/previews/' + row.ID +'.png" style="width:50px;height:50px;" onerror=this.src="images/backup.png" />';
 		}
 	function linkFormatter(value, row) {
-    return '<div class="dropdown"><button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Download</button><div class="dropdown-menu"> <a class="dropdown-item" href="http://primatedatabase.com/download?cell='+ row.ID +'.zip" target="_blank" class="btn btn-primary">Download (zip/abf)</a> <a class= "dropdown-item" href="http://primatedatabase.com/download?cell='+ row.ID +'.nwb" target="_blank">Download (NWB)</a></div></div>';
+		return '<div class="dropdown"><button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Download</button><div class="dropdown-menu"> <button id="dlzip" class="dropdown-item" href="#" class="btn btn-primary">Download (zip/abf)</button> <button id="dlnwb" class="dropdown-item" href="#">Download (NWB)</button></div></div>';
+   /* return '<div class="dropdown"><button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Download</button><div class="dropdown-menu"> <a class="dropdown-item" href="http://primatedatabase.com/download?cell='+ row.ID +'.zip" target="_blank" class="btn btn-primary">Download (zip/abf)</a> <a class= "dropdown-item" href="http://primatedatabase.com/download?cell='+ row.ID +'.nwb" target="_blank">Download (NWB)</a></div></div>';*/
 	}
 	function morphFormatter(value, row) {
 		if(value){
@@ -359,14 +371,14 @@ data-page-list="[10, 25, 50, 100, all]"
     .html(text);
 }
  $(function() {
-	 $table.on('check.bs.table uncheck.bs.table ' +
+	$table.on('check.bs.table uncheck.bs.table ' +
       'check-all.bs.table uncheck-all.bs.table',
     		function () {
 		 		
       			selections = getIdSelections()
       			
     })
-    $("#dlsel").on("click", function () {
+    /*$("#dlsel").on("click", function () {
 	
 	var ids
 	$("#dlsel").html('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Generating ZIP...')
@@ -400,10 +412,21 @@ data-page-list="[10, 25, 50, 100, all]"
 
     return false;
 	
-}) 
+}) */
 		 
-	
-	
+	 $("#dlsel").click(function(){
+		 	
+    		$('.toast').toast('show');
+  		});
+	$("#dlall").click(function(){
+		
+    		$('.toast').toast('show');
+  		});
+	 $('.dropdown-toggle').click(function(){
+		 
+    		$('.toast').toast('show');
+  		});
+	 
 	
 	})
 	 
