@@ -1,7 +1,7 @@
 // set and cache variables
 		var w, container, carousel, item, radius, itemLength, rY, ticker, fps; 
 		var mouseX = -0.2;
-		var mouseY = 2;
+		var mouseY = 0;
 		var mouseZ = 0;
 		var addX = 0.00;
 		
@@ -44,7 +44,7 @@
 			itemLength = $( '.carouselItem' ).length;
 			fps = $('#fps');
 			rY = 360 / itemLength;
-			radius = (Math.round( (250) / Math.tan( Math.PI / itemLength ) ))*0.5;
+			radius = (Math.round( (250) / Math.tan( Math.PI / itemLength ) ))*0.2;
 			
 			// set container 3d props
 			TweenMax.set(container, {perspective:600})
