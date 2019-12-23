@@ -6369,14 +6369,14 @@ a.close.disabled {
 		left:50%;
 		top:30%;
 		width:10vh;
-		height:15vh;
+		height:14vh;
 	}
 	
 	#carouselContainer
 	{
 		position:absolute;
 		margin-left:-0vh;
-		margin-top:-5vh;
+		margin-top:-7vh;
 		left:50%;
 		top:70%;
 		width:10vh;
