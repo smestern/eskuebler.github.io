@@ -6383,7 +6383,7 @@ a.close.disabled {
 		height:15vh;
 	}
 	
-	.carouselItem
+	/*.carouselItem
 	{
 		width:500px;
 		height:200px;
@@ -6392,6 +6392,18 @@ a.close.disabled {
 		top:50%;
 		margin-left:-160px;
 		margin-top: -150px;
+		visibility:hidden;
+	}*/
+
+	.carouselItem
+	{
+		width:320px;
+		height:130px;
+		position:absolute;
+		left:50%;
+		top:50%;
+		margin-left:-160px;
+		margin-top:-90px;
 		visibility:hidden;
 	}
 	
@@ -6408,8 +6420,7 @@ a.close.disabled {
 		margin-left:-160px;
 		margin-top:-90px;
 		text-align:center;
-		padding-top:30px;
-		
+		padding-top:30px;	
 	}
 
  /* --  background image section  -- */

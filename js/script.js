@@ -30,8 +30,7 @@
 			span: 20
 		};
 		var counter = Object.create(fps_counter);
-		
-		
+
 		
 		$(document).ready( init )
 		
@@ -58,8 +57,7 @@
 				var $block = $item.find('.carouselItemInner');
 				
         //thanks @chrisgannon!        
-        TweenMax.set($item, {rotationY:rY * i, z:radius, transformOrigin:"50% 50% " + -radius + "px"});
-				
+            TweenMax.set($item, {rotationY:rY * i, z:radius, transformOrigin:"50% 50% " + -radius + "px"});		
 				animateIn( $item, $block )						
 			}
 			
@@ -101,7 +99,7 @@
 			addX += (mouseX*0.5)
 			TweenMax.to( carousel, 1, { rotationY:addX, rotationX:mouseY, ease:Quint.easeOut } )
 			TweenMax.set( carousel, {z:0.5 } )
-			fps.text( 'Framerate: ' + counter.tick() + '/60 FPS' )	
+			/*fps.text( 'Framerate: ' + counter.tick() + '/60 FPS' )*/	
 		}
 		
 		function getRandomInt( $n )
