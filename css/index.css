@@ -6306,7 +6306,7 @@ a.close.disabled {
 }
 
  #home {
-    height: 50vh;
+    height: 40vh;
 }
 
 .carousel {
@@ -6430,7 +6430,7 @@ a.close.disabled {
     top: 0;
     right: 0;
     bottom: 0;
-	margin-bottom: 50vh;
+	margin-bottom: 55vh;
 	 margin-top: 0vh;
     z-index: -1;
     background-position: center;

@@ -62,7 +62,7 @@
 			}
 			
 			// set mouse x and y props and looper ticker
-			window.addEventListener( "mousemove", onMouseMove, false );
+			/*window.addEventListener( "mousemove", onMouseMove, false );*/
 			ticker = setInterval( looper, 1000/60 );			
 		}
 
