@@ -73,24 +73,26 @@
 	  
 	  
 <!-- AXN BUTTONS -->  
-	  <div class="toast" data-autohide="false" style="position: absolute; top: 20%; right: 0;">
- 				 <div class="toast-header bg-danger">
-    <strong class="mr-auto text-white">Access Restricted</strong>
-    <small class="text-muted"></small>
-    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
-  </div>
-  				<div class="toast-body bg-light">
-    Download is currently restricted. To download the dataset please contact us.
-  </div>
-		</div> 
+	 <div style="position: sticky; top: 0%; right: 0%; z-index: 9999;"> <div class="toast" data-autohide="true" data-delay="10000" style="position: absolute; top: 0%; right: 0%; z-index: 9999;">
+		  
+ 				 	<div class="toast-header bg-danger">
+   			 				<strong class="mr-auto text-white">Access Restricted</strong>
+    						<small class="text-muted"></small>
+    						<button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
+  					</div>
+				  				<div class="toast-body bg-light"> Download is currently restricted. To download the dataset please contact us.</div>
+		</div> </div>
 	<p>
-		
-			<button id = "filter_btn" class="btn btn-primary" data-toggle="collapse" href="#ScatterFilter" role="button" aria-expanded="false" aria-controls="ScatterFilter" >Filter</button>
+		<span id = "Filter" class="text-left" style="display: relative">
+		<button id = "filter_btn" class="btn btn-primary" data-toggle="collapse" href="#ScatterFilter" role="button" aria-expanded="false" aria-controls="ScatterFilter" >Filter</button>
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#tableData" aria-expanded="true" aria-controls="tableData">Table</button>
-		<span id = "dwnld_btn" class="text-right" style="display: inline">
+		</span>
+		<span id = "dwnld_btn" class="text-right " style="display: relative">
+			
 			<button id="dlsel" class="btn btn-primary">Download Selected (zip)</button>
 			<a id="dlall" href="#" class="btn btn-primary" alight="right">Download Full dataset (NWB + abf)</a>
 		</span>
+	  
 	</p>
 	  
 	<br>
@@ -219,13 +221,13 @@ data-page-list="[10, 25, 50, 100, all]"
 	<th data-field="Morphology" data-sortable="true" data-formatter="morphFormatter" rowspan="2" data-valign="right">Morphology</th>
 	</tr>
     <tr>
-      <th data-field="Resistence" data-sortable="true">Resistence</th>
-      <th data-field="sag" data-sortable="true">Sag</th>
-	  <th data-field="rheobaseLP" data-sortable="true">Rheobase</th>
-	  <th data-field="peakLP" data-sortable="true">Peak</th>
-	  <th data-field="time_constant" data-sortable="true">Time Constant</th>
-      <th data-field="delay" data-sortable="true">Delay</th>
-	  <th data-field="halfWidthTP" data-sortable="true">AP Width</th>
+      <th data-field="Resistence" data-formatter="nameFormatter" data-sortable="true">Resistence</th>
+      <th data-field="sag" data-formatter="nameFormatter" data-sortable="true">Sag</th>
+	  <th data-field="rheobaseLP" data-formatter="nameFormatter" data-sortable="true">Rheobase</th>
+	  <th data-field="peakLP" data-formatter="nameFormatter" data-sortable="true">Peak</th>
+	  <th data-field="time_constant" data-formatter="nameFormatter" data-sortable="true">Time Constant</th>
+      <th data-field="delay" data-formatter="nameFormatter" data-sortable="true">Delay</th>
+	  <th data-field="halfWidthTP" data-formatter="nameFormatter" data-sortable="true">AP Width</th>
     </tr>
 	  </thead>
 </table>
@@ -239,8 +241,13 @@ data-page-list="[10, 25, 50, 100, all]"
     			Promise = JSZip.external.Promise;
 			}
 			function nameFormatter(value, row, field, index) {
-
-    			return '<span class="badge badge-info">'+ index + '</span>' + '<p>' + value + '</p>'
+				
+				if (typeof value == 'string' && value == ''){
+					return '';
+				} else {
+					
+    				return '<span class="badge badge-secondary">'+ index + '</span>' + '<p>' + value + '</p>'
+				};
   	}
 		
 	function imageFormatter(value, row) {
