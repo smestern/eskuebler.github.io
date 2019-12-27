@@ -1633,6 +1633,11 @@ pre code {
   
   background-color: rgba(0, 0, 0, 0.0000);
 }
+.table-striped tbody tr.detail-view:hover {
+  transform-style: preserve-3d;
+transform: scale(1);
+  background-color: rgba(0, 0, 0, 0.0000);
+}
 
 .table-hover tbody tr:hover {
   color: #212529;
