@@ -56,7 +56,7 @@
         </form>
       </div>
     </nav>
-	  <section id="home">
+	  <section>
 	<center><h1>Primate Cell Type Database</h1></center>
 
 	  </section>
@@ -66,15 +66,15 @@
 		<div class="row">
         <div class="col-12">
               <form>
-				<div class="tipue_search_group">
-<input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><button type="submit" class="tipue_search_button"><div class="tipue_search_icon">&#9906;</div></button>
+				<div class="tipue_search_group" style="display: flex; justify-content: center;">
+<input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" style="width: 80%;" required><button type="submit" class="tipue_search_button" ><div class="tipue_search_icon">&#9906;</div></button>
 </div>
 			</form>
 
 			<div id="tipue_search_content"></div>
 			<script>
 
-     $('#tipue_search_input').tipuesearch();
+     $('#tipue_search_input').tipuesearch({"wholeWords":false});
 
 </script>
               <!--<p><a class="btn btn-primary btn-lg" href="#" role="button"}>Learn more through our Technical White Papers »</a></p>-->
