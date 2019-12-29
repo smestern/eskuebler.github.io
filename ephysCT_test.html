@@ -1,0 +1,546 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Primate Cell Type Database</title>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154856577-1"></script>
+	<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-154856577-1');
+</script>
+    <!-- Bootstrap -->
+    <link href="css/index.css" rel="stylesheet">
+	
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap-table.css">
+	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/tableexport.jquery.plugin/tableExport.min.js"></script>
+	<script src="js/jszip.min.js"></script>
+	<script src="js/jszip-utils.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.min.js"></script>
+    <script src="https://unpkg.com/bootstrap-table@1.15.5/dist/bootstrap-table.min.js"></script>
+  	<script src="https://unpkg.com/bootstrap-table@1.15.5/dist/extensions/export/bootstrap-table-export.min.js"></script>
+   
+
+		<script src="js/tipuesearch/tipuesearch_content.js"></script>
+		<link rel="stylesheet" href="js/tipuesearch/tipuesearch.css">
+		<script src="js/tipuesearch/tipuesearch_set.js"></script>
+		<script src="js/tipuesearch/tipuesearch.min.js"></script>
+	  
+<!-- NAV BAR AND HEADING -->
+	  
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html">Primate Cell Type Database</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <a class="nav-link" href="index.html">Home </a>
+          <li class="nav-item">
+            <a class="nav-link" href="ourTeam.html">Our Team</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Data
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Electrophysiology</a>
+              <a class="dropdown-item" href="morphology.html">Morphology</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="transcriptome.html">RNAseq (coming soon)</a>
+            </div>
+          </li>
+        </ul>
+        <form>
+<div class="tipue_search_group">
+<input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><button type="submit" class="tipue_search_button"><div class="tipue_search_icon">&#9906;</div></button>
+</div>
+</form>
+
+<div id="tipue_search_content"></div>
+      </div>
+    </nav>
+	  
+	  
+<!-- TITLE -->
+	  
+	<section>
+            <h2 Class = "text-center" id= "electrophystitle">Ex Vivo Data - Electrophysiology&nbsp;</h2>
+    </section>
+	  
+	  
+<!-- AXN BUTTONS -->  
+	 <div style="position: sticky; top: 0%; right: 0%; z-index: 9999;"> <div class="toast" data-autohide="true" data-delay="10000" style="position: absolute; top: 0%; right: 0%; z-index: 9999;">
+		  
+ 				 	<div class="toast-header bg-danger">
+   			 				<strong class="mr-auto text-white">Access Restricted</strong>
+    						<small class="text-muted"></small>
+    						<button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
+  					</div>
+				  				<div class="toast-body bg-light"> Download is currently restricted. To download the dataset please contact us.</div>
+		</div> </div>
+	<p>
+		<span id = "Filter" class="text-left" style="display: relative">
+		<button id = "filter_btn" class="btn btn-primary" data-toggle="collapse" href="#ScatterFilter" role="button" aria-expanded="false" aria-controls="ScatterFilter" >Filter</button>
+			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#tableData" aria-expanded="true" aria-controls="tableData">Table</button>
+		</span>
+		<span id = "dwnld_btn" class="text-right " style="display: relative">
+			
+			<button id="dlsel" class="btn btn-primary">Download Selected (zip)</button>
+			<a id="dlall" href="#" class="btn btn-primary" alight="right">Download Full dataset (NWB + abf)</a>
+		</span>
+	  
+	</p>
+	  
+	<br>
+	  
+	  
+<!-- MAIN TABLE -->
+	
+		  <div class="collapse multi-collapse" id="ScatterFilter">
+		  <div class="card card-body" style="width: 100%">
+			  <center>
+				  <div id="graphDiv"></div>
+	
+	
+	<script> 
+		
+Plotly.d3.csv('data/WEB_DATA.csv', function(err, rows){
+ 			
+function unpack(rows, key) {
+  return rows.map(function(row) { 
+    return row[key]; 
+  });
+}
+
+var data = [{
+  type: 'parcoords',
+  pad: [80,80,80,80],
+  line: {
+	colorscale: 'Bluered',
+	color: unpack(rows, 'peakLP')
+  },
+
+  dimensions: [{
+    range: [0, 1500],
+    label: 'Resistence',
+    values: unpack(rows, 'Resistence')
+  }, {
+    range: [0,120],
+    label: 'sag',
+    values: unpack(rows, 'sag')
+  }, {
+    label: 'Rheobase',
+    range: [0, 500],
+    values: unpack(rows, 'rheobaseLP')
+  }, {
+    label: 'Time Constant',
+    range: [0, 50],
+    values: unpack(rows, 'time_constant')
+  }, {
+    label: 'Peak',
+    range: [-10, 70],
+    values: unpack(rows, 'peakLP')
+  }, {
+    label: 'Time Constant',
+    range: [0, 50],
+    values: unpack(rows, 'time_constant')
+  }]
+}];
+
+var layout = {
+	width: 1300
+};
+
+Plotly.newPlot('graphDiv', data, layout, {displaylogo: false}, {responsive: true});
+var graphDiv = document.getElementById("graphDiv")
+graphDiv.on('plotly_restyle', function(data){
+		var keys = []
+		var ranges = []
+		
+		graphDiv.data[0].dimensions.forEach(function(d) {
+     			if (d.constraintrange === undefined){
+					keys.push(d.label);
+					ranges.push([-9999,9999]);
+				}
+				else{
+					keys.push(d.label);
+					var allLengths = d.constraintrange.flat();
+					if (allLengths.length > 2){
+						ranges.push([d.constraintrange[0][0],d.constraintrange[0][1]]); //return only the first filter applied per feature
+	
+					}else{
+						ranges.push(d.constraintrange);
+					}
+					
+					
+				} // => use this to find values are selected
+  		})
+		
+		filterByPlot(keys, ranges)
+        }); 
+		}); 
+		
+		
+				  
+		</script></center>
+			  </div>
+		  </div>
+    <section>
+
+		<div class="collapse multi-collapse show" id="tableData">
+		 <div class="card card-body">
+
+      <table id="table"
+data-toggle="table"
+data-url="data/data.json"
+data-sortable="true"
+data-pagination="true"
+data-search="true"
+data-detail-view="true"
+data-force-export="true"
+data-show-columns="true"
+data-click-to-select="true"
+data-detail-formatter="detailFormatter"
+data-show-export="false"
+data-classes="table table-card-like table-borderless table-striped"
+data-sort-name="peakLP"
+data-sort-order="desc"
+data-page-list="[10, 25, 50, 100, all]"
+			 >
+	  <thead>
+	<tr>
+	<th data-field="state" data-checkbox="true" rowspan="2"></th>
+	<th data-field="ID" data-sortable="true" data-formatter="nameFormatter" rowspan="2" data-valign="bottom">Cell ID</th> 
+	<th data-field="preview" data-formatter="imageFormatter" rowspan="2" data-valign="middle"></th>
+	<th colspan="7"></th>
+	<th data-field="link" data-formatter="linkFormatter" rowspan="2" data-halign="center">Link</th>
+	<th data-field="Morphology" data-sortable="true" data-formatter="morphFormatter" rowspan="2" data-valign="right">Morphology</th>
+	</tr>
+    <tr>
+      <th data-field="Resistence" data-formatter="nameFormatter" data-sortable="true">Resistence</th>
+      <th data-field="sag" data-formatter="nameFormatter" data-sortable="true">Sag</th>
+	  <th data-field="rheobaseLP" data-formatter="nameFormatter" data-sortable="true">Rheobase</th>
+	  <th data-field="peakLP" data-formatter="nameFormatter" data-sortable="true">Peak</th>
+	  <th data-field="time_constant" data-formatter="nameFormatter" data-sortable="true">Time Constant</th>
+      <th data-field="delay" data-formatter="nameFormatter" data-sortable="true">Delay</th>
+	  <th data-field="halfWidthTP" data-formatter="nameFormatter" data-sortable="true">AP Width</th>
+    </tr>
+	  </thead>
+</table>
+		<script type="text/javascript"> 
+		var zip = new JSZip();
+		var $table = $('#table');
+		var $graphDiv = $('#graphDiv')
+		var selections = []
+		var Promise = window.Promise;
+		if (!Promise) {
+    			Promise = JSZip.external.Promise;
+			}
+			function nameFormatter(value, row, field, index) {
+				
+				if (typeof value == 'string' && value == ''){
+					return '';
+				} else {
+					
+    				return '<span class="badge badge-secondary">'+ index + '</span>' + '<p>' + value + '</p>'
+				};
+  	}
+		
+	function imageFormatter(value, row) {
+    		return '<img src="images/previews/' + row.ID +'.png" style="width:50px;height:50px;" onerror=this.src="images/backup.png" />';
+		}
+	function linkFormatter(value, row) {
+		return '<div class="dropright"><button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  onclick="showtoast()"">Download</button><div class="dropdown-menu"> <button id="dlzip" class="dropdown-item" href="#" class="btn btn-primary">Download (zip/abf)</button> <button id="dlnwb" class="dropdown-item" href="#">Download (NWB)</button></div></div>';
+   /* return '<div class="dropright"><button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Download</button><div class="dropdown-menu"> <a class="dropdown-item" href="http://primatedatabase.com/download?cell='+ row.ID +'.zip" target="_blank" class="btn btn-primary">Download (zip/abf)</a> <a class= "dropdown-item" href="http://primatedatabase.com/download?cell='+ row.ID +'.nwb" target="_blank">Download (NWB)</a></div></div>';*/
+	}
+	function morphFormatter(value, row) {
+		if(value){
+    return '<a href="http://primatedatabase.com'+ value +'" class="btn btn-primary">View Cell </a>';}
+		else{ return;}
+	}
+
+    function detailFormatter(index, row) {
+    var html = []
+	
+	
+	html.push('<center>')
+	html.push('<div class="row">')
+
+	html.push('<div class="col">')
+	html.push('<div class="col-container">')
+	html.push('<img src="https://raw.githubusercontent.com/smestern/LPtraces/master/'+ row.ID +'0001.png" width="100%" height="100%">');
+	html.push('</div>')
+	html.push('</div>')
+	html.push('<div class="col">')
+	html.push('<div id="' + row.ID + '"></div>');
+	maketrace(row);
+	html.push('</div>');
+	html.push('<div class="col">')
+	html.push('<div id="' + row.ID + '"></div>');
+	html.push('<div class="grid-container">');
+    	$.each(row, function (key, value) {
+			if (typeof value == "number") {
+      		html.push('<div class="grid-item" data-toggle="tooltip" data-placement="top" title="' + key + '""><b>' + key + '</b>: ' + value + '</div>');}
+    	})
+	html.push('</div>');
+	html.push('</div>');
+	html.push('</div>');
+    return html.join('');
+	html.push('</div>');
+	html.push('</center>')
+  }
+	function getUrlVars() {
+    var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+        vars[key] = value;
+    });
+    return vars;
+};
+
+	function getUrlParam(parameter, defaultvalue){
+    var urlparameter = defaultvalue;
+    if(window.location.href.indexOf(parameter) > -1){
+        urlparameter = getUrlVars()[parameter];
+        }
+    return urlparameter;
+};		
+	function filterByPlot(keys, ranges){		
+		jQuery.get("data/data.json").done(function(data){
+		var ids = []
+		var fildata = data
+		var newArray = data.filter(function (el) {
+  			return el.Resistence <= ranges[0][1] &&
+			el.Resistence >= ranges[0][0] &&
+			el.sag <= ranges[1][1] &&
+			el.sag >= ranges[1][0] &&
+			el.rheobaseLP <= ranges[2][1] &&
+			el.rheobaseLP >= ranges[2][0] && 
+			el.peakLP <= ranges[3][1] &&
+			el.peakLP >= ranges[3][0] &&
+			el.time_constant <= ranges[4][1] &&
+			el.time_constant >= ranges[4][0];	
+    
+			});
+		let result = newArray.map(function(a) { return a.ID; });
+		
+		$table.bootstrapTable('filterBy',{'ID': result})})
+	}
+    function getIdSelections() {
+	
+    var ids = $.map($table.bootstrapTable('getSelections'), function (row) {
+		
+      return row.ID 
+    })
+	
+	return ids;
+  }
+	function maketrace(row){
+		var url = "https://raw.githubusercontent.com/smestern/LPtraces/master/" + row.ID + ".csv"
+		Plotly.d3.csv(url, function(rows){
+					data = []
+					var i = 1
+					rows.forEach(function(row) {
+						var rowdata =  Object.keys(row).map(function(e) {
+  																return row[e]
+															})
+						var sweepname = 'Sweep ' + i
+						var trace = {
+                      			type: 'scatter',                    // set the chart type
+								mode: 'lines',                      // connect points with lines
+                      			name: sweepname,
+                      			y: rowdata,
+                      line: {                             // set the width of the line.
+                        width: 1,
+						shape: 'spline',
+						smoothing: 0.5
+                      }
+						
+                    };
+						data.push(trace);
+                        i += 1;
+					});
+					
+                   
+
+                    var layout = {
+					  
+                      yaxis: {title: "mV",
+							 },       // set the y axis title
+                      xaxis: {
+          
+						zeroline: false  // remove the x-axis grid lines
+                           
+                      },
+                      margin: {                           // update the left, bottom, right, top margin
+                        l: 10, b: 20, r: 10, t: 20
+                      },
+					  hovermode: "closest"
+				
+                    };
+
+                    Plotly.newPlot(document.getElementById(row.ID), data, layout, {displaylogo: false});
+                });}
+	function urlToPromise(url) {
+    return new Promise(function(resolve, reject) {
+        JSZipUtils.getBinaryContent(url, function (err, data) {
+            if(err) {
+                reject(err);
+            } else {
+                resolve(data);
+            }
+        });
+    });
+		}
+	function resetMessage () {
+    $("#dlsel")
+    .text("");
+}
+	function showtoast(){
+		$('.toast').toast('show');
+	}
+	function showMessage(text) {
+    resetMessage();
+    $("#dlsel")
+    .html(text);
+}
+ $(function() {
+	$table.on('check.bs.table uncheck.bs.table ' +
+      'check-all.bs.table uncheck-all.bs.table',
+    		function () {
+		 		
+      			selections = getIdSelections()
+      			
+    })
+    /*$("#dlsel").on("click", function () {
+	
+	var ids
+	$("#dlsel").html('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Generating ZIP...')
+	myWindow = window.open("http://primatedatabase.com/download", "download", "width=200, height=100");
+	myWindow.close(); 
+	ids = getIdSelections();
+	
+	$.each(ids, function (idu, a) {
+      		var dlurl = "https://ptcd.s3.us-east-2.amazonaws.com/"+ a +".zip"
+			var filename = a + "zip";
+			zip.file(filename, urlToPromise(dlurl), {binary:true});
+    
+	});
+	zip.generateAsync({type:"blob"}, function updateCallback(metadata) {
+        var msg = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Generating ZIP... Progression : ' + metadata.percent.toFixed(2) + " %";
+        if(metadata.currentFile) {
+            msg += ", current file = " + metadata.currentFile;
+        }
+        showMessage(msg);
+        
+    })
+    .then(function callback(blob) {
+
+        // see FileSaver.js
+        saveAs(blob, "dataset.zip");
+
+        showMessage("Download Selected (Zip)");
+    }, function (e) {
+        
+    });
+
+    return false;
+	
+}) */
+		 $('#dropdownMenuButton').hover(function(){
+		 
+    		$('.toast').toast('show');
+  		});
+	 $("#dlsel").click(function(){
+		 	
+    		$('.toast').toast('show');
+  		});
+	$("#dlall").click(function(){
+		
+    		$('.toast').toast('show');
+  		});
+	 
+	 $('[data-toggle="tooltip"]').tooltip()
+	 
+	})
+ window.onload = () => {
+	
+  var cellvars = getUrlParam('cell', '');
+
+  if (cellvars == ''){
+		
+	} else{
+		$table.bootstrapTable('filterBy',{'ID': cellvars})
+		
+	}
+  
+  
+  
+	
+};		 
+			
+     
+	  </script>
+				  </div>
+		</div>
+    
+    </section>
+    <hr>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-md-4 col-12 col-lg-7">
+            <h3 class="text-center">GET IN TOUCH</h3>
+            <address class="text-center">
+              <strong>Western University - Robarts Research Institute</strong><br>
+              1151 Richmond St. N., 
+              London, Ontario, Canada<br>
+            P: (519) 931-5777 F: (519) 931-5789<br>
+            </address>
+          </div>
+          <div class="col-md-4 col-12">
+            <h3 class="text-center">NEWSLETTER</h3>
+            <form>
+              <div class="form-group col-12">
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                <button type="submit" class="btn btn-dark mt-2" id="subscribe_btn">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <footer class="text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p>Copyright © JMT Lab 2020. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.3.1.js"></script>
+	 <script>
+$(document).ready(function() {
+     $('#tipue_search_input').tipuesearch();
+});
+</script>
+  </body>
+</html>
