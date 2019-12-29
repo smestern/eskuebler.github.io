@@ -293,7 +293,21 @@ data-page-list="[10, 25, 50, 100, all]"
 	html.push('</div>');
 	html.push('</center>')
   }
-			
+	function getUrlVars() {
+    var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+        vars[key] = value;
+    });
+    return vars;
+};
+
+	function getUrlParam(parameter, defaultvalue){
+    var urlparameter = defaultvalue;
+    if(window.location.href.indexOf(parameter) > -1){
+        urlparameter = getUrlVars()[parameter];
+        }
+    return urlparameter;
+};		
 	function filterByPlot(keys, ranges){		
 		jQuery.get("data/data.json").done(function(data){
 		var ids = []
@@ -452,7 +466,22 @@ data-page-list="[10, 25, 50, 100, all]"
 	 $('[data-toggle="tooltip"]').tooltip()
 	
 	})
-	 
+ window.onload = () => {
+	
+  var cellvars = getUrlParam('cell', '');
+  alert(cellvars)
+
+  if (cellvars == ''){
+		
+	} else{
+		$table.bootstrapTable('filterBy',{'ID': cellvars})
+		
+	}
+  
+  
+  
+	
+};		 
 			
      
 	  </script>
