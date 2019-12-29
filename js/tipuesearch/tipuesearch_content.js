@@ -5,7 +5,7 @@ var tipuesearch = {"pages": [
 	  "url": "https://primatedatabase.com/ourteam.html"},
      {
 	  "title": "Ephys Cells",
-	  "text": "Ex Vivo Data - Electrophysiology Access Restricted×Download is currently restricted. To download the dataset please contact us.  SearchCell IDLinkMorphologyResistenceSagRheobasePeakTime ConstantDelayAP WidthIDM10_SA_A1_C16Resistence282.3893292sag10.76355005rheobaseLP160peakLP57.04345831time_constant17.475halfWidthTP1.2-IDM04_MW_A1_C09Resistence268.0664122sag7.22973649rheobaseLP30peakLP56.1889661time_constant32.35halfWidthTP1.15-IDM03_MW_A1_C08Resistence450.1342874sag6.427368308rheobaseLP30peakLP50.04882924time_constant21.23333333delay0.336922641halfWidthTP0.8IDM03_MW_A1_C10Resistence105.5297875sag3.820190515rheobaseLP150peakLP49.98169057time_constant21.075-IDM10_JS_A1_C16Resistence64.34122865sag2.440795953rheobaseLP230peakLP48.24829209time_constant17.55-IDM03_MW_A1_C15Resistence188.6596722sag4.527221781rheobaseLP30peakLP47.71728622time_constant33.81666667halfWidthTP1.4-IDM03_MW_A1_C11Resistence171.3867226sag5.097168083rheobaseLP70peakLP47.26562606time_constant17.20833333delay0.135486668halfWidthTP1.3-IDM02_MW_D6_C12Resistence205.0781296sag8.200073425rheobaseLP30peakLP46.87500105time_constant22.075delay0.457033466halfWidthTP0.85-IDM03_SM_A1_C09Resistence128.1127958sag2.720092834rheobaseLP150peakLP46.82006941time_constant13.69166667-IDM10_SA_A1_C14Resistence166.3970984sag9.713257053rheobaseLP160peakLP46.10595806time_constant21.09375halfWidthTP0.8", 
+	  "text": "Ex Vivo Data - Electrophysiology  Download is currently restricted. To download the dataset please contact us.", 
 	  "tags": "patch-clamp", 
 	  "url": "https://primatedatabase.com/ephysCT.html"
 	 },
