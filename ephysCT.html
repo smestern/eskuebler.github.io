@@ -259,7 +259,9 @@ data-page-list="[10, 25, 50, 100, all]"
 	}
 	function morphFormatter(value, row) {
 		if(value){
-    return '<a href="http://primatedatabase.com'+ value +'" class="btn btn-primary">View Cell </a>';}
+			
+		var morphID = value.split("=")
+    return '<a href="http://primatedatabase.com'+ value +'" class="btn btn-primary" style="margin: 5px">View Cell</a> <a href="http://primatedatabase.com/swc/'+ morphID[1] +'" class="btn btn-secondary" style="margin: 5px">Download Morph</a> ';}
 		else{ return;}
 	}
 
