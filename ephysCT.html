@@ -349,12 +349,15 @@ data-page-list="[10, 25, 50, 100, all]"
 						var rowdata =  Object.keys(row).map(function(e) {
   																return row[e]
 															})
+						var timeseries = Object.keys(row);
+						console.log(row);
 						var sweepname = 'Sweep ' + i
 						var trace = {
                       			type: 'scatter',                    // set the chart type
 								mode: 'lines',                      // connect points with lines
                       			name: sweepname,
                       			y: rowdata,
+								x: timeseries,
                       line: {                             // set the width of the line.
                         width: 1,
 						shape: 'spline',
@@ -373,12 +376,13 @@ data-page-list="[10, 25, 50, 100, all]"
                       yaxis: {title: "mV",
 							 },       // set the y axis title
                       xaxis: {
-          
-						zeroline: false  // remove the x-axis grid lines
+          				dtick: 0.25,
+						zeroline: false,
+						title: "Time (S)"// remove the x-axis grid lines
                            
                       },
                       margin: {                           // update the left, bottom, right, top margin
-                        b: 20, r: 10, t: 20
+                        b: 60, r: 10, t: 20
                       },
 					  hovermode: "closest"
 				
