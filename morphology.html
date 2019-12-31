@@ -119,7 +119,6 @@
 		      <label for='swc_input'>Upload a obj file to view it in the SharkViewer:</label>
       <input type='file' name='obj_input' id='obj_input' />
     </form>
-	  
 	  <select class="form-control form-control-lg" id='loadCell'>
 		<option value="swc/M3.JS.A1.C1.swc">M3.JS.A1.C1</option>
 	    <option value="swc/M3.JS.B5.C11.swc">M3.JS.B5.C11</option>
@@ -130,6 +129,7 @@
 	  	<option value="swc/M3.MW.B1.C7.swc">M3.MW.B1.C7</option>
 	  	<option value="swc/M3.MW.B2.C8.swc">M3.MW.B2.C8</option>
 	  </select>
+	  	  <input type="button" onclick="window.location.href=document.getElementById('loadCell').value" value="Download" class="grey-btn" />
 	  
 <!--<div class="btn-group dropright">
   <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
