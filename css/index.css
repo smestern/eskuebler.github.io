@@ -224,11 +224,18 @@ table {
 	margin-top: 2rem;
 	align-content: left;*/
 }
+
+#morphDL{
+	margin-left: 5.5rem;
+	margin-top: 0.2rem;
+	align-content: left;
+}
+
 #electrophystitle{
 	margin: 5rem 0;
 }
 .controls {
-	margin-top: -4.5rem;
+	margin-top: -8rem;
 }
 caption {
   padding-top: 0.75rem;
