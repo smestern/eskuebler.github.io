@@ -219,10 +219,10 @@ table {
   border-collapse: collapse;
 }
 #loadCell{
-	/*margin-left: 2rem;
-	margin-bottom: -2rem;
-	margin-top: 2rem;
-	align-content: left;*/
+	margin-left: 2rem;
+	margin-bottom: 0rem;
+	margin-top: -2rem;
+	align-content: left;
 }
 
 #morphDL{
@@ -235,7 +235,7 @@ table {
 	margin: 5rem 0;
 }
 .controls {
-	margin-top: -8rem;
+	margin-top: -4rem;
 }
 caption {
   padding-top: 0.75rem;
