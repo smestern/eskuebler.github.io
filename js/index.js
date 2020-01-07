@@ -70,7 +70,7 @@ document
     mode: 'skeleton',
     dom_element: document.getElementById('container'),
 	colors:[
-    0xffffff,
+    0x00be9e,
     0x3919cb,
     0x7d0bc4,
     0xff6700,
