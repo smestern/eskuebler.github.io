@@ -67,7 +67,7 @@ document
   mdata = JSON.parse(document.getElementById("metadata_swc").text);
   s = new sharkViewer.default({
     animated: false,
-    mode: 'particle',
+    mode: 'skeleton',
     dom_element: document.getElementById('container'),
 	colors:[
     0xffffff,
