@@ -69,15 +69,6 @@ document
     animated: false,
     mode: 'skeleton',
     dom_element: document.getElementById('container'),
-	colors:[
-    0x00be9e,
-    0x3919cb,
-    0x7d0bc4,
-    0xff6700,
-    0x3eef00,
-    0xffce00,
-    0xf50027,
-    0x606060],
     metadata: mdata,
     showAxes: 10000,
     cameraChangeCallback: (data) => { console.log(data) }
