@@ -144,10 +144,6 @@ var data = [{
     label: 'Peak',
     range: [-10, 70],
     values: unpack(rows, 'peakLP')
-  }, {
-    label: 'Time Constant',
-    range: [0, 50],
-    values: unpack(rows, 'time_constant')
   }]
 }];
 
@@ -323,10 +319,10 @@ data-page-list="[10, 25, 50, 100, all]"
 			el.sag >= ranges[1][0] &&
 			el.rheobaseLP <= ranges[2][1] &&
 			el.rheobaseLP >= ranges[2][0] && 
-			el.peakLP <= ranges[3][1] &&
-			el.peakLP >= ranges[3][0] &&
-			el.time_constant <= ranges[4][1] &&
-			el.time_constant >= ranges[4][0];	
+			el.peakLP <= ranges[4][1] &&
+			el.peakLP >= ranges[4][0] &&
+			el.time_constant <= ranges[3][1] &&
+			el.time_constant >= ranges[3][0];	
     
 			});
 		let result = newArray.map(function(a) { return a.ID; });
