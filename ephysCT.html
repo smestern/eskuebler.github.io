@@ -214,7 +214,7 @@ data-page-list="[10, 25, 50, 100, all]"
 	  <thead>
 	<tr>
 	<th data-field="state" data-checkbox="true" rowspan="2"></th>
-	<th data-field="ID" data-sortable="true" data-formatter="nameFormatter" rowspan="2" data-valign="bottom">Cell ID</th> 
+	<th data-field="ID" data-sortable="true" data-formatter="nameFormatter" rowspan="2" >Cell ID</th> 
 	<th data-field="preview" data-formatter="imageFormatter" rowspan="2" data-valign="middle"></th>
 	<th colspan="7"></th>
 	<th data-field="link" data-formatter="linkFormatter" rowspan="2" data-halign="center">Link</th>
@@ -246,7 +246,8 @@ data-page-list="[10, 25, 50, 100, all]"
 					return '';
 				} else {
 					
-    				return '<span class="badge badge-secondary">'+ index + '</span>' + '<p>' + value + '</p>'
+    				//return '<span class="badge badge-light">'+ index + '</span>' + '<p>' + value + '</p>'
+					return value
 				};
   	}
 		
@@ -279,10 +280,10 @@ data-page-list="[10, 25, 50, 100, all]"
 	html.push('</div>')
 	html.push('<div class="col">')
 	html.push('<div id="' + row.ID + '"></div>');
-	maketrace(row);
+	
 	html.push('</div>');
 	html.push('<div class="col">')
-	html.push('<div id="' + row.ID + '"></div>');
+	
 	html.push('<div class="grid-container">');
     	$.each(row, function (key, value) {
 			if (typeof value == "number") {
@@ -291,6 +292,7 @@ data-page-list="[10, 25, 50, 100, all]"
 	html.push('</div>');
 	html.push('</div>');
 	html.push('</div>');
+	maketrace(row);
     return html.join('');
 	html.push('</div>');
 	html.push('</center>')
@@ -350,7 +352,7 @@ data-page-list="[10, 25, 50, 100, all]"
   																return row[e]
 															})
 						var timeseries = Object.keys(row);
-						console.log(row);
+						
 						var sweepname = 'Sweep ' + i
 						var trace = {
                       			type: 'scatter',                    // set the chart type
@@ -389,7 +391,9 @@ data-page-list="[10, 25, 50, 100, all]"
                     };
 
                     Plotly.newPlot(document.getElementById(row.ID), data, layout, {displaylogo: false});
-                });}
+                })
+		
+		;}
 	function urlToPromise(url) {
     return new Promise(function(resolve, reject) {
         JSZipUtils.getBinaryContent(url, function (err, data) {
