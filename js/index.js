@@ -67,7 +67,7 @@ document
   mdata = JSON.parse(document.getElementById("metadata_swc").text);
   s = new sharkViewer.default({
     animated: false,
-    mode: 'skeleton',
+    mode: 'particle',
     dom_element: document.getElementById('container'),
     metadata: mdata,
     showAxes: 10000,
@@ -82,8 +82,6 @@ document
         s.render();
       } else {
         alert("Please upload a valid swc file.");}
-	
-	
   });
   s.init();
   s.animate();
