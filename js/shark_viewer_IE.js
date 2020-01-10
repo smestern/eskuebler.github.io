@@ -1108,7 +1108,8 @@ var sharkViewer = function (e) {
             zmin: 1 / 0,
             zmax: -1 / 0
           };
-          return Object.keys(e).map(function (e) {
+		  var values_IE = Object.keys(e).map( function(val) {return e[val];})
+          return values_IE.forEach(function (e) {
             var r = e.radius;
             e.x - r < t.xmin && (t.xmin = e.x - r), e.x + r > t.xmax && (t.xmax = e.x + r), e.y - r < t.ymin && (t.ymin = e.y - r), e.y + r > t.ymax && (t.ymax = e.y + r), e.z - r < t.zmin && (t.zmin = e.z - r), e.z + r > t.zmax && (t.zmax = e.z + r);
           }), t;
