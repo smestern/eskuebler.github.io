@@ -1082,7 +1082,8 @@ var sharkViewer = function (e) {
           var s = Math.min(r, n, a),
               i = new o.Vector3(t.xmin + r, t.ymin + n, t.zmin + a),
               l = s * s;
-          return Object.values(e).forEach(function (e) {
+		  var values_IE_N = Object.keys(e).map( function(val) {return e[val];})
+          return values_IE_N.forEach(function (e) {
             var t = new o.Vector3(e.x, e.y, e.z),
                 r = new o.Vector3();
             r.subVectors(i, t);
