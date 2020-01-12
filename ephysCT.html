@@ -135,7 +135,7 @@ rows.forEach(function(row) {
                       			name: sweepname,
                       			x: [row.half_width],
 								y: [row.height],
-								marker: {colorscale: 'YIOrRd',
+								marker: {colorscale: 'Bluered',
 											cmin:0,
 											cmax:3,
 											color: [row.half_width],}
@@ -152,7 +152,9 @@ rows.forEach(function(row) {
 var layout = {
 	dragmode: 'lasso',
 	colorway: 'Bluered',
-	
+	xaxis: {title: 'Half Width (ms)',},
+	yaxis: {title: 'AP Height (mV)',},
+	margin: {t: 10,},
 };
 
 Plotly.newPlot('graphDiv_scatter2', data, layout, {displaylogo: false}, {responsive: true});
