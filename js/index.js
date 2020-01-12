@@ -52,10 +52,10 @@ function switchSwcFile(e) {
   } else {
     alert("Failed to load file");
   }
-}
+};
 
 
-window.onload = () => {
+window.onload = function() {
 document
     .getElementById("loadCell")
     .addEventListener("change", switchSwcFile, false);	
@@ -71,7 +71,7 @@ document
     dom_element: document.getElementById('container'),
     metadata: mdata,
     showAxes: 10000,
-    cameraChangeCallback: (data) => { console.log(data) }
+    //cameraChangeCallback: (data) => { console.log(data) }
   });
   window.s = s;
   const r = jQuery.get(cellvars).done(function(data) {

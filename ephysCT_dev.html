@@ -120,6 +120,7 @@ m_trace_x = []
 m_trace_y = []
 h_trace_x = []
 h_trace_y = []
+var colors = ['#f59582','#f0320c', '#274f1b', '#d6b376', '#18c912', '#58d4d6', '#071aeb', '#000000' ]
 rows.forEach(function(row) {
 						var rowdata =  Object.keys(row).map(function(e) {
   																return row[e]
@@ -143,6 +144,7 @@ rows.forEach(function(row) {
                       			name: sweepname,
                       			y: [row.y],
 								x: [row.x],
+								marker: {color: colors[row.gmm],},
                       
 						 };
 						data.push(trace);
@@ -157,7 +159,8 @@ var m_trace = {
                       			name: 'mouse data',
                       			y: m_trace_y,
 								x: m_trace_x,
-								marker: {color: '#D3D3D3' },
+								marker: {color: '#D3D3D3',
+										opacity: 0.25,},
                       
 						 };
 var h_trace = {
@@ -166,14 +169,15 @@ var h_trace = {
                       			name: 'human data',
                       			y: h_trace_y,
 								x: h_trace_x,
-								marker: {color: '#707070' }
+								marker: {color: '#707070',
+										opacity: 0.25,}
                       
 						 };
 data = data.concat(m_trace, h_trace);
 
 var layout = {
 	dragmode: 'lasso',
-	width: 1300,
+	autosize: true,
 	xaxis: {
 		autorange: "reversed", 
 }
