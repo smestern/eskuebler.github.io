@@ -131,27 +131,130 @@
 	  </select>
 	  <input type="button" id='morphDL' onclick="window.location.href=document.getElementById('loadCell').value" value="Download" class="grey-btn"/>
 	  
-<!--<div class="btn-group dropright">
-  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Load Cell
-  </button>
-	  <div class="dropdown-menu" id="loadCell">
-		<a class="dropdown-item" data-value="swc/M3.JS.A1.C1.swc">M3.JS.A1.C1</a>
-	    <a class="dropdown-item" data-value="swc/M3.JS.B5.C11.swc">M3.JS.B5.C11</a>
-	  	<a class="dropdown-item" data-value="swc/M3.JS.B5.C11.2.swc">M3.JS.B5.C11</a>
-	  	<a class="dropdown-item" data-value="swc/M3.JS.D1.C19.swc">M3.JS.D1.C19</a>
-	  	<a class="dropdown-item" data-value="swc/M3.MW.A2.C2.swc">M3.MW.A2.C2</a>
-	  	<a class="dropdown-item" data-value="swc/M3.MW.A4.C4.swc">M3.MW.A4.C4</a>
-	  	<a class="dropdown-item" data-value="swc/M3.MW.B1.C7.swc">M3.MW.B1.C7</a>
-	  	<a class="dropdown-item" data-value="swc/M3.MW.B2.C8.swc">M3.MW.B2.C8</a>
-  	</div>
-</div>-->
 
 				
 	<center><img src="images/morphologyControls.png" width="200" height="78" alt="Controls" class="controls"></center>
 <hr>
-    <!-- three.js container -->
-    <div id="container" style='position:relative;width:100%;height:700px'></div>
+
+	  
+<fieldset>
+		<legend>Choose your features</legend>
+		<div>
+			<input type="checkbox" id="axon" name="features" value="0x7d0bc4" checked>
+			<label for="axon">Axon</label>
+		</div>
+		<div>
+			<input type="checkbox" id="dendrite" name="features" value="0xff6700" checked>
+			<label for="dendrite">Dendrite</label>
+		</div>
+		<div>
+			<input type="checkbox" id="soma" name="features" value="0x00be9e" checked>
+			<label for="soma">Soma</label>
+		</div>
+	</fieldset>
+	<!-- three.js container -->
+    	<div id="container" style='position:relative'></div>
+	<!-- info on screen display -->
+
+
+	<script type='text/javascript'>
+	var dendriteColor = 0xff6700;
+	var axonColor = 0x7d0bc4;
+	var somaColor = 0x00be9e;
+
+
+document.getElementById('axon').addEventListener("click", function(){
+	if(this.checked){
+		axonColor = 0x7d0bc4;
+	} else {
+		axonColor = 0xffffff;
+}
+});
+document.getElementById('dendrite').addEventListener("click",function(){
+	if(this.checked){
+		dendriteColor = 0xff6700;
+	} else {
+		dendriteColor = 0xffffff;
+	}
+});
+document.getElementById('soma').addEventListener("click",function(){
+	if(this.checked){
+		somaColor = 0x00be9e;
+	} else {
+		somaColor = 0xffffff;
+	}
+});
+
+
+
+	var mdata;
+	function readSwcFile(e) {
+		var f = e.target.files[0]; 
+		console.log(f);
+		if (f) {
+			var r = new FileReader();
+			r.onload = function(e2) { 
+				var swc_txt = e2.target.result;
+				var swc = swc_parser(swc_txt);
+				if ( Object.keys(swc).length > 0 ) {
+					//remove previous neuron
+					document.getElementById('container').innerHTML = "";
+
+					var s = new SharkViewer({
+						swc: swc, 
+						dom_element: 'container', 
+						center_node: -1, 
+						show_stats: true, 
+						colors : [
+							0xffffff,
+							somaColor,
+							axonColor,
+							dendriteColor,
+							0xffffff,
+							0xffffff,
+							0xffffff,
+							0xffffff,
+							],
+						metadata: mdata
+					});
+					s.init();
+					s.animate();
+				}
+				else {
+					alert("Please upload a valid swc file.");
+				}
+			}
+			r.readAsText(f);
+		} else { 
+		      alert("Failed to load file");
+		}
+	}
+	window.onload = function() {
+		document.getElementById('swc_input').addEventListener('change', readSwcFile, false);
+		var swc = swc_parser(document.getElementById("swc").text);
+		mdata = JSON.parse(document.getElementById("metadata_swc").text);
+		var s = new SharkViewer({
+			swc: swc, 
+			mode: 'particle',
+			dom_element: 'container', 
+			center_node: -1, 
+			show_stats: true,
+			colors : [
+				0xffffff,
+				0x00be9e,
+				axonColor,
+				dendriteColor,
+				0xffffff,
+				0xffffff,
+				0xffffff,
+				0xffffff,
+			],
+			metadata: mdata});
+		s.init();
+		s.animate();
+    window.s = s;
+	}
+	</script>
 	  
   <hr>
 	    	<div class="container">
@@ -185,9 +288,13 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script type="text/javascript" src="js/popper.min.js"></script>
     <script type="text/javascript" src="js/bootstrap-4.3.1.js"></script>
-    <script type="text/javascript" src="js/three.min.js"></script>
-    <script type="text/javascript" src="js/shark_viewer_IE.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
+    <!--<script type="text/javascript" src="js/three.min.js"></script>
+    <script type="text/javascript" src="js/shark_viewer_IE.js"></script>-->
+	<script src="js/threejs/three.min.js"></script>
+	<script src="js/threejs/TrackballControls.js"></script>
+	<script src="./js/shark_viewer_old.js"></script>
+	<!-- optional only if show_stats = true -->
+	<script src="js/threejs/Stats.js"></script>    <script type="text/javascript" src="js/index.js"></script>
   
   </body>
 </html>
