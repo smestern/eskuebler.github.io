@@ -270,10 +270,24 @@ document
 				0xffffff,
 			],
 			metadata: mdata});
-		s.init();
-		s.animate();
-    window.s = s;
-	}
+  window.s = s;
+  const r = jQuery.get(cellvars).done(function(data) {
+		/*alert( "Data Loaded: " + data );*/
+	    swc = sharkViewer.swcParser(data);
+		if (Object.keys(swc).length > 0) {
+        s.loadNeuron('foo',null, swc);
+        s.render();
+      } else {
+        alert("Please upload a valid swc file.");}
+  });
+  s.init();
+  s.animate();
+  const swc2 = sharkViewer.swcParser(document.getElementById("swc2").text);
+  // s.loadNeuron('swc2', '#ff0000', swc2);
+  s.loadNeuron('swc', null, swc);
+  s.render();
+	
+};
 	</script>
 	  
   <hr>
