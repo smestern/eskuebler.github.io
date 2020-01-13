@@ -1561,7 +1561,8 @@ pre code {
 }
 
 .table {
-  width: 100%;
+  width: auto;
+
   margin-bottom: 1rem;
   color: #212529;
   border-collapse: separate;

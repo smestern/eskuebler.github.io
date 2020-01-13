@@ -85,6 +85,7 @@
 	<p>
 		<span id = "Filter" class="text-left" style="display: relative">
 		<button id = "filter_btn" class="btn btn-primary" data-toggle="collapse" href="#ScatterFilter" role="button" aria-expanded="false" aria-controls="ScatterFilter" >Filter</button>
+		<button id = "filter_btn2" class="btn btn-primary" data-toggle="collapse" href="#Scatter2Filter" role="button" aria-expanded="false" aria-controls="Scatter2Filter" >Filter - Scatter</button>
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#tableData" aria-expanded="true" aria-controls="tableData">Table</button>
 		</span>
 		<span id = "dwnld_btn" class="text-right " style="display: relative">
@@ -99,7 +100,85 @@
 	  
 	  
 <!-- MAIN TABLE -->
+	<div class="collapse multi-collapse" id="Scatter2Filter">
+		  <div class="card card-body" style="width: 100%">
+			  <center>
+				  <div id="graphDiv_scatter2"></div>
 	
+	
+	<script> 
+		
+Plotly.d3.csv('data/WEB_DATA.csv', function(err, rows){
+ 			
+function unpack(rows, key) {
+  return rows.map(function(row) { 
+    return row[key]; 
+  });
+}
+data = []
+m_trace_x = []
+m_trace_y = []
+h_trace_x = []
+h_trace_y = []
+var colors = ['#ffb3ba','#baffc9', '#ffdfba','#bae1ff', '#7dd8e1']
+rows.forEach(function(row) {
+						var rowdata =  Object.keys(row).map(function(e) {
+  																return row[e]
+															})
+						var timeseries = Object.keys(row);
+	
+						var sweepname = row.ID
+						if (row.half_width != 0){
+						var trace = {
+                      			type: 'scatter',                    // set the chart type
+								mode: 'markers',                      // connect points with lines
+                      			name: sweepname,
+                      			x: [row.half_width],
+								y: [row.height],
+								marker: {colorscale: 'Bluered',
+											cmin:0,
+											cmax:3,
+											color: [row.half_width],}
+                      
+						 };
+						data.push(trace);
+						
+						}
+					
+                    
+					});
+
+
+var layout = {
+	dragmode: 'lasso',
+	colorway: 'Bluered',
+	width: 1300,
+	xaxis: {title: 'Half Width (ms)',},
+	yaxis: {title: 'AP Height (mV)',},
+	margin: {t: 10,},
+};
+
+Plotly.newPlot('graphDiv_scatter2', data, layout, {displaylogo: false}, {responsive: true});
+var graphDiv = document.getElementById("graphDiv_scatter2")
+graphDiv.on('plotly_selected', function(eventData){
+		var ids = []
+		var ranges = []
+		
+		eventData.points.forEach(function(pt) {
+			
+			
+			ids.push(pt.data.name);
+		});
+		
+		filterByID(ids);
+        }); 
+		}); 
+		
+		
+				  
+		</script></center>
+			  </div>
+		  </div>
 		  <div class="collapse multi-collapse" id="ScatterFilter">
 		  <div class="card card-body" style="width: 100%">
 			  <center>
@@ -130,7 +209,7 @@ var data = [{
     values: unpack(rows, 'Resistence')
   }, {
     range: [0,120],
-    label: 'sag',
+    label: 'Sag',
     values: unpack(rows, 'sag')
   }, {
     label: 'Rheobase',
@@ -140,6 +219,10 @@ var data = [{
     label: 'Time Constant',
     range: [0, 50],
     values: unpack(rows, 'time_constant')
+  },{
+    label: 'Half Width',
+    range: [0, 3.8],
+    values: unpack(rows, 'half_width')
   }, {
     label: 'Peak',
     range: [-10, 70],
@@ -186,7 +269,8 @@ graphDiv.on('plotly_restyle', function(data){
 			  </div>
 		  </div>
     <section>
-
+<div class="container-fluid" style="display: inline-flex;
+							flex-shrink:80; ">
 		<div class="collapse multi-collapse show" id="tableData">
 		 <div class="card card-body">
 
@@ -319,8 +403,10 @@ data-page-list="[10, 25, 50, 100, all]"
 			el.sag >= ranges[1][0] &&
 			el.rheobaseLP <= ranges[2][1] &&
 			el.rheobaseLP >= ranges[2][0] && 
-			el.peakLP <= ranges[4][1] &&
-			el.peakLP >= ranges[4][0] &&
+			el.peakLP <= ranges[5][1] &&
+			el.peakLP >= ranges[5][0] &&
+			el.half_width <= ranges[4][1] &&
+			el.half_width >= ranges[4][0] &&
 			el.time_constant <= ranges[3][1] &&
 			el.time_constant >= ranges[3][0];	
     
@@ -329,6 +415,9 @@ data-page-list="[10, 25, 50, 100, all]"
 		
 		$table.bootstrapTable('filterBy',{'ID': result})})
 	}
+	function filterByID(ids){		
+		$table.bootstrapTable('filterBy',{'ID': ids})
+	}		
     function getIdSelections() {
 	
     var ids = $.map($table.bootstrapTable('getSelections'), function (row) {
@@ -492,7 +581,7 @@ data-page-list="[10, 25, 50, 100, all]"
 	  </script>
 				  </div>
 		</div>
-    
+ </div>   
     </section>
     <hr>
     <div class="section">
@@ -523,13 +612,22 @@ data-page-list="[10, 25, 50, 100, all]"
     <hr>
     <footer class="text-center">
       <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <p>Copyright © JMT Lab 2020. All rights reserved.</p>
-          </div>
-        </div>
+        <div class="row" style="justify-content: center;">
+		  <center>
+            <a>Copyright © JMT Lab 2020. All rights reserved.</a>
+          </center>
+		  </div>
+		 <br>
+		
       </div>
     </footer>
+	<section><div class="row container-fluid" style="align-content: center; justify-content: space-around">
+          
+				<div class="column" style="margin-bottom: 13px;">
+            			<a href="" class="btn btn-outline-secondary"> Please view Our Citation policy.</a>
+          		</div>
+					<div class="column" ><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0; width: 50px;" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br /><div class="font-weight-lighter" style="font-size:10px">This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a></div></div>
+        </div></section>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
