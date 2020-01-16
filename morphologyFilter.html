@@ -249,7 +249,7 @@ document
     .addEventListener("change", switchSwcFile, false);	
   var swc = sharkViewer.swcParser(document.getElementById("swc").text);
 	
-  var cellvars = getUrlParam('cell', 'M3.JS.B5.C11.2.swc')
+  var cellvars = getUrlParam('cell', 'M3.JS.B5.C11.swc')
   cellvars = 'swc/' + cellvars
   document.getElementById("loadCell").value = cellvars;
   mdata = JSON.parse(document.getElementById("metadata_swc").text);
