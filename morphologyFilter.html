@@ -167,8 +167,17 @@ document.getElementById('axon').addEventListener("click", function(){
 		axonColor = 0x7d0bc4;
 	} else {
 		axonColor = 0xffffff;
-}
-	switchSwcFile("");
+	}
+	s.colors : [
+							0xffffff,
+							somaColor,
+							axonColor,
+							dendriteColor,
+							0xffffff,
+							0xffffff,
+							0xffffff,
+							0xffffff,
+							]
 });
 document.getElementById('dendrite').addEventListener("click",function(){
 	if(this.checked){
@@ -176,7 +185,16 @@ document.getElementById('dendrite').addEventListener("click",function(){
 	} else {
 		dendriteColor = 0xffffff;
 	}
-	switchSwcFile("");
+	s.colors : [
+							0xffffff,
+							somaColor,
+							axonColor,
+							dendriteColor,
+							0xffffff,
+							0xffffff,
+							0xffffff,
+							0xffffff,
+							]
 });
 document.getElementById('soma').addEventListener("click",function(){
 	if(this.checked){
@@ -184,7 +202,16 @@ document.getElementById('soma').addEventListener("click",function(){
 	} else {
 		somaColor = 0xffffff;
 	}
-	switchSwcFile("");
+	s.colors : [
+							0xffffff,
+							somaColor,
+							axonColor,
+							dendriteColor,
+							0xffffff,
+							0xffffff,
+							0xffffff,
+							0xffffff,
+							]
 });
 
 let s = null;
@@ -290,7 +317,7 @@ function switchSwcFile(e) {
     	alert("Failed to load file");
   			}
 		};
-	window.onload = function() {
+window.onload = function() {
 		document.getElementById('swc_input').addEventListener('change', readSwcFile, false);
 		document
     	.getElementById("loadCell")
