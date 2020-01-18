@@ -254,6 +254,11 @@ SharkViewer.prototype.alertColor = function (colorArray) {
 		}
 		i += 1
 	}
+	var customAttributes = 
+		{
+			radius:   { type: "fv1", value: [] },
+			typeColor:   { type: "c", value: [] },
+		};
 	for (var node in this.swc) {
 			if (this.swc.hasOwnProperty(node)) {
 				var particle_vertex = this.generateParticle(this.swc[node]);
