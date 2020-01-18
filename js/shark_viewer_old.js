@@ -246,7 +246,7 @@ SharkViewer.prototype.nodeColor = function (node) {
 };
 
 SharkViewer.prototype.alertColor = function (colorArray) {
-	
+	console.log(this.neuron.children[1].material)
 	var i = 0
 	for (var color in colorArray) {
 		if (colorArray.hasOwnProperty(color)) {
