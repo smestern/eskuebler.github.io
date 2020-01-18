@@ -245,6 +245,10 @@ SharkViewer.prototype.nodeColor = function (node) {
 	return this.three_colors[ node.type % this.three_colors.length];
 };
 
+SharkViewer.prototype.alertColor = function () {
+	console.log(this.three_colors);
+};
+
 SharkViewer.prototype.calculateParticleSize = function(fov) {
 		return (0.5 * this.HEIGHT * this.renderer.devicePixelRatio)/ Math.tan(0.5 * fov * Math.PI / 180.0);
 }
