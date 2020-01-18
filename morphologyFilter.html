@@ -168,16 +168,7 @@ document.getElementById('axon').addEventListener("click", function(){
 	} else {
 		axonColor = 0xffffff;
 	}
-	window.s.colors = [
-							0xffffff,
-							somaColor,
-							axonColor,
-							dendriteColor,
-							0xffffff,
-							0xffffff,
-							0xffffff,
-							0xffffff,
-							]
+	switchSwcFile('');
 });
 document.getElementById('dendrite').addEventListener("click",function(){
 	if(this.checked){
@@ -185,16 +176,7 @@ document.getElementById('dendrite').addEventListener("click",function(){
 	} else {
 		dendriteColor = 0xffffff;
 	}
-	window.s.colors = [
-							0xffffff,
-							somaColor,
-							axonColor,
-							dendriteColor,
-							0xffffff,
-							0xffffff,
-							0xffffff,
-							0xffffff,
-							]
+	switchSwcFile('');
 });
 document.getElementById('soma').addEventListener("click",function(){
 	if(this.checked){
@@ -202,16 +184,7 @@ document.getElementById('soma').addEventListener("click",function(){
 	} else {
 		somaColor = 0xffffff;
 	}
-	window.s.colors = [
-							0xffffff,
-							somaColor,
-							axonColor,
-							dendriteColor,
-							0xffffff,
-							0xffffff,
-							0xffffff,
-							0xffffff,
-							]
+	switchSwcFile('');
 });
 
 
