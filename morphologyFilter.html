@@ -245,17 +245,72 @@ function readSwcFile(e) {
 		      alert("Failed to load file");
 		}
 	}
+function switchSwcFile(e) {
+		s.unloadNeuron('foo', null, swc);	
+		var e = document.getElementById("loadCell");
+ 		const f = e.options[e.selectedIndex].value;
+  		if (f) {
+			const r = jQuery.get(f).done(function(data) {
+		/*alert( "Data Loaded: " + data );*/
+			const  swc = sharkViewer.swcParser(data);
+			if (Object.keys(swc).length > 0) {
+        	document.getElementById('container').innerHTML = "";
+
+					var s = new SharkViewer({
+						swc: swc, 
+						dom_element: 'container', 
+						center_node: -1, 
+						show_stats: true, 
+						colors : [
+							0xffffff,
+							somaColor,
+							axonColor,
+							dendriteColor,
+							0xffffff,
+							0xffffff,
+							0xffffff,
+							0xffffff,
+							],
+						metadata: mdata
+					});
+					s.init();
+					s.animate();}
+			}
+      } else {
+        alert("Please upload a valid swc file.");}
+	
+	
+	});
+
+
+  		} else {
+    	alert("Failed to load file");
+  			}
+		};
 	window.onload = function() {
 		document.getElementById('swc_input').addEventListener('change', readSwcFile, false);
-		var swc = swc_parser(document.getElementById("swc").text);
+		document
+    	.getElementById("loadCell")
+    	.addEventListener("change", switchSwcFile, false);	
+  
+	
+  		var cellvars = getUrlParam('cell', 'M3.JS.B5.C11.swc')
+  		cellvars = 'swc/' + cellvars
+  		document.getElementById("loadCell").value = cellvars;
+		
+		//var swc = swc_parser(document.getElementById("swc").text);
 		mdata = JSON.parse(document.getElementById("metadata_swc").text);
-		var s = new SharkViewer({
-			swc: swc, 
-			mode: 'particle',
-			dom_element: 'container', 
-			center_node: -1, 
-			show_stats: true,
-			colors : [
+		const r = jQuery.get(cellvars).done(function(data) {
+			/*alert( "Data Loaded: " + data );*/
+	    		swc = sharkViewer.swcParser(data);
+				if (Object.keys(swc).length > 0) {
+        			var s = new SharkViewer({
+						swc: swc, 
+						mode: 'particle',
+						dom_element: 'container', 
+						center_node: -1, 
+						show_stats: true,
+						colors : [
 				0xffffff,
 				0x00be9e,
 				axonColor,
@@ -265,10 +320,14 @@ function readSwcFile(e) {
 				0xffffff,
 				0xffffff,
 			],
-			metadata: mdata});
-		s.init();
-		s.animate();
-    window.s = s;
+						metadata: mdata});
+						s.init();
+						s.animate();
+						window.s = s;
+      			} else {
+        		alert("Please upload a valid swc file.");}
+  		});
+		
 	}
 	</script>
 	  
