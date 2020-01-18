@@ -252,7 +252,7 @@ function switchSwcFile(e) {
   		if (f) {
 			const r = jQuery.get(f).done(function(data) {
 		/*alert( "Data Loaded: " + data );*/
-			const  swc = sharkViewer.swcParser(data);
+			const swc = swc_parser(data);
 			if (Object.keys(swc).length > 0) {
         	document.getElementById('container').innerHTML = "";
 
@@ -302,7 +302,7 @@ function switchSwcFile(e) {
 		mdata = JSON.parse(document.getElementById("metadata_swc").text);
 		const r = jQuery.get(cellvars).done(function(data) {
 			/*alert( "Data Loaded: " + data );*/
-	    		swc = sharkViewer.swcParser(data);
+	    		var swc = swc_parser(data);
 				if (Object.keys(swc).length > 0) {
         			var s = new SharkViewer({
 						swc: swc, 
