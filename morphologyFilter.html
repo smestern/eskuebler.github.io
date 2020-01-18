@@ -160,7 +160,16 @@
 	var dendriteColor = 0xff6700;
 	var axonColor = 0x7d0bc4;
 	var somaColor = 0x00be9e;
-
+	var colorArray = [
+							0xffffff,
+							somaColor,
+							axonColor,
+							dendriteColor,
+							0xffffff,
+							0xffffff,
+							0xffffff,
+							0xffffff,
+							]
 
 document.getElementById('axon').addEventListener("click", function(){
 	if(this.checked){
@@ -168,8 +177,8 @@ document.getElementById('axon').addEventListener("click", function(){
 	} else {
 		axonColor = 0xffffff;
 	}
-	switchSwcFile('');
-	window.s.alertColor();
+	//switchSwcFile('');
+	window.s.alertColor(colorArray);
 });
 document.getElementById('dendrite').addEventListener("click",function(){
 	if(this.checked){
