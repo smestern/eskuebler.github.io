@@ -267,19 +267,7 @@ SharkViewer.prototype.alertColor = function (colorArray) {
 				customAttributes.typeColor.value.push(this.nodeColor(this.swc[node]));
 			}
 	} 
-	this.material = new THREE.ShaderMaterial(
-	{
-			uniforms : customUniforms,
-			attributes : customAttributes,
-			vertexShader : vertexShader,
-			fragmentShader : fragmentShader,
-			transparent : true, 
-			// alphaTest: 0.5,  // if having transparency issues, try including: alphaTest: 0.5, 
-			depthTest : true,
-			// blending: THREE.AdditiveBlending, depthTest: false,
-			// I guess you don't need to do a depth test if you are alpha blending?
-			// 
-		});
+	this.material.attributes.typeColor = customAttributes.typeColor;
 	console.log(this.neuron.children[1].material)
 };
 
