@@ -246,7 +246,7 @@ SharkViewer.prototype.nodeColor = function (node) {
 };
 
 SharkViewer.prototype.alertColor = function (colorArray) {
-	
+	console.log(customAttributes.typeColor.value)
 	var i = 0
 	for (var color in colorArray) {
 		if (colorArray.hasOwnProperty(color)) {
@@ -700,7 +700,7 @@ SharkViewer.prototype.init = function () {
 	}
 	
 	//centers neuron
-	this.neuron.position.set(-this.center[0], -this.center[1], -this.center[2]);
+	//this.neuron.position.set(-this.center[0], -this.center[1], -this.center[2]);
 	this.scene.add(this.neuron);
 
 	//Lights
