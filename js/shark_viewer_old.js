@@ -267,7 +267,7 @@ SharkViewer.prototype.alertColor = function (colorArray) {
 				customAttributes.typeColor.value.push(this.nodeColor(this.swc[node]));
 			}
 	} 
-	this.material.attributes.typeColor = customAttributes.typeColor;
+	this.neuron.children[1].material.attributes.typeColor = customAttributes.typeColor;
 	console.log(this.neuron.children[1].material)
 };
 
