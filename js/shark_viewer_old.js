@@ -246,16 +246,36 @@ SharkViewer.prototype.nodeColor = function (node) {
 };
 
 SharkViewer.prototype.alertColor = function (colorArray) {
-	console.log(this.neuron.children[1].material)
+	
 	var i = 0
 	for (var color in colorArray) {
 		if (colorArray.hasOwnProperty(color)) {
 			this.three_colors[i] = (new THREE.Color(colorArray[color]));
-			console.log(colorArray[color]);
-			console.log(this.three_colors[i]);
 		}
 		i += 1
 	}
+	for (var node in this.swc) {
+			if (this.swc.hasOwnProperty(node)) {
+				var particle_vertex = this.generateParticle(this.swc[node]);
+				this.geometry.vertices.push(particle_vertex);
+				customAttributes.radius.value.push(this.swc[node].radius);
+				customAttributes.typeColor.value.push(this.nodeColor(this.swc[node]));
+			}
+	} 
+	this.material = new THREE.ShaderMaterial(
+	{
+			uniforms : customUniforms,
+			attributes : customAttributes,
+			vertexShader : vertexShader,
+			fragmentShader : fragmentShader,
+			transparent : true, 
+			// alphaTest: 0.5,  // if having transparency issues, try including: alphaTest: 0.5, 
+			depthTest : true,
+			// blending: THREE.AdditiveBlending, depthTest: false,
+			// I guess you don't need to do a depth test if you are alpha blending?
+			// 
+		});
+	console.log(this.neuron.children[1].material)
 };
 
 SharkViewer.prototype.calculateParticleSize = function(fov) {
