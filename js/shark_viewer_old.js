@@ -246,11 +246,12 @@ SharkViewer.prototype.nodeColor = function (node) {
 };
 
 SharkViewer.prototype.alertColor = function (colorArray) {
-	console.log(this.three_colors);
+	
 	var i = 0
 	for (var color in colorArray) {
 		if (colorArray.hasOwnProperty(color)) {
-			this.three_colors[i] = (new THREE.Color(this.colors[color]));
+			this.three_colors[i] = (new THREE.Color(colorArray[color]));
+			alert(this.three_colors[i])
 		}
 		i += 1
 	}
