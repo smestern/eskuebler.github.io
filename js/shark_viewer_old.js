@@ -251,7 +251,8 @@ SharkViewer.prototype.alertColor = function (colorArray) {
 	for (var color in colorArray) {
 		if (colorArray.hasOwnProperty(color)) {
 			this.three_colors[i] = (new THREE.Color(colorArray[color]));
-			alert(this.three_colors[i])
+			console.log(colorArray[color]);
+			console.log(this.three_colors[i]);
 		}
 		i += 1
 	}
